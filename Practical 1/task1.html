@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My First Task</title>
+        <link rel="stylesheet" type="text/css" href="./task2.css">
+        <script src="./task3.js" ></script>
+    </head>
+    <body>
+        <div class="header-image-container">
+            <img id="city-image" src="https://cdn.pixabay.com/photo/2014/08/01/15/51/city-407703_1280.jpg" alt="A city skyline">
+        </div>
+        <table>
+            <thead>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Location</th>
+            </thead>
+            <tbody id="table-body">
+                <tr>
+                    <td>John</td>
+                    <td>20</td>
+                    <td>New York</td>
+                </tr>
+                <tr>
+                    <td>Sarah</td>
+                    <td>25</td>
+                    <td>London</td>
+                </tr>
+            </tbody>
+        </table>
+        <form onsubmit="submitForm(event)">
+            <div class="input-container">
+                <label for="name">Name</label>
+                <input type="text" id="name" size=20 maxlength=20>
+            </div>
+            <div class="input-container">
+                <label for="age">Age</label>
+                <input type="number" id="age" max=120>
+            </div>
+            <div class="input-container">
+                <label for="location">Location</label>
+                <input type="text" id="location">
+            </div>
+            <div class="input-container">
+                <input class="button" type="submit" value="Submit">
+                <input class="button" type="reset" value="Cancel">
+            </div>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+.header-image-container {
+  height: 200px;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+  left: -8px;
+  top: -8px;
+}
+
+#city-image {
+  position: absolute;
+  bottom: -80%;
+}
+
+table {
+  border: 2px solid black;
+  width: 48%;
+  float: left;
+  margin-top: 20px;
+}
+
+td {
+  text-align: center;
+}
+
+form {
+  width: 48%;
+  float: right;
+  margin-right: 20px;
+}
+
+.input-container {
+  padding: 10px;
+  width: 100%;
+  position: relative;
+}
+
+input {
+  width: 80%;
+  position: absolute;
+  right: 0;
+}
+
+.button {
+  width: 100px;
+  position: relative;
+  float: right;
+  background-color: green;
+  color: white;
+  border-radius: 10px;
+  margin: auto;
+}
