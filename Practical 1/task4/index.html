@@ -17,6 +17,10 @@
                 :class="{ 'task-complete': item.complete }"
             ></todo-item>
         </ol>
+        <form @submit.prevent="addTask">
+            <input type="text" v-model="newToDoText" id="new-todo">
+            <input type="submit" value="Add task">
+        </form>
     </div>
 
 </body>
