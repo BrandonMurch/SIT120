@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vue To Do</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <div id="todo-app">
+        <h1>To Do:</h1>
+        <ol>
+            <todo-item 
+                v-for="item in groceryList" 
+                v-bind:todo="item" 
+                v-bind:key="item.id"
+                :class="{ 'task-complete': item.complete }"
+            ></todo-item>
+        </ol>
+    </div>
+
+</body>
+</html>
