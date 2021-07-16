@@ -11,7 +11,7 @@
         <h1>To Do:</h1>
         <ol>
             <todo-item 
-                v-for="item in groceryList" 
+                v-for="item in toDoList" 
                 v-bind:todo="item" 
                 v-bind:key="item.id"
                 :class="{ 'task-complete': item.complete }"

@@ -16,7 +16,9 @@ window.onload = function() {
                     :id="todo.key"  
                     v-model="todo.complete"
                 >
-                <label for="key">{{ todo.text }}</label>
+                <label for="key" @click="todo.complete = !todo.complete">
+                    {{ todo.text }}
+                </label>
             </li>`
     })
     
@@ -26,7 +28,7 @@ window.onload = function() {
         data() {
             return {
                 newToDoText : '',
-                groceryList: [
+                toDoList: [
                     {id: "task-0", text: 'Vegetables', complete: true},
                     {id: "task-1", text: 'Cheese', complete: true},
                     {id: "task-2", text: 'Milk', complete: false},
@@ -35,8 +37,8 @@ window.onload = function() {
         },
         methods: {
             addTask() {
-                this.groceryList.push({
-                    id: `task-${this.groceryList.length}`,
+                this.toDoList.push({
+                    id: `task-${this.toDoList.length}`,
                     text: this.newToDoText,
                     complete: false,
                 })
