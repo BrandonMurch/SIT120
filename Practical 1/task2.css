@@ -3,13 +3,16 @@
   width: 100vw;
   overflow: hidden;
   position: relative;
-  left: -8px;
+  left: 50%;
+  transform: translate(-50%, 0);
   top: -8px;
 }
 
 #city-image {
   position: absolute;
-  bottom: -80%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
 }
 
 table {
