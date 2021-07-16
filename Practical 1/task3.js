@@ -6,4 +6,6 @@ function submitForm(event) {
     const tableBody = document.getElementById("table-body");
 
     tableBody.innerHTML += `<tr><td>${name}</td><td>${age}</td><td>${location}</td></tr>`
+
+    event.target.reset();
 }
