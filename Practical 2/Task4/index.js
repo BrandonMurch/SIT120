@@ -13,6 +13,10 @@ let mouseX, mouseY;
 
 function greenRingOnMouseMove(event) {
     // use offsetX/layerX instead of screenX to account for offset in canvas positioning: https://stackoverflow.com/questions/1114465/getting-mouse-location-in-canvas
+    const canvas = document.querySelector('#canvas');
+    const ctx = canvas.getContext('2d');
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
     mouseX = event.offsetX || event.layerX;
     mouseY = event.offsetY || event.layerY;
     const timer = setTimeout(function () {
@@ -60,10 +64,10 @@ function clearAllTimeouts(timers) {
 
 
 function drawGreenRing(cx, cy) {
-    canvas = document.querySelector('#canvas');
+    const canvas = document.querySelector('#canvas');
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
-    ctx = canvas.getContext('2d');
+    const ctx = canvas.getContext('2d');
     const timers = [];
     let cancelInProgress = false;
     for (let i = 0; i < 40; i++) {
