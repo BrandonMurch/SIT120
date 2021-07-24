@@ -43,31 +43,27 @@ html {
   background-color: #3f463d;
 }
 
-.logo-container {
-  float: right;
-  width: 10%;
-}
-
-.exit-icon {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  z-index: 5;
-  cursor: pointer;
-}
-
 .nav-link {
   text-decoration: none;
   font-size: 1.5rem;
   color: #bf763c;
-  margin: 1em 2em;
+  padding: 1rem;
+}
+
+.logo-container {
+  float: left;
+  margin-right: 2rem;
+  display: flex;
+  font-family: "Lucida Handwriting";
+  color: #bf763c;
 }
 
 .content-container {
-  position: fixed;
+  position: relative;
+  top: 2rem;
   width: 80vw;
   max-height: 80vh;
-  max-width: 1200px;
+  max-width: 1600px;
   background-color: white;
   border: 4px solid black;
   box-shadow: 3px 3px darkgray;
@@ -77,18 +73,22 @@ html {
   align-items: stretch;
 }
 
+.exit-icon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 5;
+  cursor: pointer;
+  margin: 0;
+}
+
 .text-container {
-  width: 49%;
+  width: 100%;
   height: auto;
   position: relative;
   margin: 0;
   padding: 0;
-}
-
-.text-container {
   overflow-y: scroll;
-  position: relative;
-  width: 40vw;
 }
 
 .ignore-height {
@@ -100,41 +100,41 @@ html {
 }
 
 .main-image {
-  float: left;
-  max-height: 80vh;
-  max-width: 40vw;
+  max-height: 90vh;
+  max-width: 600px;
   width: auto;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .content-container {
     overflow-y: scroll;
     display: block;
-  }
-
-  .content-container::-webkit-scrollbar,
-  .text-container::-webkit-scrollbar {
-    display: none;
+    max-height: 85vh;
+    /* Stops Content box from being wider than a tall image */
+    width: min-content;
   }
 
   .ignore-height {
     text-align: justify;
     position: relative;
+    top: 0;
+    left: 5%;
     width: 90%;
-    overflow: hidden;
+  }
+
+  .main-image {
+    max-width: 80vw;
+    max-height: 75vh;
+  }
+
+  /* Hide scrollbar on mobile */
+  .content-container::-webkit-scrollbar,
+  .text-container::-webkit-scrollbar {
+    display: none;
   }
 
   .content-container,
   .ignore-height {
     scrollbar-width: none; /* Firefox */
-  }
-
-  .main-image {
-    max-width: 80vw;
-    max-height: 80vh;
-  }
-
-  .text-container {
-    width: 80vw;
   }
 }
