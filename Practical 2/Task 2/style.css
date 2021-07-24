@@ -92,7 +92,8 @@ html {
   max-width: 1600px;
   background-color: #d8dad4;
   border: 4px solid black;
-  box-shadow: 3px 3px 5px black;
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow */
+  box-shadow: 3px 3px 10px 2px black;
   border-radius: 8px;
   overflow: hidden;
   display: flex;
