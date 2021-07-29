@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+</head>
+<body>
+        <div id="message"></div>
+        
+        
+        <script>
+                function addToDiv(message, value) {
+                    document.getElementById("message").innerHTML += "<b>" + message + ":</b> " + value + "<br />"
+                }
+
+                const date = new Date;
+
+                addToDiv("Date is", `${date.getFullYear()}/${date.getMonth()}/${date.getDate()} ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`);
+
+                date.setFullYear(2020);
+                date.setMonth(10);
+                date.setMinutes(44);
+
+                addToDiv("Modified date: ", date.toLocaleString());
+                addToDiv("getTime()  = ", date.getTime())
+
+
+        </script>
+</body>
+</html>

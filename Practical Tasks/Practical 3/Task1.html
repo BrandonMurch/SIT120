@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+</head>
+<body>
+    <div id="message"></div>
+
+
+    <script>
+        function addToDiv(message) {
+            document.getElementById("message").innerHTML += message + "<br />"
+        }
+
+        let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; 
+        let length = text.length;
+        addToDiv(" <b>String length is:</b>    " + length);
+
+        let firstFive = text.slice(0, 5);
+        addToDiv("<b>The first five letters are:</b> " + firstFive);
+
+        let replaced = text.replace("ABC", "123");
+        addToDiv("<b>Replace the first three letters with numbers:</b>    " + replaced);
+
+        let lowercase = text.toLowerCase();
+        addToDiv("<b>All lowercase:</b>    " + lowercase);
+
+        let oneUppercase = lowercase[0].toUpperCase() + lowercase.slice(1);
+        addToDiv("<b>First Letter Uppercase:</b>    " + oneUppercase);
+
+        let spacesEverywhere = "      Look Ma, no spaces!       ";
+        addToDiv("<b>Trim spaces from either side:</b>    " + spacesEverywhere.trim());
+        
+        let padding = text.padStart(30,0);
+        addToDiv("<b>Add padding:</b>       " + padding);
+
+
+    </script>
+</body>
+</html>

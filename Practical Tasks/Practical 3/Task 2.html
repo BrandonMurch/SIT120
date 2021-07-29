@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+</head>
+<body>
+        <div id="message"></div>
+        
+        
+        <script>
+            // NUMBER FUNCTIONS
+            function addToDiv(message, before, after) {
+                document.getElementById("message").innerHTML +="<b>" + message + ":</b> Before: " + before + " After: " + after + "<br />"
+            }
+
+            let x = 22;
+            addToDiv("To String", x, x.toString());
+            
+            addToDiv("To Exponential", x, x.toExponential(2));
+
+            addToDiv("To Fixed", x, x.toFixed(4));
+
+            let decimalNumber = 2.23438;
+            addToDiv("To Precision", decimalNumber, decimalNumber.toPrecision(3));
+
+            let string = "2334";
+            addToDiv("ParseInt", typeof(string), typeof(parseInt(string)));
+
+            let getRandom = () => Math.ceil(Math.random() * 100);
+            addToDiv("Random", getRandom(), getRandom());
+
+            document.getElementById("message").innerHTML += "<br /> <br />"
+            
+
+        </script>
+
+        <script>
+            // ARRAY FUNCTIONS
+
+            function addToDiv(message, value) {
+                document.getElementById("message").innerHTML += "<b>" + message + ":</b> " + value + "<br />"
+            }
+
+            function addToDivBeforeAfter(message, before, after) {
+                document.getElementById("message").innerHTML += "<b>" + message 
+                    + ":</b><br /> Before: " + before + " <br /> After: " + after + "<br />"
+            }
+
+            let fruits =  ["Banana", "Orange", "Apple", "Mango"];
+
+            addToDivBeforeAfter("To String", typeof(fruits), typeof(fruits.toString()));
+
+            addToDivBeforeAfter("Join", fruits, fruits.join("  *  "));
+
+            let numbers = ["1", "2", "3", "4"];
+            let copyNumbers = Array.from(numbers);
+            addToDivBeforeAfter("Pop", numbers, copyNumbers.copyWithin().pop());
+
+            copyNumbers = Array.from(numbers);
+            addToDivBeforeAfter("Shift", numbers, copyNumbers.shift());
+            copyNumbers.unshift("33");
+            addToDiv("Unshift(33)", copyNumbers);
+
+            addToDiv("Merging fruit and numbers", numbers.concat(fruits));
+        </script>
+</body>
+</html>
