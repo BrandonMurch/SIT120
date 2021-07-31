@@ -1,0 +1,8 @@
+@font-face {
+  font-family: fell;
+  src: url("../fonts/IMFeENrm29P.ttf");
+}
+
+html {
+  font-family: fell, serif;
+}
