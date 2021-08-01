@@ -15,6 +15,7 @@
 <script>
 import ImageCard from './ImageCard.vue';
 import PopUp from './PopUp.vue';
+import { debounce } from '../assets/javascript/debounce'
 
 export default {
     name: 'ImageGallery',
@@ -27,10 +28,10 @@ export default {
     },
     //https://stackoverflow.com/questions/49380830/vue-js-how-to-get-window-size-whenever-it-changes
     created() {
-        window.addEventListener("resize", this.updateColumnsOnResize)
+        window.addEventListener("resize", debounce(this.updateColumnsOnResize))
     },
     unmounted() {
-        window.removeEventListener("resize", this.updateColumnsOnResize)
+        window.removeEventListener("resize", debounce(this.updateColumnsOnResize))
     },
     methods: {
         updateColumnsOnResize() {
