@@ -1,6 +1,6 @@
 <template>
     <div  class="gallery-container">
-        <PopUp v-if="popupImage" />
+        <PopUp v-if="popupImage" v-bind="popupImage" @close="closePopUp"/>
         <div class="gallery-column" v-for="(column, index) in imageColumns" :key="index">
             <ImageCard 
                 v-for="image in column" 
@@ -48,8 +48,10 @@ export default {
             return columnQueue;
         },
         openPopUp(image) {
-            console.log("OPENING...")
             this.popupImage = image;
+        },
+        closePopUp() {
+            this.popupImage = null;
         }
     }, 
     data () {
