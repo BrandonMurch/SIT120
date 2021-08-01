@@ -16,24 +16,24 @@ export default {
                 images.push({
                     imageSource: "https://images.unsplash.com/photo-1517848568502-d03fa74e1964?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
                     title: "monstera deliciosa",
-                    id: i,
+                    id: 4 * i,
                 });
                 images.push({
                     imageSource: "https://images.unsplash.com/photo-1497250681960-ef046c08a56e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
                     title: "dryopteris affinis",
-                    id: i + 1,
+                    id: 4 * i + 1,
                 });
                 images.push({
                     imageSource: "https://images.unsplash.com/photo-1453904300235-0f2f60b15b5d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1833&q=80",
                     title: "Plant",
-                    id: i + 2,
+                    id: 4 * i + 2,
                 }),
                 images.push({
                     imageSource: "https://images.unsplash.com/photo-1508502726440-477c94bc369e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
                     title: "Plant2",
                     subtitle: '"Droopy"',
                     text: this.lorem,
-                    id: i + 3,
+                    id: 4 * i + 3,
                 });
             }
             return images;
