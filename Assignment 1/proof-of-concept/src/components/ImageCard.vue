@@ -8,12 +8,14 @@
 </template>
 
 <script>
+
 export default {
     name: "ImageCard",
     props: {
         imageSource: String,
         hoverText: String,
-    }
+        id: Number,
+    },
 }
 </script>
 
