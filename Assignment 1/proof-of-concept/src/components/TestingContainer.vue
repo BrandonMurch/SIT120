@@ -2,7 +2,7 @@
   <div>
       <div class="application-background"></div>
       <NavigationBar />
-      <ExplorePlants class="main-window" />
+      <ExplorePlants />
   </div>
 </template>
 
@@ -27,10 +27,5 @@ export default {
     height: 100vh;
     width: 100vw;
     background-color: #D8DAD4;
-  }
-
-  .main-window {
-    position: relative;
-    top: 4rem;
   }
 </style>
