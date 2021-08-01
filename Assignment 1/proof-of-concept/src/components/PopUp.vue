@@ -132,7 +132,7 @@ export default {
 
     .text-container {
     scrollbar-width: thin; /* "auto" or "thin" */
-    scrollbar-color: transparent #bf763c; /* scroll thumb and track */
+    scrollbar-color: #bf763c transparent; /* scroll thumb and track */
     }
 
 /* ----------------------------------------------------------------------------------------- */
