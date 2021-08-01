@@ -52,6 +52,9 @@ export default {
             if (window.innerWidth > 800) {
                 this.popUpWidth = event.target.width * 2; 
                 this.popUpHeight = event.target.height; 
+            } else {
+                this.popUpWidth = event.target.width; 
+                this.popUpHeight = event.target.height * 1.2; 
             }
         },
     },
