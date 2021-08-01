@@ -19,11 +19,13 @@ export default {
 
 <style scoped>
     .image-container {
+        position: relative;
         width:250px;
         border: 1px solid black;
         border-radius: 20px;
         box-shadow: 0 5px 5px grey;
         overflow: hidden;
+        margin-bottom: 1rem;
     }
 
     .image {
