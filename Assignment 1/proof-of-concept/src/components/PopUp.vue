@@ -2,6 +2,9 @@
     <div class="container" >
         <div class="background" @click="closePopUp"/>
         <div class="popup" ref="popUp" :style="{ height: popUpHeight + 'px', width: popUpWidth + 'px' }">
+            <button class="close"  @click="closePopUp">
+                <img src="@/assets/icons/close.svg" alt="close" heigh="32" width="32">
+            </button>
             <img class="image" :src="imageSource" :alt="title" @load="updateSizeOfPopUpBasedOnImage">
             <div class="text-container">
                 <h3 class="title">{{title}}</h3>
@@ -65,6 +68,7 @@ export default {
     }
 
     .popup {
+        position: relative;
         background-color: #D8DAD4;
         border-radius: 20px;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -100,6 +104,15 @@ export default {
         width: 100%;
         margin: 0;
         margin-top: 1rem;
+    }
+
+    .close {
+        position: absolute;
+        top:10px;
+        right: 10px;
+        border: none;
+        background: none;
+        cursor: pointer;
     }
 
     /* Scrollbar Modifications: https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp */
