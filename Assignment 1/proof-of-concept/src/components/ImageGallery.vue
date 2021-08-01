@@ -1,21 +1,26 @@
 <template>
-    <div  class="gallery-container" v-bind:style="centerContainer">
+    <div  class="gallery-container">
+        <PopUp v-if="popupImage" />
         <div class="gallery-column" v-for="(column, index) in imageColumns" :key="index">
             <ImageCard 
                 v-for="image in column" 
-                v-bind:key="image.hoverText" 
-                v-bind="image" />
+                :key = image.id
+                v-bind="image" 
+                @click="openPopUp(image)"
+                />
         </div>        
     </div>
 </template>
 
 <script>
 import ImageCard from './ImageCard.vue';
+import PopUp from './PopUp.vue';
 
 export default {
     name: 'ImageGallery',
     components: {
         ImageCard,
+        PopUp,
     },
     props: {
         images: Array
@@ -41,11 +46,16 @@ export default {
                 columnQueue[i % columns].push(this.images[i]);
             }
             return columnQueue;
+        },
+        openPopUp(image) {
+            console.log("OPENING...")
+            this.popupImage = image;
         }
-    },
+    }, 
     data () {
         return {
             imageColumns: this.splitImages(),
+            popupImage: null,
         }
     },
 
