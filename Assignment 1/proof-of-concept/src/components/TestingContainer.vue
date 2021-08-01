@@ -1,8 +1,9 @@
 <template>
-    <div>
+  <div>
+      <div class="application-background"></div>
       <NavigationBar />
       <ExplorePlants />
-    </div>
+  </div>
 </template>
 
 <script>
@@ -14,6 +15,17 @@ export default {
   components: {
       NavigationBar,
       ExplorePlants,
-  }
+  },
 }
 </script>
+
+<style scoped>
+  .application-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #D8DAD4;
+  }
+</style>
