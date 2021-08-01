@@ -1,8 +1,6 @@
 <template>
-    <div>
-        <div :class="{ open: isOpen, container: true }">
-            <slot name="inside"></slot>
-        </div>
+    <div :class="{ open: isOpen, container: true }">
+        <slot name="inside"></slot>
     </div>
 </template>
 

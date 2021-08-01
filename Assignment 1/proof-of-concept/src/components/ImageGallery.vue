@@ -28,15 +28,16 @@ export default {
     },
     //https://stackoverflow.com/questions/49380830/vue-js-how-to-get-window-size-whenever-it-changes
     created() {
-        window.addEventListener("resize", debounce(this.updateColumnsOnResize))
+        window.addEventListener("resize", this.debounceUpdateSize)
     },
     unmounted() {
-        window.removeEventListener("resize", debounce(this.updateColumnsOnResize))
+        window.removeEventListener("resize", this.debounceUpdateSize)
     },
     methods: {
         updateColumnsOnResize() {
             this.imageColumns = this.splitImages();
         },
+        // Split images into a 2d array of columns, then images.
         splitImages() {
             const columns = Math.floor(window.innerWidth / 265)
             const columnQueue = [];
@@ -59,6 +60,7 @@ export default {
         return {
             imageColumns: this.splitImages(),
             popupImage: null,
+            debounceUpdateSize: debounce(this.updateColumnsOnResize),
         }
     },
 
@@ -67,11 +69,8 @@ export default {
 
 <style scoped>
     .gallery-container {
-        position: relative;
-        top: 0;
         margin: auto;
         display: flex;
-        flex-direction: row;
     }
 
     .gallery-column {
