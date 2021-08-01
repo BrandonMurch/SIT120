@@ -27,8 +27,8 @@ export default {
             this.$emit('close');
         }, 
         updateSizeOfPopUpBasedOnImage(event) {
-            this.popwidth = event.target.width * 2; 
-            this.popheight = event.target.height; 
+            this.popUpWidth = event.target.width * 2; 
+            this.popUpHeight = event.target.height; 
         },
     },
 }

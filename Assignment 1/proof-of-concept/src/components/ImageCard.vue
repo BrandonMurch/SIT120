@@ -1,8 +1,8 @@
 <template>
     <div class="image-container">
-        <img class="image" :src="imageSource" :alt="hoverText">
+        <img class="image" :src="imageSource" :alt="title">
         <div class="image-overlay">
-            <p class="image-hover-text">{{ hoverText }}</p>
+            <p class="image-hover-text">{{ title }}</p>
         </div>
     </div>
 </template>
@@ -13,7 +13,7 @@ export default {
     name: "ImageCard",
     props: {
         imageSource: String,
-        hoverText: String,
+        title: String,
         id: Number,
     },
 }
