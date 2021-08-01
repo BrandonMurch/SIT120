@@ -1,7 +1,7 @@
 <template>
-    <div class="image-container">
-        <img class="image" :src="imageSource" :alt="title">
-        <div class="image-overlay">
+    <div :class="{imageContainer: isLoaded}">
+        <img class="image" :src="imageSource" :alt="title" @load="isLoaded = true">
+        <div v-if="isLoaded" class="image-overlay">
             <p class="image-hover-text">{{ title }}</p>
         </div>
     </div>
@@ -16,11 +16,16 @@ export default {
         title: String,
         id: Number,
     },
+    data() {
+        return {
+            isLoaded: false,
+        };
+    }
 }
 </script>
 
 <style scoped>
-    .image-container {
+    .imageContainer {
         position: relative;
         width:250px;
         border: 1px solid black;
