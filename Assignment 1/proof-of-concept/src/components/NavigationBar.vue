@@ -27,15 +27,15 @@ export default {
     }
 
     .logo-image {
-        height: 90px;
+        height: 5rem;
     }
 
     .logo-text {
         display: inline;
         color: #BF763C;
-        font-size: 72px;
+        font-size: 4rem;
         position: relative;
-        top: -20px;
+        top: -1rem;
     }
 
     .navigation-link {
@@ -43,7 +43,7 @@ export default {
         color: #BF763C;
         text-decoration: none;
         margin: 1rem;
-        font-size: 34px;
+        font-size: 1.5rem;
     }
 
     .navigation-link:first-of-type {

@@ -108,8 +108,8 @@ export default {
 
     .close {
         position: absolute;
-        top:10px;
-        right: 10px;
+        top:0.5rem;
+        right: 0.5rem;
         border: none;
         background: none;
         cursor: pointer;

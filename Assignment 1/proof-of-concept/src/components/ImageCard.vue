@@ -57,9 +57,10 @@ export default {
     .image-overlay:hover .image-hover-text {
         display: inline;
         position:absolute;
-        top:40%;
+        bottom:10%;
+        left: 5%;
         text-align: center;
-        width: 100%;
+        width: 90%;
         color: white;
         font-size: 2rem;
         margin: 0;
