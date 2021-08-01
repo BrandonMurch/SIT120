@@ -15,12 +15,12 @@ export default {
             for (let i = 0; i < 5; i++) {
                 images.push({
                     imageSource: "https://images.unsplash.com/photo-1517848568502-d03fa74e1964?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
-                    title: "Monstera",
+                    title: "monstera deliciosa",
                     id: i,
                 });
                 images.push({
                     imageSource: "https://images.unsplash.com/photo-1497250681960-ef046c08a56e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
-                    title: "Fern",
+                    title: "dryopteris affinis",
                     id: i + 1,
                 });
                 images.push({
