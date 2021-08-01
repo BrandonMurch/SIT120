@@ -1,10 +1,15 @@
 <template>
-  <div class="container" >
-      <div class="background" @click="closePopUp"/>
-      <div class="popup" ref="popUp" :style="{ height: popUpHeight + 'px', width: popUpWidth + 'px' }">
-          <img class="image" :src="imageSource" :alt="title" @load="updateSizeOfPopUpBasedOnImage">
-      </div>
-  </div>
+    <div class="container" >
+        <div class="background" @click="closePopUp"/>
+        <div class="popup" ref="popUp" :style="{ height: popUpHeight + 'px', width: popUpWidth + 'px' }">
+            <img class="image" :src="imageSource" :alt="title" @load="updateSizeOfPopUpBasedOnImage">
+            <div class="text-container">
+                <h3 class="title">{{title}}</h3>
+                <h4 class="subtitle">{{subtitle}}</h4>
+                <p class="paragraph">{{text}}</p>
+            </div>
+        </div>
+    </div>
 </template>
 
 <script>
@@ -74,4 +79,51 @@ export default {
         max-height: 80vh;
         max-width: 40vw;
     }
+
+    .text-container {
+        float: right;
+        width: 49%;
+        height: 100%;
+        overflow-y: scroll;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1.25rem;
+    }
+
+    .title, .subtitle {
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        margin-top: 1rem;
+    }
+
+    /* Scrollbar Modifications: https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp */
+    .text-container::-webkit-scrollbar {
+    width: 4px; /* width of the entire scrollbar */
+    }
+
+    .text-container::-webkit-scrollbar-track {
+    background: transparent; /* color of the tracking area */
+    }
+
+    .text-container::-webkit-scrollbar-thumb {
+    background-color: #bf763c; /* color of the scroll thumb */
+    border-radius: 20px; /* roundness of the scroll thumb */
+    border: 5px solid transparent; /* creates padding around scroll thumb */
+    }
+
+    .text-container {
+    scrollbar-width: thin; /* "auto" or "thin" */
+    scrollbar-color: transparent #bf763c; /* scroll thumb and track */
+    }
+
+/* ----------------------------------------------------------------------------------------- */
+
+
+    
 </style>
