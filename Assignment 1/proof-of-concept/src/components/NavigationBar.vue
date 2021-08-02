@@ -3,8 +3,8 @@
         <img class="logo-image" src="../assets/images/logo.svg" alt="logo">
         <h1 class="logo-text">tend</h1>
         <div class="icon-container" @click="toggle">
-            <img v-if="!isOpen" class="menu-icon" src="@/assets/images/MenuIcon.svg" />
-            <svg v-else class="menu-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M38 12.83L35.17 10 24 21.17 12.83 10 10 12.83 21.17 24 10 35.17 12.83 38 24 26.83 35.17 38 38 35.17 26.83 24z"/></svg>
+            <img class="menu-icon" :class="{menuIconOpen: !isOpen}" src="@/assets/images/MenuIcon.svg" />
+            <svg class="menu-icon" :class="{menuIconOpen: isOpen}"  xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M38 12.83L35.17 10 24 21.17 12.83 10 10 12.83 21.17 24 10 35.17 12.83 38 24 26.83 35.17 38 38 35.17 26.83 24z"/></svg>
         </div>
         <DropDown class="drop-down" :isOpen="isOpen"> 
             <template v-slot:inside> 
@@ -90,8 +90,17 @@ export default {
         position: absolute;
         right: 2rem;
         top: 1rem;
+        opacity: 0;
+        transition: opacity 0.5s;
+        /* transition-delay: 0.5s; */
         cursor: pointer;
         fill: #BF763C;
+    }
+
+    .menuIconOpen {
+        opacity: 1;
+        transition: opacity 0.5s;
+        transition-delay: 0.5s;
     }
 
     @media (min-width: 800px) {
