@@ -22,7 +22,6 @@ export default {
         width: 120%;
         overflow: hidden;
         transition: 1s;
-        transition-timing-function: ease;
         transition-property: max-height;
         box-shadow: inset 0px 0px 4px 4px grey;
     }
@@ -30,8 +29,8 @@ export default {
     .open {
         height: auto;
         max-height: 800px;
-        transition: 1s;
-        transition-timing-function: ease;
+        /* Uneven transition times due to the max-height css animation work around. */
+        transition: 2.5s;
         transition-property: max-height;
         border-top: 1px solid black;
         border-bottom: 1px solid black;
