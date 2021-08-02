@@ -1,7 +1,7 @@
 <template>
     <div class="container" >
         <div class="background" @click="closePopUp"/>
-        <div class="popup" ref="popUp" :style="{ height: popUpHeight + 'px', width: popUpWidth + 'px' }">
+        <div class="popup" ref="popUp" :style="{ height: popUpHeight, width: popUpWidth }">
             <button class="close"  @click="closePopUp">
             <svg class="close-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M38 12.83L35.17 10 24 21.17 12.83 10 10 12.83 21.17 24 10 35.17 12.83 38 24 26.83 35.17 38 38 35.17 26.83 24z"/></svg>
             </button>
@@ -50,11 +50,11 @@ export default {
         },
         updateSizeOfPopUpBasedOnImage(event) {
             if (window.innerWidth > 800) {
-                this.popUpWidth = event.target.width * 2; 
-                this.popUpHeight = event.target.height; 
+                this.popUpWidth = (event.target.width * 2) + "px"; 
+                this.popUpHeight = (event.target.height) + "px"; 
             } else {
-                this.popUpWidth = event.target.width; 
-                this.popUpHeight = event.target.height * 1.2; 
+                this.popUpWidth = (event.target.width) + "px"; 
+                this.popUpHeight = "auto"; 
             }
         },
     },
@@ -165,7 +165,9 @@ export default {
 
         .text-container {
             float: none;
-            width: 100%;
+            width: 90%;
+            position:relative;
+            left: 5%
         }
     }
 
