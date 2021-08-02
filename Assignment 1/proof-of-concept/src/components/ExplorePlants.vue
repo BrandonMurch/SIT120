@@ -18,7 +18,6 @@ export default {
                 for(let j = 0; j < 6; j++) {
                     let copy = {...plantData[j]};
                     copy.id = copy.id + (7 * i);
-                    console.log(copy.title, copy.id, i)
                     images.push(copy);                    
                 }
             }
