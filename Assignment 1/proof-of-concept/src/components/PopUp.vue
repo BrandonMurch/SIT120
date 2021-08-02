@@ -101,6 +101,7 @@ export default {
 
     .text-container {
         float: right;
+        margin-top: 4%;
         width: 49%;
         height: 100%;
         overflow-y: scroll;
