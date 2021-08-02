@@ -1,10 +1,13 @@
 <template>
     <div class="container" >
         <div class="background" @click="closePopUp"/>
+        <!-- Use JavaScript to dynamically set the height and width depending on the image. -->
         <div class="popup" ref="popUp" :style="{ height: popUpHeight, width: popUpWidth }">
             <button class="close"  @click="closePopUp">
-            <svg class="close-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M38 12.83L35.17 10 24 21.17 12.83 10 10 12.83 21.17 24 10 35.17 12.83 38 24 26.83 35.17 38 38 35.17 26.83 24z"/></svg>
+                <!-- Close icon -->
+                <svg class="close-icon" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M38 12.83L35.17 10 24 21.17 12.83 10 10 12.83 21.17 24 10 35.17 12.83 38 24 26.83 35.17 38 38 35.17 26.83 24z"/></svg>
             </button>
+            <!-- Resize PopUp on image load -->
             <img class="image" :src="imageSource" :alt="title" @load="updateSizeOfPopUpBasedOnImage" ref="image">
             <div class="text-container">
                 <h3 class="title">{{title}}</h3>
@@ -46,6 +49,14 @@ export default {
             this.$emit('close');
         }, 
         getPopUpThenResize() {
+            /* 
+                this.$refs passes all elements with a ref attribute. Then image selects the image ref.
+                This way GetElementById is unnecessary. The image is passed in using the target key to
+                emulate an event.
+
+                https://vuejs.org/v2/api/#ref
+                https://vuejs.org/v2/api/#vm-refs
+            */
             this.updateSizeOfPopUpBasedOnImage({ target: this.$refs.image })
         },
         updateSizeOfPopUpBasedOnImage(event) {
@@ -64,6 +75,7 @@ export default {
 
 <style scoped>
     .container {
+        /* Cover entire screen, ignore scrolling */
         position: fixed;
         top: 0;
         left: 0;
@@ -76,12 +88,13 @@ export default {
     }
 
     .background {
+        /* Fill container */
         position:absolute;
         top:0;
         left:0;
-        background-color: rgba(0,0,0,0.3);
         width: 100vw;
         height: 100vh;
+        background-color: rgba(0,0,0,0.3);
         z-index: 10;
 
     }
@@ -93,10 +106,6 @@ export default {
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         z-index: 11;
         overflow: hidden;
-    }
-
-    .image {
-        max-height: 80vh;
     }
 
     .text-container {
@@ -142,6 +151,7 @@ export default {
 
         .image {
             max-width: 40vw;
+            max-height: 80vh;
         }
     }
 
@@ -149,6 +159,8 @@ export default {
     @media (max-width: 800px) {
         .popup {
             overflow-y: scroll;
+            /* min-content adjusts the height to be as small as possible 
+            https://developer.mozilla.org/en-US/docs/Web/CSS/min-content */
             width: min-content;
             max-height: 90vh;
         }

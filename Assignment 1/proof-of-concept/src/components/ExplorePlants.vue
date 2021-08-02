@@ -12,7 +12,7 @@ export default {
     name: 'ExplorePlants', 
     methods: {
         getImageData() {
-            // Duplicate examples to fill the screen.
+            // Duplicate examples to fill the screen into images array.
             const images = [];
             for (let i = 0; i < 5; i++) {
                 for(let j = 0; j < 6; j++) {

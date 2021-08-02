@@ -1,5 +1,7 @@
 <template>
-    <div :class="{ open: isOpen, container: true }" :style="{height: height}">
+    <div :class="{ open: isOpen, container: true }">
+        <!-- Named slots, in the future would like to add more parts to the drop down
+         https://vuejs.org/v2/guide/components-slots.html#Named-Slots-->
         <slot name="inside"></slot>
     </div>
 </template>
@@ -9,7 +11,6 @@ export default {
     name: "DropDown",
     props: {
         isOpen: Boolean,
-        height: Number,
     }
 }
 </script>
@@ -19,12 +20,13 @@ export default {
     .container {
         position: relative;
         left: -10%;
-        max-height: 0;
         width: 120%;
-        overflow: hidden;
+        max-height: 0;
+        /* https://www.w3schools.com/css/css3_transitions.asp */
         transition: 1s; 
         transition-property: max-height;
         box-shadow: inset 0px 0px 4px 4px grey;
+        overflow: hidden;
     }
 
     .open {

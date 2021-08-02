@@ -1,9 +1,14 @@
 <template>
     <nav class="navigation-bar">
+        <!-- LOGO -->
         <img class="logo-image" src="../assets/images/logo.svg" alt="logo">
         <h1 class="logo-text">tend</h1>
+        
+        <!-- MOBILE NAV -->
         <div class="icon-container" @click="menuOpen = !menuOpen">
             <img class="menu-icon" :class="{menuIconOpen: !menuOpen}" src="@/assets/images/MenuIcon.svg" />
+            <!-- Close Icon -->
+            <!-- https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Adding_vector_graphics_to_the_Web -->
             <svg class="menu-icon" :class="{menuIconOpen: menuOpen}"  xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M38 12.83L35.17 10 24 21.17 12.83 10 10 12.83 21.17 24 10 35.17 12.83 38 24 26.83 35.17 38 38 35.17 26.83 24z"/></svg>
         </div>
         <DropDown class="drop-down" :isOpen="menuOpen"> 
@@ -17,10 +22,10 @@
                         </div>
                     </template>
                 </DropDown>
-            
             </template>
-                
         </DropDown>
+
+        <!-- DESKTOP NAV -->
         <div class="large-navigation">
             <a class="navigation-link" @click="searchToggle()" href="#">search</a>
             <a class="navigation-link" v-for="link in links" :key="link.text" :href="link.url">{{ link.text }}</a>

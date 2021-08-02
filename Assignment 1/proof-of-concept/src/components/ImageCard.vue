@@ -1,4 +1,8 @@
 <template>
+    <!-- 
+        Wait until image is loaded before loading borders, overlay and text.
+        https://www.geeksforgeeks.org/how-to-check-an-image-is-loaded-or-not-in-vuejs/
+    -->
     <div :class="{imageContainer: isLoaded}">
         <img class="image" :src="imageSource" :alt="title" @load="isLoaded = true">
         <div v-if="isLoaded" class="image-overlay">
@@ -14,7 +18,6 @@ export default {
     props: {
         imageSource: String,
         title: String,
-        id: Number,
     },
     data() {
         return {
@@ -31,23 +34,28 @@ export default {
         border: 1px solid black;
         border-radius: 20px;
         box-shadow: 0 5px 5px grey;
-        overflow: hidden;
         margin-bottom: 1rem;
+        overflow: hidden;
     }
 
     .image {
         width: 100%;
-        /* https://stackoverflow.com/questions/10844205/html-5-strange-img-always-adds-3px-margin-at-bottom */
+        /* 
+        There was a small gap that was appearing at the bottom of my images. It seems that the browser treats
+        an image as text. So I used vertical-align to stop this, as discussed here:
+
+        https://stackoverflow.com/questions/10844205/html-5-strange-img-always-adds-3px-margin-at-bottom 
+        */
         vertical-align: middle;
     }
 
     .image-overlay {
+        /* Fill parent completely */
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        border-radius: 20px;
     }
 
     .image-overlay:hover {
@@ -59,6 +67,7 @@ export default {
         display:none;
     }
 
+    /* Display when card is hovered. */
     .image-overlay:hover .image-hover-text {
         display: inline;
         position:absolute;
