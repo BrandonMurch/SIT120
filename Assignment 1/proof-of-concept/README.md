@@ -1,24 +1,7 @@
-# proof-of-concept
+# Tend (Proof of Concept)
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
+This was bootstrapped by @vue/cli. To get started run **npm install**, then run **npm run serve** for the development server, or run **npm run build** for a production version in the dist/ folder.
 
 ### Customize configuration
+
 See [Configuration Reference](https://cli.vuejs.org/config/).
