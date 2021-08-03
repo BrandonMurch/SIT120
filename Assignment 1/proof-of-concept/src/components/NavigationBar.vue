@@ -13,45 +13,33 @@
         </div>
         <DropDown class="drop-down" :isOpen="menuOpen"> 
             <template v-slot:inside> 
-                <a class="navigation-link drop-link" v-for="link in links" :key="link.text" :href="link.url">{{ link.text }}</a>
-                <a class="navigation-link drop-link" @click="searchToggle()" href="#">search</a>
-                <DropDown :isOpen="searchOpen">
-                    <template v-slot:inside >
-                        <div class="search-container" ref="searchbar">
-                            <input class="search-input" type="text" v-model="searchTerm">
-                        </div>
-                    </template>
-                </DropDown>
+                <a class="navigation-link drop-link" v-for="link in links" :key="link.text" :href="link.url" @click="link.click">{{ link.text }}</a>
+                <a class="navigation-link drop-link" @click="searchOpen = !searchOpen" href="#">search</a>
+                <SearchBar :isOpen="searchOpen" @close="searchOpen = false" />
             </template>
         </DropDown>
 
         <!-- DESKTOP NAV -->
         <div class="large-navigation">
-            <a class="navigation-link" @click="searchToggle()" href="#">search</a>
-            <a class="navigation-link" v-for="link in links" :key="link.text" :href="link.url">{{ link.text }}</a>
-                <DropDown :isOpen="searchOpen">
-                    <template v-slot:inside >
-                        <div class="search-container" ref="searchbar">
-                            <input class="search-input" type="text" v-model="searchTerm">
-                        </div>
-                    </template>
-                </DropDown>
+            <a class="navigation-link" @click="searchOpen = !searchOpen" href="#">search</a>
+            <a class="navigation-link" v-for="link in links" :key="link.text" :href="link.url" @click="click(link.text)">{{ link.text }}</a>
+            <SearchBar :isOpen="searchOpen" @close="searchOpen = false" />
         </div>
     </nav>
 </template>
 
 <script>
 import DropDown from './DropDown.vue'
-// import SearchBar from './SearchBar.vue'
+import SearchBar from './SearchBar.vue'
 
 export default {
     name: 'NavigationBar', 
-    components: { DropDown },
+    components: { DropDown, SearchBar },
+    props: { activeComponent: String },
     data() {
         return {
             menuOpen: false,
             searchOpen: false,
-            searchTerm: "",
             links: [
                 {text: "contact", url: "#"},
                 {text: "learn", url: "#"},
@@ -59,27 +47,11 @@ export default {
                 {text: "my plants", url: "#"},
             ]
         }
-    }, methods: {
-        searchToggle() {
-            this.searchOpen = !this.searchOpen;
-            if (!this.searchOpen) {
-                setTimeout(() => this.searchTerm = "", 800)
-            }
-        }, submitSearch(event) {
-            if (event.key == "Enter") {
-                alert("Searching for: " + this.searchTerm + "...");
-                this.searchTerm = "";
-                this.searchOpen = false;
-            } else if (event.key == "Escape") {
-                this.searchTerm = "";
-                this.searchOpen = false;
-            }
+    }, 
+    methods: {
+        click(target) {
+            this.$emit('update:activeComponent', target);
         }
-    },
-    created() {
-        window.addEventListener("keyup", this.submitSearch);
-    }, unmounted () {
-        window.addEventListener("keyup", this.submitSearch);
     }
 }
 </script>
@@ -139,24 +111,6 @@ export default {
         opacity: 1;
         transition: opacity 0.5s;
         transition-delay: 0.5s;
-    }
-
-    .search-container {
-        width: 100%;
-        height: 2.1rem;
-        display: block;
-    }
-
-    .search-input {
-        position: relative;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.1);
-        border: none;
-        height: 2rem;
-        text-align: center;
-        color:white;
-        font-family: fell, serif;
-        font-size: 2rem;
     }
 
     @media (min-width: 800px) {
