@@ -7,6 +7,7 @@
 		<DropDown class="drop-down" :isOpen="menuOpen">
 			<template v-slot:inside>
 				<NavigationLinks
+					v-if="menuOpen"
 					:links="links"
 					:dropDown="true"
 					:activeComponent="activeComponent"
@@ -18,6 +19,7 @@
 		<!-- Desktop Navigation -->
 		<div class="large-navigation">
 			<NavigationLinks
+				v-if="!menuOpen"
 				:dropDown="false"
 				:links="links"
 				:activeComponent="activeComponent"
