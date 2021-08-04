@@ -2,28 +2,8 @@
 	<nav class="navigation-bar">
 		<MainLogo />
 
-		<!-- MOBILE NAV -->
-		<div class="icon-container" @click="menuOpen = !menuOpen">
-			<img
-				class="menu-icon"
-				:class="{ menuIconOpen: !menuOpen }"
-				src="@/assets/images/MenuIcon.svg"
-			/>
-			<!-- Close Icon -->
-			<!-- https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Adding_vector_graphics_to_the_Web -->
-			<svg
-				class="menu-icon"
-				:class="{ menuIconOpen: menuOpen }"
-				xmlns="http://www.w3.org/2000/svg"
-				width="48"
-				height="48"
-				viewBox="0 0 48 48"
-			>
-				<path
-					d="M38 12.83L35.17 10 24 21.17 12.83 10 10 12.83 21.17 24 10 35.17 12.83 38 24 26.83 35.17 38 38 35.17 26.83 24z"
-				/>
-			</svg>
-		</div>
+		<!-- Mobile Navigation -->
+		<MenuIcon :isOpen="menuOpen" @click="menuOpen = !menuOpen" />
 		<DropDown class="drop-down" :isOpen="menuOpen">
 			<template v-slot:inside>
 				<a
@@ -33,26 +13,29 @@
 					:class="{ activeLink: isActive(link.text) }"
 					:href="link.url"
 					@click="click(link.text)"
-					>{{ link.text }}
+				>
+					{{ link.text }}
 				</a>
 				<a
 					class="navigation-link drop-link"
 					@click="searchOpen = !searchOpen"
 					href="#"
-					>search</a
 				>
+					search
+				</a>
 				<SearchBar :isOpen="searchOpen" @close="searchOpen = false" />
 			</template>
 		</DropDown>
 
-		<!-- DESKTOP NAV -->
+		<!-- Desktop Navigation -->
 		<div class="large-navigation">
 			<a
 				class="navigation-link"
 				@click="searchOpen = !searchOpen"
 				href="#"
-				>search</a
 			>
+				search
+			</a>
 			<a
 				class="navigation-link"
 				v-for="link in links"
@@ -60,8 +43,9 @@
 				:href="link.url"
 				@click="click(link.text)"
 				:class="{ activeLink: isActive(link.text) }"
-				>{{ link.text }}</a
 			>
+				{{ link.text }}
+			</a>
 			<SearchBar
 				style="{position: relative; top: -1.5rem;}"
 				:isOpen="searchOpen"
@@ -75,10 +59,11 @@
 import DropDown from "./DropDown.vue";
 import SearchBar from "./SearchBar.vue";
 import MainLogo from "./MainLogo.vue";
+import MenuIcon from "./MenuIcon.vue";
 
 export default {
 	name: "NavigationBar",
-	components: { DropDown, SearchBar, MainLogo },
+	components: { DropDown, SearchBar, MainLogo, MenuIcon },
 	props: { activeComponent: String },
 	data() {
 		return {
@@ -114,19 +99,6 @@ export default {
 	min-height: 2rem;
 }
 
-.logo-image {
-	height: 5rem;
-}
-
-.logo-text {
-	display: inline;
-	color: #bf763c;
-	font-size: 4rem;
-	position: relative;
-	top: -1rem;
-	cursor: default;
-}
-
 .navigation-link {
 	float: right;
 	color: #bf763c;
@@ -149,24 +121,6 @@ export default {
 
 .navigation-link:hover {
 	font-weight: bold;
-}
-
-.menu-icon {
-	height: 4rem;
-	width: 4rem;
-	position: absolute;
-	right: 2rem;
-	top: 1rem;
-	opacity: 0;
-	transition: opacity 0.5s;
-	cursor: pointer;
-	fill: #bf763c;
-}
-
-.menuIconOpen {
-	opacity: 1;
-	transition: opacity 0.5s;
-	transition-delay: 0.5s;
 }
 
 @media (min-width: 800px) {
