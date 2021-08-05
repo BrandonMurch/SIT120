@@ -1,29 +1,32 @@
 @font-face {
-  font-family: fell;
-  src: url("../fonts/IMFeENrm29P.ttf");
+	font-family: fell;
+	src: url("../fonts/IMFeENrm29P.ttf");
 }
 
 html {
-  font-family: fell, serif;
-  font-size: 18px;
+	font-family: fell, serif;
+	font-size: 18px;
 }
 
+/* I was searching for a way for elements to be hidden, but still appear
+in accessibility readers (such as input labels). I stumbled across this post on css-tricks that solved that issue. See: https://css-tricks.com/snippets/css/accessibilityseo-friendly-css-hiding/ */
+
 .hidden {
-  position: absolute;
-  left: -10000px;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
+	position: absolute;
+	left: -10000px;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
 }
 
 @media (max-width: 1000px) {
-  html {
-    font-size: 16px;
-  }
+	html {
+		font-size: 16px;
+	}
 }
 
 @media (max-width: 600px) {
-  html {
-    font-size: 14px;
-  }
+	html {
+		font-size: 14px;
+	}
 }
