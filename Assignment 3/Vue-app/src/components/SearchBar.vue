@@ -4,6 +4,7 @@ https://www.w3schools.com/howto/howto_js_autocomplete.asp
 <template>
 	<div style="display: inline;">
 		<!-- Create pop up if a plant has been selected through the search bar. -->
+		<!-- TODO: Can this be extracted to make search bar more reusable? -->
 		<PopUp
 			v-if="searchResultForPopUp"
 			v-bind="searchResultForPopUp"
@@ -53,7 +54,6 @@ export default {
 	props: { isOpen: Boolean },
 	watch: {
 		isOpen: function(value) {
-			console.log("value change");
 			if (!value) {
 				this.close();
 			}

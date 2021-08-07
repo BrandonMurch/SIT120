@@ -7,7 +7,7 @@
 		<DropDown class="drop-down" :isOpen="menuOpen">
 			<template v-slot:inside>
 				<NavigationLinks
-					v-if="menuOpen"
+					v-if="isMobile"
 					:links="links"
 					:dropDown="true"
 					:activeComponent="activeComponent"
@@ -19,7 +19,7 @@
 		<!-- Desktop Navigation -->
 		<div class="large-navigation">
 			<NavigationLinks
-				v-if="!menuOpen"
+				v-if="!isMobile"
 				:dropDown="false"
 				:links="links"
 				:activeComponent="activeComponent"
@@ -42,6 +42,7 @@ export default {
 	data() {
 		return {
 			menuOpen: false,
+			isMobile: window.innerWidth < 800,
 			links: [
 				{ text: "contact", url: "#" },
 				{ text: "learn", url: "#" },
@@ -51,9 +52,18 @@ export default {
 		};
 	},
 	methods: {
+		updateIsMobile() {
+			this.isMobile = window.innerWidth < 800;
+		},
 		updateActiveComponent(target) {
 			this.$emit("update:activeComponent", target);
 		},
+	},
+	created() {
+		window.addEventListener("resize", this.updateIsMobile);
+	},
+	unmounted() {
+		window.removeEventListener("resize", this.updateIsMobile);
 	},
 };
 </script>
