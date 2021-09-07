@@ -1,0 +1,208 @@
+body {
+	max-width: 42rem;
+	width: 95vw;
+	position: relative;
+	margin: 10rem auto;
+	font-size: 14px;
+	line-height: 1.7;
+	font-family: Georgia, Palatino, "Palatino Linotype", Times,
+		"Times New Roman", serif;
+}
+
+/* Title */
+.maketitle {
+	margin-bottom: 6em;
+	margin-top: 10rem;
+}
+
+.titleHead {
+	font-size: 4rem;
+	margin-bottom: 0;
+	text-align: center;
+}
+
+.author,
+.date {
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+/* Table of Contents */
+.sectionToc {
+	margin-left: 1rem;
+}
+.subsectionToc {
+	margin-left: 2rem;
+}
+
+/* Chapter Titles */
+.chapterHead {
+	position: relative;
+	text-align: center;
+	margin-top: 6rem;
+	margin-bottom: 3rem;
+	font-size: 2rem;
+}
+
+/* Before and After form the lines both above and below the chapter titles. */
+.chapterHead::before,
+.chapterHead::after {
+	content: "";
+	height: 2px;
+	width: 70vw;
+	max-width: 800px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: black;
+	border: 1px solid black;
+}
+
+.chapterHead::before {
+	top: -1rem;
+}
+
+.chapterHead::after {
+	bottom: -1rem;
+}
+
+/* Section, Subsection and Subsubsection headers */
+.sectionHead {
+	font-size: 1.75rem;
+}
+
+.subsectionHead {
+	font-size: 1.5rem;
+}
+
+.likesubsubsectionHead {
+	margin-top: 2rem;
+	font-size: 1.25rem;
+}
+
+/* Used colours for HTML demonstration */
+.opening-tag {
+	color: blue;
+}
+.closing-tag {
+	color: red;
+}
+
+div.tabular {
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}
+
+tr {
+	vertical-align: middle !important;
+}
+
+td div img,
+div.minipage {
+	width: 46vw;
+	max-width: 21rem;
+}
+
+div.minipage {
+	white-space: normal;
+}
+
+img {
+	max-width: 100%;
+	margin-top: 1rem;
+}
+
+div.minipage img {
+	margin-top: 2rem;
+	width: 95%;
+}
+
+div.lstlisting {
+	/* Horizontal scroll for code sections */
+	overflow-x: scroll;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	margin: 2rem auto;
+	font-family: monospace;
+}
+
+.center {
+	text-align: center;
+}
+
+/*  Coloured priority text */
+.priority-low {
+	color: blue;
+}
+
+.priority-medium {
+	color: darkorange;
+}
+
+.priority-high {
+	color: red;
+}
+
+.priority-low,
+.priority-medium,
+.priority-high {
+	text-align: center !important;
+}
+
+#TBL-14-1-,
+#TBL-15-1-,
+#TBL-16-1- {
+	text-align: center;
+}
+
+/* Piority Columns */
+#TBL-14-3g,
+#TBL-15-3g,
+#TBL-16-3g {
+	min-width: 15%;
+}
+
+.left-column.td11 {
+	width: 25%;
+	text-align: center !important;
+	padding: 0.5rem;
+}
+
+@media (max-width: 500px) {
+	.td-minipage {
+		display: block;
+		clear: both;
+		width: 100%;
+	}
+
+	img,
+	table,
+	div.minipage {
+		max-width: 95vw;
+		width: 100% !important;
+	}
+
+	div.minipage img {
+		min-width: 95vw;
+	}
+}
+
+@media (min-width: 501px) {
+	div.minipage img {
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
+@media (min-width: 700px) {
+	body {
+		font-size: 16px;
+	}
+}
+
+@media (min-width: 1000px) {
+	body {
+		font-size: 18px;
+	}
+}
