@@ -1,0 +1,52 @@
+<svg width="520" height="315" viewBox="0 0 520 315" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Aufbau einer HTML-Tabelle -2</title>
+  <defs>
+    <style>
+	  * {
+        stroke-width: 1px;
+	  }
+	  text {
+	    font-size: 15px;
+		font-family: monospace;
+	  }
+	 </style> 
+  </defs>
+  <g id="table">
+    <desc>HTML-Markup einer Tabelle mit 3 Spalten, Kopfzeile und Inhaltsszellen - Kopfzeile und Zellen sind in thead und tbody umschlossen.</desc> 
+    <rect x="10" y="10" height="300" width="498" fill="#ebf5d7" stroke="#8db243"/>
+    <text x="15" y="40">&lt;table&gt;</text>
+	
+    <text x="40" y="80" fill="#666">&lt;thead&gt;</text>  
+    <text x="65" y="110">&lt;tr&gt;</text>  
+    <rect x="110" y="90" height="30" width="100" fill="#ffebe6" stroke="#c32e04"/>
+	<text x="115" y="110">&lt;th&gt; &lt;/th&gt;</text>
+    <rect x="210" y="90" height="30" width="100" fill="#ffebe6" stroke="#c32e04"/>
+	<text x="215" y="110">&lt;th&gt; &lt;/th&gt;</text>
+    <rect x="310" y="90" height="30" width="100" fill="#ffebe6" stroke="#c32e04"/>
+	<text x="315" y="110">&lt;th&gt; &lt;/th&gt;</text>	
+    <text x="415" y="110">&lt;/tr&gt;</text>	
+    <text x="40" y="140" fill="#666">&lt;/thead&gt;</text>		
+
+    <text x="40" y="170" fill="#666">&lt;tbody&gt;</text> 
+    <text x="65" y="200">&lt;tr&gt;</text>  	
+	<rect x="110" y="180" height="30" width="100" fill="#fffbf0" stroke="#dfac20"/>
+	<text x="115" y="200">&lt;td&gt; &lt;/td&gt;</text>
+    <rect x="210" y="180" height="30" width="100" fill="#fffbf0" stroke="#dfac20"/>
+	<text x="215" y="200">&lt;td&gt; &lt;/td&gt;</text>
+    <rect x="310" y="180" height="30" width="100" fill="#fffbf0" stroke="#dfac20"/>
+	<text x="315" y="200">&lt;td&gt; &lt;/td&gt;</text>	
+    <text x="415" y="200">&lt;/tr&gt;</text>	
+
+    <text x="65" y="230">&lt;tr&gt;</text>  
+	<rect x="110" y="210" height="30" width="100" fill="#fffbf0" stroke="#dfac20"/>
+	<text x="115" y="230">&lt;td&gt; &lt;/td&gt;</text>
+    <rect x="210" y="210" height="30" width="100" fill="#fffbf0" stroke="#dfac20"/>
+	<text x="215" y="230">&lt;td&gt; &lt;/td&gt;</text>
+    <rect x="310" y="210" height="30" width="100" fill="#fffbf0" stroke="#dfac20"/>
+	<text x="315" y="230">&lt;td&gt; &lt;/td&gt;</text>	
+    <text x="415" y="230">&lt;/tr&gt;</text>			
+    <text x="40" y="260" fill="#666">&lt;/tbody&gt;</text>	
+		
+    <text x="15" y="290">&lt;table&gt;</text>	
+  </g>	
+</svg>
