@@ -1,0 +1,125 @@
+\BOOKMARK [0][-]{chapter.1}{Justification For Grade}{}% 1
+\BOOKMARK [0][-]{chapter.2}{The Basics of Web Development}{}% 2
+\BOOKMARK [1][-]{section.2.1}{Introduction}{chapter.2}% 3
+\BOOKMARK [1][-]{section.2.2}{Weekly Content}{chapter.2}% 4
+\BOOKMARK [2][-]{subsection.2.2.1}{HTML}{section.2.2}% 5
+\BOOKMARK [2][-]{subsection.2.2.2}{CSS}{section.2.2}% 6
+\BOOKMARK [2][-]{subsection.2.2.3}{JavaScript}{section.2.2}% 7
+\BOOKMARK [2][-]{subsection.2.2.4}{Vue.js}{section.2.2}% 8
+\BOOKMARK [1][-]{section.2.3}{Practical Tasks}{chapter.2}% 9
+\BOOKMARK [2][-]{subsection.2.3.1}{1 - HTML}{section.2.3}% 10
+\BOOKMARK [2][-]{subsection.2.3.2}{2 - CSS}{section.2.3}% 11
+\BOOKMARK [2][-]{subsection.2.3.3}{3 - JavaScript}{section.2.3}% 12
+\BOOKMARK [2][-]{subsection.2.3.4}{4 - Vue.js}{section.2.3}% 13
+\BOOKMARK [1][-]{section.2.4}{Project}{chapter.2}% 14
+\BOOKMARK [2][-]{subsection.2.4.1}{What I completed this week}{section.2.4}% 15
+\BOOKMARK [2][-]{subsection.2.4.2}{What I will complete next week}{section.2.4}% 16
+\BOOKMARK [0][-]{chapter.3}{Development Techniques}{}% 17
+\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 18
+\BOOKMARK [1][-]{section.3.2}{Weekly Content}{chapter.3}% 19
+\BOOKMARK [2][-]{subsection.3.2.1}{Responsive Design}{section.3.2}% 20
+\BOOKMARK [2][-]{subsection.3.2.2}{User Stories}{section.3.2}% 21
+\BOOKMARK [2][-]{subsection.3.2.3}{HTML Media}{section.3.2}% 22
+\BOOKMARK [2][-]{subsection.3.2.4}{HTML API}{section.3.2}% 23
+\BOOKMARK [1][-]{section.3.3}{Practical Tasks}{chapter.3}% 24
+\BOOKMARK [2][-]{subsection.3.3.1}{Task 1}{section.3.3}% 25
+\BOOKMARK [2][-]{subsection.3.3.2}{Task 2}{section.3.3}% 26
+\BOOKMARK [2][-]{subsection.3.3.3}{Task 3}{section.3.3}% 27
+\BOOKMARK [2][-]{subsection.3.3.4}{Task 4}{section.3.3}% 28
+\BOOKMARK [1][-]{section.3.4}{Project}{chapter.3}% 29
+\BOOKMARK [2][-]{subsection.3.4.1}{This Week}{section.3.4}% 30
+\BOOKMARK [2][-]{subsection.3.4.2}{Next Week}{section.3.4}% 31
+\BOOKMARK [0][-]{chapter.4}{JavaScript In Depth}{}% 32
+\BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 33
+\BOOKMARK [1][-]{section.4.2}{Weekly Content}{chapter.4}% 34
+\BOOKMARK [2][-]{subsection.4.2.1}{Arrays}{section.4.2}% 35
+\BOOKMARK [2][-]{subsection.4.2.2}{JSON}{section.4.2}% 36
+\BOOKMARK [2][-]{subsection.4.2.3}{Operators}{section.4.2}% 37
+\BOOKMARK [2][-]{subsection.4.2.4}{jQuery}{section.4.2}% 38
+\BOOKMARK [1][-]{section.4.3}{Practical Tasks}{chapter.4}% 39
+\BOOKMARK [2][-]{subsection.4.3.1}{Task 1}{section.4.3}% 40
+\BOOKMARK [2][-]{subsection.4.3.2}{Task 2}{section.4.3}% 41
+\BOOKMARK [2][-]{subsection.4.3.3}{Task 3}{section.4.3}% 42
+\BOOKMARK [2][-]{subsection.4.3.4}{Task 4}{section.4.3}% 43
+\BOOKMARK [1][-]{section.4.4}{Project}{chapter.4}% 44
+\BOOKMARK [2][-]{subsection.4.4.1}{What I achieved this week}{section.4.4}% 45
+\BOOKMARK [2][-]{subsection.4.4.2}{What I need to achieve next week}{section.4.4}% 46
+\BOOKMARK [0][-]{chapter.5}{TCP/IP}{}% 47
+\BOOKMARK [1][-]{section.5.1}{Weekly Content}{chapter.5}% 48
+\BOOKMARK [2][-]{subsection.5.1.1}{Introduction}{section.5.1}% 49
+\BOOKMARK [2][-]{subsection.5.1.2}{TCP/IP Protocol}{section.5.1}% 50
+\BOOKMARK [2][-]{subsection.5.1.3}{Data packets}{section.5.1}% 51
+\BOOKMARK [2][-]{subsection.5.1.4}{Application Layer}{section.5.1}% 52
+\BOOKMARK [2][-]{subsection.5.1.5}{Routing}{section.5.1}% 53
+\BOOKMARK [1][-]{section.5.2}{Practical Tasks}{chapter.5}% 54
+\BOOKMARK [2][-]{subsection.5.2.1}{Introduction}{section.5.2}% 55
+\BOOKMARK [2][-]{subsection.5.2.2}{Task 1}{section.5.2}% 56
+\BOOKMARK [2][-]{subsection.5.2.3}{Task 2}{section.5.2}% 57
+\BOOKMARK [1][-]{section.5.3}{Project}{chapter.5}% 58
+\BOOKMARK [2][-]{subsection.5.3.1}{What I accomplished this week}{section.5.3}% 59
+\BOOKMARK [2][-]{subsection.5.3.2}{What I would like to accomplish next week}{section.5.3}% 60
+\BOOKMARK [0][-]{chapter.6}{Model View Design Patterns}{}% 61
+\BOOKMARK [1][-]{section.6.1}{Weekly Content}{chapter.6}% 62
+\BOOKMARK [2][-]{subsection.6.1.1}{Introduction}{section.6.1}% 63
+\BOOKMARK [2][-]{subsection.6.1.2}{MVC}{section.6.1}% 64
+\BOOKMARK [2][-]{subsection.6.1.3}{MVVM}{section.6.1}% 65
+\BOOKMARK [1][-]{section.6.2}{Practical Tasks}{chapter.6}% 66
+\BOOKMARK [2][-]{subsection.6.2.1}{Introduction}{section.6.2}% 67
+\BOOKMARK [2][-]{subsection.6.2.2}{Task 1}{section.6.2}% 68
+\BOOKMARK [2][-]{subsection.6.2.3}{Task 2}{section.6.2}% 69
+\BOOKMARK [2][-]{subsection.6.2.4}{Task 3}{section.6.2}% 70
+\BOOKMARK [2][-]{subsection.6.2.5}{Task 4}{section.6.2}% 71
+\BOOKMARK [1][-]{section.6.3}{Project}{chapter.6}% 72
+\BOOKMARK [2][-]{subsection.6.3.1}{What I accomplished this week}{section.6.3}% 73
+\BOOKMARK [2][-]{subsection.6.3.2}{What I would like to accomplish next week}{section.6.3}% 74
+\BOOKMARK [0][-]{chapter.7}{Data Binding}{}% 75
+\BOOKMARK [1][-]{section.7.1}{Weekly Content}{chapter.7}% 76
+\BOOKMARK [1][-]{section.7.2}{Introduction}{chapter.7}% 77
+\BOOKMARK [2][-]{subsection.7.2.1}{Two-Way Binding}{section.7.2}% 78
+\BOOKMARK [1][-]{section.7.3}{Individually Researched Topics}{chapter.7}% 79
+\BOOKMARK [2][-]{subsection.7.3.1}{Introduction}{section.7.3}% 80
+\BOOKMARK [2][-]{subsection.7.3.2}{Vue Router}{section.7.3}% 81
+\BOOKMARK [2][-]{subsection.7.3.3}{Vuex}{section.7.3}% 82
+\BOOKMARK [2][-]{subsection.7.3.4}{Composition API}{section.7.3}% 83
+\BOOKMARK [2][-]{subsection.7.3.5}{Vue Transitions}{section.7.3}% 84
+\BOOKMARK [2][-]{subsection.7.3.6}{Deployment}{section.7.3}% 85
+\BOOKMARK [2][-]{subsection.7.3.7}{DNS Records}{section.7.3}% 86
+\BOOKMARK [1][-]{section.7.4}{Practical Tasks}{chapter.7}% 87
+\BOOKMARK [2][-]{subsection.7.4.1}{Task 1}{section.7.4}% 88
+\BOOKMARK [2][-]{subsection.7.4.2}{Task 2}{section.7.4}% 89
+\BOOKMARK [2][-]{subsection.7.4.3}{Task 3}{section.7.4}% 90
+\BOOKMARK [2][-]{subsection.7.4.4}{Task 4}{section.7.4}% 91
+\BOOKMARK [1][-]{section.7.5}{Project}{chapter.7}% 92
+\BOOKMARK [2][-]{subsection.7.5.1}{What I accomplished this week}{section.7.5}% 93
+\BOOKMARK [2][-]{subsection.7.5.2}{What I would like to accomplish next week}{section.7.5}% 94
+\BOOKMARK [0][-]{chapter.8}{Digging Deeper into Vue}{}% 95
+\BOOKMARK [1][-]{section.8.1}{Weekly Content}{chapter.8}% 96
+\BOOKMARK [2][-]{subsection.8.1.1}{Component Registration}{section.8.1}% 97
+\BOOKMARK [2][-]{subsection.8.1.2}{Props, Custom Events, Dynamic \046 Async Components}{section.8.1}% 98
+\BOOKMARK [1][-]{section.8.2}{Practical Tasks}{chapter.8}% 99
+\BOOKMARK [2][-]{subsection.8.2.1}{Task 1}{section.8.2}% 100
+\BOOKMARK [2][-]{subsection.8.2.2}{Task 2}{section.8.2}% 101
+\BOOKMARK [2][-]{subsection.8.2.3}{Task 3}{section.8.2}% 102
+\BOOKMARK [2][-]{subsection.8.2.4}{Task 4}{section.8.2}% 103
+\BOOKMARK [1][-]{section.8.3}{Project}{chapter.8}% 104
+\BOOKMARK [2][-]{subsection.8.3.1}{What I accomplished this week}{section.8.3}% 105
+\BOOKMARK [2][-]{subsection.8.3.2}{What I would like to accomplish next week}{section.8.3}% 106
+\BOOKMARK [0][-]{chapter.9}{Useful Code Snippets}{}% 107
+\BOOKMARK [1][-]{section.9.1}{Introduction}{chapter.9}% 108
+\BOOKMARK [1][-]{section.9.2}{CSS}{chapter.9}% 109
+\BOOKMARK [2][-]{subsection.9.2.1}{Common Properties}{section.9.2}% 110
+\BOOKMARK [2][-]{subsection.9.2.2}{Center an Element \(From Week 1\)}{section.9.2}% 111
+\BOOKMARK [2][-]{subsection.9.2.3}{Centring an Element with Flex}{section.9.2}% 112
+\BOOKMARK [2][-]{subsection.9.2.4}{Box Shadow}{section.9.2}% 113
+\BOOKMARK [2][-]{subsection.9.2.5}{Round Specific Corners}{section.9.2}% 114
+\BOOKMARK [2][-]{subsection.9.2.6}{Adding a custom font}{section.9.2}% 115
+\BOOKMARK [2][-]{subsection.9.2.7}{Modifying Scrollbar}{section.9.2}% 116
+\BOOKMARK [2][-]{subsection.9.2.8}{Transitions}{section.9.2}% 117
+\BOOKMARK [2][-]{subsection.9.2.9}{Modifying Scrollbar}{section.9.2}% 118
+\BOOKMARK [1][-]{section.9.3}{JavaScript}{chapter.9}% 119
+\BOOKMARK [2][-]{subsection.9.3.1}{Window.onLoad}{section.9.3}% 120
+\BOOKMARK [2][-]{subsection.9.3.2}{Round to Specific Decimal Place}{section.9.3}% 121
+\BOOKMARK [2][-]{subsection.9.3.3}{Canvas Drawing}{section.9.3}% 122
+\BOOKMARK [2][-]{subsection.9.3.4}{Delay\(\)}{section.9.3}% 123
+\BOOKMARK [2][-]{subsection.9.3.5}{"Debounce"}{section.9.3}% 124
+\BOOKMARK [2][-]{subsection.9.3.6}{JavaScript Observers}{section.9.3}% 125

@@ -1,0 +1,25 @@
+Ensure gh-pages branch on github only contains the content of docs
+To do this:\
+
+    npm run build
+    git add dist
+    git commit -m "..."
+    git subtree push --prefix dist origin gh-pages
+
+    if error: 
+    git push origin --delete gh-pages
+    then: 
+    git subtree push --prefix dist origin gh-pages
+    or if 404:
+    gh-pages -d dist
+
+
+
+
+    cp dist/* docs/ -r
+    cd docs
+    git add .
+    git commit -m deploy
+    git push origin gh-page
+    cd ..
+    gh-pages -d dist

@@ -1,0 +1,235 @@
+{
+    "categories": [
+        "watering",
+        "soil",
+        "fertilizing",
+        "pots",
+        "all"
+    ],
+    "questions": [
+        {
+            "id": 3002,
+            "user": "Johnny123",
+            "datetime": "2021-09-02",
+            "categories": [
+                "watering"
+            ],
+            "text": "Am I overwatering my plant?",
+            "answered": false,
+            "responses": []
+        },
+        {
+            "id": 3003,
+            "user": "Johnny123",
+            "datetime": "2021-09-02",
+            "categories": [
+                "soil"
+            ],
+            "text": "What is the best soil?",
+            "answered": true,
+            "responses": [
+                {
+                    "id": 11110,
+                    "user": "Ally",
+                    "datetime": "2021-09-03",
+                    "text": "Dirty soil!"
+                }
+            ]
+        }
+    ],
+    "articles": [
+        {
+            "id": 4002,
+            "title": "Watering your house plants",
+            "datetime": "2021-08-02",
+            "categories": [
+                "watering"
+            ],
+            "text": "It is important when watering your plants that you know the following things. Don't water your plants too much or too little! Just the right amount! Do proident mollit veniam dolore mollit tempor consectetur eu veniam veniam est nostrud. Anim fugiat dolor aliquip nostrud officia est. Consequat adipisicing ipsum reprehenderit commodo incididunt id enim ipsum proident pariatur ad eiusmod commodo proident. Dolor eu ea ea occaecat do ad. Velit reprehenderit sunt cupidatat ut tempor incididunt quis et. Officia nostrud irure sit ad fugiat. Exercitation eu dolore et veniam Lorem id enim. Id anim id amet nisi duis in adipisicing laboris tempor. Commodo elit esse eu enim reprehenderit sunt laboris dolor cillum elit non officia elit. Consectetur nostrud cupidatat magna tempor nulla sint ut voluptate Lorem pariatur et et officia. <br/> Mollit labore incididunt duis velit nisi adipisicing dolore veniam ad incididunt officia sunt. Exercitation ex veniam enim ex enim ipsum. Minim amet do anim ipsum anim.Cupidatat et aliquip est ea officia dolore ullamco id ullamco incididunt id. Esse aliquip Lorem commodo laboris elit ut non consequat excepteur et magna exercitation nisi. In consequat sint amet dolor exercitation commodo ut fugiat. Commodo ipsum elit irure commodo labore ullamco enim voluptate aute anim qui ea. Culpa incididunt sit consectetur excepteur sint tempor pariatur id non.",
+            "imageSource": "https://images.unsplash.com/photo-1515150144380-bca9f1650ed9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
+            "comments": []
+        },
+        {
+            "id": 4003,
+            "title": "Choosing the best soil",
+            "datetime": "2021-07-02",
+            "categories": [
+                "soil"
+            ],
+            "text": "It is important when planting your plants that you know the following things. Dunt id enim ipsum proident pariatur ad eiusmod commodo proident. Dolor eu ea ea occaecat do ad. Velit reprehenderit sunt cupidatat ut tempor incididunt quis et. Officia nostrud irure sit ad fugiat. Exercitation eu dolore et veniam Lorem id enim. Id anim id amet nisi duis in adipisicing laboris tempor. Commodo elit esse eu enim reprehenderit sunt laboris dolor cillum elit non officia elit. Consectetur nostrud cupidatat magna tempor nulla sint ut voluptate Lorem pariatur et et officia. <br/> Mollit labore incididunt duis velit nisi adipisicing dolore veniam ad incididunt officia sunt. Exercitation ex veniam enim ex enim ipsum. Minim amet do anim ipsum anim.Cupidatat et aliquip est ea officia dolore ullamco id ullamco incididunt id. Esse aliquip Lorem commodo laboris elit ut non consequat excepteur et magna exercitation nisi. In consequat sint amet dolor exercitation commodo ut fugiat. Commodo ipsum elit irure commodo labore ullamco enim voluptate aute anim qui ea. Culpa incididunt sit consectetur excepteur sint tempor pariatur id non.",
+            "imageSource": "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80",
+            "comments": []
+        },
+        {
+            "id": 4004,
+            "title": "When to fertilize?",
+            "datetime": "2021-06-02",
+            "categories": [
+                "fertilizing"
+            ],
+            "text": "It is important when fertilizing your plants that you know the following things. Proident mollit veniam dolore mollit tempor consectetur eu veniam veniam est nostrud. Anim fugiat dolor aliquip nostrud officia est. Consequat adipisicing ipsum reprehenderit commodo incididunt id enim ipsum proident pariatur ad eiusmod commodo proident. Dolor eu ea ea occaecat do ad. Velit reprehenderit sunt cupidatat ut tempor incididunt quis et. Officia nostrud irure sit ad fugiat. Exercitation eu dolore et veniam Lorem id enim. Id anim id amet nisi duis in adipisicing laboris tempor. Commodo elit esse eu enim reprehenderit sunt laboris dolor cillum elit non officia elit. Consectetur nostrud cupidatat magna tempor nulla sint ut voluptate Lorem pariatur et et officia. <br/> Mollit labore incididunt duis velit nisi adipisicing dolore veniam ad incididunt officia sunt. Exercitation ex veniam enim ex enim ipsum. Minim amet do anim ipsum anim.Cupidatat et aliquip est ea officia dolore ullamco id ullamco incididunt id. Esse aliquip Lorem commodo laboris elit ut non consequat excepteur et magna exercitation nisi. In consequat sint amet dolor exercitation commodo ut fugiat. Commodo ipsum elit irure commodo labore ullamco enim voluptate aute anim qui ea. Culpa incididunt sit consectetur excepteur sint tempor pariatur id non.",
+            "imageSource": "https://images.unsplash.com/photo-1581578021450-fbd19fba0e63?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80",
+            "comments": []
+        },
+        {
+            "id": 4005,
+            "title": "Choosing the best pot",
+            "datetime": "2021-05-02",
+            "categories": [
+                "pots"
+            ],
+            "text": "Incididunt quis et. Officia nostrud irure sit ad fugiat. Exercitation eu dolore et veniam Lorem id enim. Id anim id amet nisi duis in adipisicing laboris tempor. Commodo elit esse eu enim reprehenderit sunt laboris dolor cillum elit non officia elit. Consectetur nostrud cupidatat magna tempor nulla sint ut voluptate Lorem pariatur et et officia. <br/> Mollit labore incididunt duis velit nisi adipisicing dolore veniam ad incididunt officia sunt. Exercitation ex veniam enim ex enim ipsum. Minim amet do anim ipsum anim.Cupidatat et aliquip est ea officia dolore ullamco id ullamco incididunt id. Esse aliquip Lorem commodo laboris elit ut non consequat excepteur et magna exercitation nisi. In consequat sint amet dolor exercitation commodo ut fugiat. Commodo ipsum elit irure commodo labore ullamco enim voluptate aute anim qui ea. Culpa incididunt sit consectetur excepteur sint tempor pariatur id non.",
+            "imageSource": "https://images.unsplash.com/photo-1594910104549-f46f15251ec8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=688&q=80",
+            "comments": []
+        },
+        {
+            "id": 4006,
+            "title": "Watering your house plants",
+            "datetime": "2021-08-02",
+            "categories": [
+                "watering"
+            ],
+            "text": "It is important when watering your plants that you know the following things. Don't water your plants too much or too little! Just the right amount! Do proident mollit veniam dolore mollit tempor consectetur eu veniam veniam est nostrud. Anim fugiat dolor aliquip nostrud officia est. Consequat adipisicing ipsum reprehenderit commodo incididunt id enim ipsum proident pariatur ad eiusmod commodo proident. Dolor eu ea ea occaecat do ad. Velit reprehenderit sunt cupidatat ut tempor incididunt quis et. Officia nostrud irure sit ad fugiat. Exercitation eu dolore et veniam Lorem id enim. Id anim id amet nisi duis in adipisicing laboris tempor. Commodo elit esse eu enim reprehenderit sunt laboris dolor cillum elit non officia elit. Consectetur nostrud cupidatat magna tempor nulla sint ut voluptate Lorem pariatur et et officia. <br/> Mollit labore incididunt duis velit nisi adipisicing dolore veniam ad incididunt officia sunt. Exercitation ex veniam enim ex enim ipsum. Minim amet do anim ipsum anim.Cupidatat et aliquip est ea officia dolore ullamco id ullamco incididunt id. Esse aliquip Lorem commodo laboris elit ut non consequat excepteur et magna exercitation nisi. In consequat sint amet dolor exercitation commodo ut fugiat. Commodo ipsum elit irure commodo labore ullamco enim voluptate aute anim qui ea. Culpa incididunt sit consectetur excepteur sint tempor pariatur id non.",
+            "imageSource": "https://images.unsplash.com/photo-1515150144380-bca9f1650ed9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
+            "comments": []
+        },
+        {
+            "id": 4007,
+            "title": "Watering your house plants",
+            "datetime": "2021-08-02",
+            "categories": [
+                "watering"
+            ],
+            "text": "It is important when watering your plants that you know the following things. Don't water your plants too much or too little! Just the right amount! Do proident mollit veniam dolore mollit tempor consectetur eu veniam veniam est nostrud. Anim fugiat dolor aliquip nostrud officia est. Consequat adipisicing ipsum reprehenderit commodo incididunt id enim ipsum proident pariatur ad eiusmod commodo proident. Dolor eu ea ea occaecat do ad. Velit reprehenderit sunt cupidatat ut tempor incididunt quis et. Officia nostrud irure sit ad fugiat. Exercitation eu dolore et veniam Lorem id enim. Id anim id amet nisi duis in adipisicing laboris tempor. Commodo elit esse eu enim reprehenderit sunt laboris dolor cillum elit non officia elit. Consectetur nostrud cupidatat magna tempor nulla sint ut voluptate Lorem pariatur et et officia. <br/> Mollit labore incididunt duis velit nisi adipisicing dolore veniam ad incididunt officia sunt. Exercitation ex veniam enim ex enim ipsum. Minim amet do anim ipsum anim.Cupidatat et aliquip est ea officia dolore ullamco id ullamco incididunt id. Esse aliquip Lorem commodo laboris elit ut non consequat excepteur et magna exercitation nisi. In consequat sint amet dolor exercitation commodo ut fugiat. Commodo ipsum elit irure commodo labore ullamco enim voluptate aute anim qui ea. Culpa incididunt sit consectetur excepteur sint tempor pariatur id non.",
+            "imageSource": "https://images.unsplash.com/photo-1515150144380-bca9f1650ed9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
+            "comments": []
+        },
+        {
+            "id": 4008,
+            "title": "Watering your house plants",
+            "datetime": "2021-08-02",
+            "categories": [
+                "watering"
+            ],
+            "text": "It is important when watering your plants that you know the following things. Don't water your plants too much or too little! Just the right amount! Do proident mollit veniam dolore mollit tempor consectetur eu veniam veniam est nostrud. Anim fugiat dolor aliquip nostrud officia est. Consequat adipisicing ipsum reprehenderit commodo incididunt id enim ipsum proident pariatur ad eiusmod commodo proident. Dolor eu ea ea occaecat do ad. Velit reprehenderit sunt cupidatat ut tempor incididunt quis et. Officia nostrud irure sit ad fugiat. Exercitation eu dolore et veniam Lorem id enim. Id anim id amet nisi duis in adipisicing laboris tempor. Commodo elit esse eu enim reprehenderit sunt laboris dolor cillum elit non officia elit. Consectetur nostrud cupidatat magna tempor nulla sint ut voluptate Lorem pariatur et et officia. <br/> Mollit labore incididunt duis velit nisi adipisicing dolore veniam ad incididunt officia sunt. Exercitation ex veniam enim ex enim ipsum. Minim amet do anim ipsum anim.Cupidatat et aliquip est ea officia dolore ullamco id ullamco incididunt id. Esse aliquip Lorem commodo laboris elit ut non consequat excepteur et magna exercitation nisi. In consequat sint amet dolor exercitation commodo ut fugiat. Commodo ipsum elit irure commodo labore ullamco enim voluptate aute anim qui ea. Culpa incididunt sit consectetur excepteur sint tempor pariatur id non.",
+            "imageSource": "https://images.unsplash.com/photo-1515150144380-bca9f1650ed9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
+            "comments": []
+        },
+        {
+            "id": 4009,
+            "title": "Watering your house plants",
+            "datetime": "2021-08-02",
+            "categories": [
+                "watering"
+            ],
+            "text": "It is important when watering your plants that you know the following things. Don't water your plants too much or too little! Just the right amount! Do proident mollit veniam dolore mollit tempor consectetur eu veniam veniam est nostrud. Anim fugiat dolor aliquip nostrud officia est. Consequat adipisicing ipsum reprehenderit commodo incididunt id enim ipsum proident pariatur ad eiusmod commodo proident. Dolor eu ea ea occaecat do ad. Velit reprehenderit sunt cupidatat ut tempor incididunt quis et. Officia nostrud irure sit ad fugiat. Exercitation eu dolore et veniam Lorem id enim. Id anim id amet nisi duis in adipisicing laboris tempor. Commodo elit esse eu enim reprehenderit sunt laboris dolor cillum elit non officia elit. Consectetur nostrud cupidatat magna tempor nulla sint ut voluptate Lorem pariatur et et officia. <br/> Mollit labore incididunt duis velit nisi adipisicing dolore veniam ad incididunt officia sunt. Exercitation ex veniam enim ex enim ipsum. Minim amet do anim ipsum anim.Cupidatat et aliquip est ea officia dolore ullamco id ullamco incididunt id. Esse aliquip Lorem commodo laboris elit ut non consequat excepteur et magna exercitation nisi. In consequat sint amet dolor exercitation commodo ut fugiat. Commodo ipsum elit irure commodo labore ullamco enim voluptate aute anim qui ea. Culpa incididunt sit consectetur excepteur sint tempor pariatur id non.",
+            "imageSource": "https://images.unsplash.com/photo-1515150144380-bca9f1650ed9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
+            "comments": []
+        },
+        {
+            "id": 4010,
+            "title": "Watering your house plants",
+            "datetime": "2021-08-02",
+            "categories": [
+                "watering"
+            ],
+            "text": "It is important when watering your plants that you know the following things. Don't water your plants too much or too little! Just the right amount! Do proident mollit veniam dolore mollit tempor consectetur eu veniam veniam est nostrud. Anim fugiat dolor aliquip nostrud officia est. Consequat adipisicing ipsum reprehenderit commodo incididunt id enim ipsum proident pariatur ad eiusmod commodo proident. Dolor eu ea ea occaecat do ad. Velit reprehenderit sunt cupidatat ut tempor incididunt quis et. Officia nostrud irure sit ad fugiat. Exercitation eu dolore et veniam Lorem id enim. Id anim id amet nisi duis in adipisicing laboris tempor. Commodo elit esse eu enim reprehenderit sunt laboris dolor cillum elit non officia elit. Consectetur nostrud cupidatat magna tempor nulla sint ut voluptate Lorem pariatur et et officia. <br/> Mollit labore incididunt duis velit nisi adipisicing dolore veniam ad incididunt officia sunt. Exercitation ex veniam enim ex enim ipsum. Minim amet do anim ipsum anim.Cupidatat et aliquip est ea officia dolore ullamco id ullamco incididunt id. Esse aliquip Lorem commodo laboris elit ut non consequat excepteur et magna exercitation nisi. In consequat sint amet dolor exercitation commodo ut fugiat. Commodo ipsum elit irure commodo labore ullamco enim voluptate aute anim qui ea. Culpa incididunt sit consectetur excepteur sint tempor pariatur id non.",
+            "imageSource": "https://images.unsplash.com/photo-1515150144380-bca9f1650ed9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
+            "comments": []
+        },
+        {
+            "id": 4011,
+            "title": "Watering your house plants",
+            "datetime": "2021-08-02",
+            "categories": [
+                "watering"
+            ],
+            "text": "It is important when watering your plants that you know the following things. Don't water your plants too much or too little! Just the right amount! Do proident mollit veniam dolore mollit tempor consectetur eu veniam veniam est nostrud. Anim fugiat dolor aliquip nostrud officia est. Consequat adipisicing ipsum reprehenderit commodo incididunt id enim ipsum proident pariatur ad eiusmod commodo proident. Dolor eu ea ea occaecat do ad. Velit reprehenderit sunt cupidatat ut tempor incididunt quis et. Officia nostrud irure sit ad fugiat. Exercitation eu dolore et veniam Lorem id enim. Id anim id amet nisi duis in adipisicing laboris tempor. Commodo elit esse eu enim reprehenderit sunt laboris dolor cillum elit non officia elit. Consectetur nostrud cupidatat magna tempor nulla sint ut voluptate Lorem pariatur et et officia. <br/> Mollit labore incididunt duis velit nisi adipisicing dolore veniam ad incididunt officia sunt. Exercitation ex veniam enim ex enim ipsum. Minim amet do anim ipsum anim.Cupidatat et aliquip est ea officia dolore ullamco id ullamco incididunt id. Esse aliquip Lorem commodo laboris elit ut non consequat excepteur et magna exercitation nisi. In consequat sint amet dolor exercitation commodo ut fugiat. Commodo ipsum elit irure commodo labore ullamco enim voluptate aute anim qui ea. Culpa incididunt sit consectetur excepteur sint tempor pariatur id non.",
+            "imageSource": "https://images.unsplash.com/photo-1515150144380-bca9f1650ed9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
+            "comments": []
+        },
+        {
+            "id": 4012,
+            "title": "Watering your house plants",
+            "datetime": "2021-08-02",
+            "categories": [
+                "watering"
+            ],
+            "text": "It is important when watering your plants that you know the following things. Don't water your plants too much or too little! Just the right amount! Do proident mollit veniam dolore mollit tempor consectetur eu veniam veniam est nostrud. Anim fugiat dolor aliquip nostrud officia est. Consequat adipisicing ipsum reprehenderit commodo incididunt id enim ipsum proident pariatur ad eiusmod commodo proident. Dolor eu ea ea occaecat do ad. Velit reprehenderit sunt cupidatat ut tempor incididunt quis et. Officia nostrud irure sit ad fugiat. Exercitation eu dolore et veniam Lorem id enim. Id anim id amet nisi duis in adipisicing laboris tempor. Commodo elit esse eu enim reprehenderit sunt laboris dolor cillum elit non officia elit. Consectetur nostrud cupidatat magna tempor nulla sint ut voluptate Lorem pariatur et et officia. <br/> Mollit labore incididunt duis velit nisi adipisicing dolore veniam ad incididunt officia sunt. Exercitation ex veniam enim ex enim ipsum. Minim amet do anim ipsum anim.Cupidatat et aliquip est ea officia dolore ullamco id ullamco incididunt id. Esse aliquip Lorem commodo laboris elit ut non consequat excepteur et magna exercitation nisi. In consequat sint amet dolor exercitation commodo ut fugiat. Commodo ipsum elit irure commodo labore ullamco enim voluptate aute anim qui ea. Culpa incididunt sit consectetur excepteur sint tempor pariatur id non.",
+            "imageSource": "https://images.unsplash.com/photo-1515150144380-bca9f1650ed9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
+            "comments": []
+        }
+    ],
+    "species": [
+        {
+            "name": "Monstera Deliciosa",
+            "waterConsumption": "Medium",
+            "temperature": "Cool",
+            "light": "Filtered",
+            "text": "Monstera deliciosa, the Swiss cheese plant, is a species of flowering plant native to tropical forests of southern Mexico, south to Panama. It has been introduced to many tropical areas, and has become a mildly invasive species in Hawaii, Seychelles, Ascension Island and the Society Islands. It is very widely grown in temperate zones as a houseplant. (https://en.wikipedia.org/wiki/Monstera_deliciosa)",
+            "imageSource": "https://images.unsplash.com/photo-1517848568502-d03fa74e1964?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
+            "id": 1001,
+            "comments": []
+        },
+        {
+            "imageSource": "https://images.unsplash.com/photo-1497250681960-ef046c08a56e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
+            "name": "dryopteris affinis",
+            "waterConsumption": "High",
+            "temperature": "warm",
+            "light": "Partial-sun",
+            "text": "Esse aute occaecat do veniam nulla non. Anim dolor et in id officia ut incididunt cillum voluptate anim sit mollit aute. Incididunt reprehenderit ad enim laboris ut commodo.    Reprehenderit fugiat irure do proident dolor aute laboris irure commodo cillum. Velit fugiat ea ipsum culpa incididunt veniam duis esse magna. Ut aute dolore tempor ea fugiat. Labore voluptate aliquip aute duis.   Sunt sit occaecat sunt quis. Laborum eu ullamco dolore incididunt amet labore nisi qui exercitation ad consequat id ex minim. Reprehenderit cillum pariatur sint pariatur excepteur veniam deserunt deserunt deserunt eiusmod in eiusmod est. Mollit enim ad consequat aute laboris reprehenderit.",
+            "id": 1002,
+            "comments": []
+        },
+        {
+            "imageSource": "https://images.unsplash.com/photo-1493552152660-f915ab47ae9d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80",
+            "name": "Ficus Elastica",
+            "waterConsumption": "High",
+            "temperature": "warm",
+            "light": "Partial-sun",
+            "text": "Esse aute occaecat do veniam nulla non. Anim dolor et in id officia ut incididunt cillum voluptate anim sit mollit aute. Incididunt reprehenderit ad enim laboris ut commodo.    Reprehenderit fugiat irure do proident dolor aute laboris irure commodo cillum. Velit fugiat ea ipsum culpa incididunt veniam duis esse magna. Ut aute dolore tempor ea fugiat. Labore voluptate aliquip aute duis.   Sunt sit occaecat sunt quis. Laborum eu ullamco dolore incididunt amet labore nisi qui exercitation ad consequat id ex minim. Reprehenderit cillum pariatur sint pariatur excepteur veniam deserunt deserunt deserunt eiusmod in eiusmod est. Mollit enim ad consequat aute laboris reprehenderit.",
+            "id": 1003,
+            "comments": []
+        },
+        {
+            "imageSource": "https://images.unsplash.com/photo-1509223197845-458d87318791?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=859&q=80",
+            "name": "Doristeina Hildebrandtii",
+            "waterConsumption": "High",
+            "temperature": "warm",
+            "light": "Partial-sun",
+            "text": "Esse aute occaecat do veniam nulla non. Anim dolor et in id officia ut incididunt cillum voluptate anim sit mollit aute. Incididunt reprehenderit ad enim laboris ut commodo.    Reprehenderit fugiat irure do proident dolor aute laboris irure commodo cillum. Velit fugiat ea ipsum culpa incididunt veniam duis esse magna. Ut aute dolore tempor ea fugiat. Labore voluptate aliquip aute duis.   Sunt sit occaecat sunt quis. Laborum eu ullamco dolore incididunt amet labore nisi qui exercitation ad consequat id ex minim. Reprehenderit cillum pariatur sint pariatur excepteur veniam deserunt deserunt deserunt eiusmod in eiusmod est. Mollit enim ad consequat aute laboris reprehenderit.",
+            "id": 1004,
+            "comments": []
+        },
+        {
+            "imageSource": "https://images.unsplash.com/photo-1505209363824-91ef02e9445a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=633&q=80",
+            "name": "Geranium",
+            "waterConsumption": "High",
+            "temperature": "warm",
+            "light": "Partial-sun",
+            "text": "Esse aute occaecat do veniam nulla non. Anim dolor et in id officia ut incididunt cillum voluptate anim sit mollit aute. Incididunt reprehenderit ad enim laboris ut commodo.    Reprehenderit fugiat irure do proident dolor aute laboris irure commodo cillum. Velit fugiat ea ipsum culpa incididunt veniam duis esse magna. Ut aute dolore tempor ea fugiat. Labore voluptate aliquip aute duis.   Sunt sit occaecat sunt quis. Laborum eu ullamco dolore incididunt amet labore nisi qui exercitation ad consequat id ex minim. Reprehenderit cillum pariatur sint pariatur excepteur veniam deserunt deserunt deserunt eiusmod in eiusmod est. Mollit enim ad consequat aute laboris reprehenderit.",
+            "id": 1005,
+            "comments": []
+        },
+        {
+            "imageSource": "https://images.unsplash.com/photo-1615794799010-49687e006646?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=663&q=80",
+            "name": "cupressaceae juniperus",
+            "waterConsumption": "High",
+            "temperature": "warm",
+            "light": "Partial-sun",
+            "text": "Esse aute occaecat do veniam nulla non. Anim dolor et in id officia ut incididunt cillum voluptate anim sit mollit aute. Incididunt reprehenderit ad enim laboris ut commodo.    Reprehenderit fugiat irure do proident dolor aute laboris irure commodo cillum. Velit fugiat ea ipsum culpa incididunt veniam duis esse magna. Ut aute dolore tempor ea fugiat. Labore voluptate aliquip aute duis.   Sunt sit occaecat sunt quis. Laborum eu ullamco dolore incididunt amet labore nisi qui exercitation ad consequat id ex minim. Reprehenderit cillum pariatur sint pariatur excepteur veniam deserunt deserunt deserunt eiusmod in eiusmod est. Mollit enim ad consequat aute laboris reprehenderit.",
+            "id": 1006,
+            "comments": []
+        },
+        {
+            "imageSource": "https://images.unsplash.com/photo-1582862058398-c157c8424b54?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=564&q=80",
+            "name": "orchid",
+            "waterConsumption": "High",
+            "temperature": "warm",
+            "light": "Partial-sun",
+            "text": "Esse aute occaecat do veniam nulla non. Anim dolor et in id officia ut incididunt cillum voluptate anim sit mollit aute. Incididunt reprehenderit ad enim laboris ut commodo.    Reprehenderit fugiat irure do proident dolor aute laboris irure commodo cillum. Velit fugiat ea ipsum culpa incididunt veniam duis esse magna. Ut aute dolore tempor ea fugiat. Labore voluptate aliquip aute duis.   Sunt sit occaecat sunt quis. Laborum eu ullamco dolore incididunt amet labore nisi qui exercitation ad consequat id ex minim. Reprehenderit cillum pariatur sint pariatur excepteur veniam deserunt deserunt deserunt eiusmod in eiusmod est. Mollit enim ad consequat aute laboris reprehenderit.",
+            "id": 1007,
+            "comments": []
+        }
+    ]
+}

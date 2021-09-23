@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2020.2 (Released July 1, 2020) -->
+<HTML lang="en">
+<HEAD>
+<TITLE>Location of CSS</TITLE>
+<META NAME="description" CONTENT="Location of CSS">
+<META NAME="keywords" CONTENT="test">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2020.2">
+
+<LINK REL="STYLESHEET" HREF="test.css">
+
+<LINK REL="next" HREF="node17.html">
+<LINK REL="previous" HREF="node15.html">
+<LINK REL="next" HREF="node17.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="node17.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node13.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node15.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html172"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node17.html">CSS Box</A>
+<B> Up:</B> <A
+ HREF="node13.html">CSS</A>
+<B> Previous:</B> <A
+ HREF="node15.html">Basic Syntax</A>
+ &nbsp; <B>  <A ID="tex2html173"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H3><A ID="SECTION00222300000000000000">
+Location of CSS</A>
+</H3>
+					There are three options for where to place CSS code:
+<BR>
+<P>
+
+<OL>
+<LI><SPAN  CLASS="textbf">Inline</SPAN>
+							Placed within the html code within the element. Example: <SPAN CLASS="MATH"><IMG STYLE="height: 1.47ex; vertical-align: -0.16ex; " SRC="img2.svg"
+ ALT="$&lt;$"></SPAN>p style="color: red;"<SPAN CLASS="MATH"><IMG STYLE="height: 1.47ex; vertical-align: -0.16ex; " SRC="img3.svg"
+ ALT="$&gt;$"></SPAN>
+</LI>
+<LI><SPAN  CLASS="textbf">Internal</SPAN>
+							Placed within the style tag, usually within the head tag. Example:  <SPAN CLASS="MATH"><IMG STYLE="height: 1.47ex; vertical-align: -0.16ex; " SRC="img2.svg"
+ ALT="$&lt;$"></SPAN>style<SPAN CLASS="MATH"><IMG STYLE="height: 1.47ex; vertical-align: -0.16ex; " SRC="img3.svg"
+ ALT="$&gt;$"></SPAN>p { color: red;}<SPAN CLASS="MATH"><IMG STYLE="height: 1.47ex; vertical-align: -0.16ex; " SRC="img2.svg"
+ ALT="$&lt;$"></SPAN>style<SPAN CLASS="MATH"><IMG STYLE="height: 1.47ex; vertical-align: -0.16ex; " SRC="img3.svg"
+ ALT="$&gt;$"></SPAN>
+</LI>
+<LI><SPAN  CLASS="textbf">External</SPAN>
+							Placed within an external .css file. This is then linked via the link tag as seen in <A HREF="node7.html#html-boiler"><IMG  ALT="[*]" SRC="crossref.png"></A>.
+					
+</LI>
+</OL>
+
+<P>
+This also effects how certain elements will override others. For example, any inline style will override any internal or external style, and any internal style will override any external style. The code is also read top to bottom, so styles at the bottom will override styles at the top.
+
+<P>
+<BR><HR>
+
+</BODY>
+</HTML>

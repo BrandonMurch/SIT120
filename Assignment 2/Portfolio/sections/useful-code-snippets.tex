@@ -1,0 +1,286 @@
+\documentclass[portfolio.tex]{subfiles}
+\begin{document}
+	\Chapter{Extra}{Useful Code Snippets}
+		\section{Introduction}
+			Throughout this course, if there is a code snippet I have found useful, I have put it in this section for easy reference. This are often not directly related to what I learned in lectures/practicals, but are still useful none-the-less. They will also be referenced in the practical task in which they were discovered.
+		\section{CSS}
+			\subsection{Common Properties}
+				\begin{tabular}{|p{2cm}|p{12cm}|}
+					\hline
+					color & Color of text. \\
+					\hline
+					background-color & Color of element background. \\
+					\hline
+					height & Height of element. \\
+					\hline
+					width & Width of element \\
+					\hline
+					font-size & Size of font (can be in pixels,  rem (relative font size), or pre-set (small, medium, etc.)) \\
+					\hline
+					font-family & Specify the font, or family of fonts. Multiple can be specified, with the earlier fonts taking priority.  \\
+					\hline
+					position & How the element is positioned in the document. Some possible values: relative(Follows the standard flow), absolute(placed in a particular location in the document), fixed (placed in a particular location on the screen.)\\
+					\hline
+					left, right, top, bottom & How far from the left/right/top/bottom the element is. \\
+					\hline
+					text-align & How the text within a p or h\# tag are aligned (left, center, right)  \\
+					\hline
+					border & How the border of the element looks. Uses the value format of "\textbf{size style color}" \\
+					\hline
+				\end{tabular}\\
+				\autocite{mozilla-css}
+			\subsection{Center an Element (From Week 1)}
+				\label{css-center-element}
+				To horizontally center any element:\\
+				\begin{lstlisting}
+element {
+	postion: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+				\end{lstlisting}
+
+				Any element can also be centred horizontally(by using top, and translateY) or both (using top, left and translate(X, Y)). This moves the element half way across the screen, and then moves the element back half of its width.  The end effect being that it is centred on the screen. \autocite{css-centre}
+
+			\subsection{Centring an Element with Flex}
+				\label{css-center-element2}
+				Elements can also be centred easily by modifying their parent to become a flex box with the following syntax:
+
+				\begin{lstlisting}
+parent-element {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+				\end{lstlisting}
+
+			This works especially well if there is only one child of the parent.
+
+			\subsection{Box Shadow}
+				\label{box-shadow}
+				To give elements depth and make them look more realistic, they can be given a depth by applying a shadow.
+
+				The syntax for applying a shadow is:
+
+				\begin{center}
+					box-shadow: offset-x, offset-y, blur-radius, spread-radius
+				\end{center}
+
+				\textbf{offset-x}, and \textbf{offset-y} shift the shadow horizontally and vertically respectively. If positive, the shadow will move towards the right/bottom and if negative will shift towards the left/top.
+
+				\textbf{blur-radius} is used to blur the shadow. The greater the value, the larger the blurred portion of the shadow. The lowest value is 0, where the shadow is a sharp line.
+
+				\textbf{spread-radius} changes the size of the solid portion of the shadow. Larger values create a shadow that is larger than the element itself. A negative value will create a shadow smaller than the element. \autocite{moz-box-shadow}
+
+
+			\subsection{Round Specific Corners}
+				\label{specific-round-corners}
+				border-radius is a property that allows corners to be rounded.  Individual corners can be rounded separately from the rest of the element with one of a few self-explanatory commands:\\
+
+				border-top-left-radius, border-top-right-radius, border-bottom-left-radius, border-bottom-right-radius. \autocite{w3-border-top-left}\\
+			\subsection{Adding a custom font}
+				\label{css-custom-font}
+				To add a custom font, they have to be either available locally, or from a website. The following syntax is used:\\
+
+				\begin{lstlisting}
+@font-face {
+	font-family: "Name of Font",
+	src: url("www.fonts.com/name-of-font.tff") format("tff");
+}
+				\end{lstlisting}
+			\autocite{moz-font-face}
+
+			\subsection{Modifying Scrollbar}
+			\label{modify-scrollbar}
+			To change the appearance of the scrollbar, a few different pseudo-selectors have to be used:
+
+			\begin{lstlisting}
+element::-webkit-scrollbar {
+	width: 4px; /* width of the entire scrollbar */
+}
+
+element::-webkit-scrollbar-track {
+	background: orange; /* color of the tracking area */
+}
+
+element::-webkit-scrollbar-thumb {
+	background-color: blue; /* color of the scroll thumb */
+	border-radius: 20px; /* roundness of the scroll thumb */
+	border: 5px solid black; /* creates padding around scroll thumb */
+}
+
+element  {
+	scrollbar-width: thin; /* "auto" or "thin" */
+	scrollbar-color: blue orange; /* scroll thumb and track */
+}
+			\end{lstlisting}
+
+			The ::webkit-* pseudo-classes are for Chrome, Edge, Safari and Opera, since they don't support the standard \textbf{scrollbar-width} and \textbf{scrollbar color}.
+
+			\autocite{w3-scroll};
+
+			\subsection{Transitions}
+				\label{css-transitions}
+				It is possible to animate transitions between CSS changes. This is accomplished by using the transition attribute. The transition command is as follows:
+				\begin{center}
+					\textbf{transition: $<$property$>$ $<$duration$>$ $<$timing-function$>$ $<$delay$>$}
+				\end{center}
+
+				Property is which CSS properties will be affected by the transition. Duration is how long the animation will take to complete. The duration can either be in seconds (2s) or in milliseconds(200ms). Timing functions is how the timing maps to the animation. For example there is ease-in which is slow at the beginning, and then faster towards the end of the animation. Finally the delay value delays the start of the animation. \autocite{mozilla-transitions}\\
+
+				One thing to note is that  not all styles can be animated. For a complete list of animatable styles see \autocite{possible-transitions}.\\
+
+			\subsection{Modifying Scrollbar}
+				\label{css-scrollbar}
+
+				To modify the appearance of the scrollbar, there is two different sets of attributes (one for Chrome/Edge/Safari/Opera and one for Firefox).\\
+
+				For Firefox, there are two CSS Properties available:
+				\begin{itemize}
+					\item scrollbar-color: $<$thumb colour$>$ $<$track colour$>$
+					\item scrollbar-width: $<$auto, thin or none$>$
+				\end{itemize}
+				\autocite{modify-scroll-mozilla}\\
+
+				Alternatively, other browsers use the \textbf{::-webkit-scrollbar} pseudo element. This allows styles to be applied to the different parts of the scroll bar. The possible elements are:
+
+				\begin{itemize}
+					\item ::-webkit-scrollbar - The entire scrollbar
+					\item ::-webkit-scrollbar-track - The track of the scrollbar (the background)
+					\item ::-webkit-scrollbar-thumb - The thumb of the scrollbar (the part that slides)
+					\item ::-webkit-scrollbar-thumb: hover - Modify the thumb on hover.
+				\end{itemize}
+				\autocite{modify-scroll}
+
+		\section{JavaScript}
+			\subsection[Window.onLoad]{Window.onLoad = function() \{...\}}
+				\label{js-window-onload}
+				Upon fully loading the window, the provided function will then be called. This ensures the elements referenced within the function will be able to be found within the DOM. This is particularly useful with Vue, since there needs to be a rendered element for Vue to be attached. \autocite{onload}
+			\subsection{Round to Specific Decimal Place}
+				\label{js-round-number}
+				To round  to a specific number of decimal places, use the toFixed(places) method on an number variable. For example:\\
+
+				\begin{lstlisting}
+let number = 9.43667;
+number = number.toFixed(2);
+// number == 9.43;
+				\end{lstlisting}
+			\autocite{tofixed}
+
+		\subsection{Canvas Drawing}
+			\label{js-canvas}
+			To draw a line on the canvas:
+
+			\begin{lstlisting}
+// Get the canvas element from the document
+const canvas = document.querySelector('#canvas');
+
+// Adjust the height and width as necessary, this fills the screen
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+// Get the kind of canvas (2d, webgl, etc.) (webgl is 3d)
+const ctx = canvas.getContext('2d');
+
+// Begin drawing.
+ctx.beginPath();
+
+// Place the cursor at x,y.
+ctx.moveTo(x, y);
+
+// from (x, y), draw a line to (newX, newY).
+ctx.lineTo(newX, newY);
+
+// Select the width of the line.
+ctx.lineWidth = 3;
+
+// Assign a colour value
+to draw.
+ctx.strokeStyle = "#123456";
+
+// Draw the line on the screen.
+ctx.stroke()
+
+			\end{lstlisting}
+
+		\autocite{moz-canvas}
+
+		\subsection{Delay()}
+			\label{js-delay}
+			JavaScript does not have a simple delay() function which many other languages have that blocks the execution of code for a certain amount of time. Instead there is a bit of a hack to delay code as necessary. An empty array is first initialised. Each timer is set by supplying a function that is to be called when the function expires, and the amount of time. Essentially this means wait x amount of time, then call the function. To call a function every x milliseconds, construct a for loop, then multiply the time-value by i. See the syntax below:
+
+			\begin{lstlisting}
+const timers = [];
+
+// Calls the function after a delay.
+timers.push(setTimout(function, time-value));
+
+// Calling multiple delays, this will call the function every time-value milliseconds.
+for (let i = 0; i < max; i++) {
+	timers.push(setTimout(function, time-value * i));
+}
+
+// To clear the first timer before it executes.
+window.clearTimeout(timers[0]);
+			\end{lstlisting}
+			\autocite{js-delay}
+
+			\subsection{"Debounce"}
+				\label{js-debounce}
+				Debounce is a function that stops functions from being called over and over. An example of a useful application of this is when the user resizes the window. It means the browser will wait until the user is finished moving the window before calling the function. This can give a big boost to performance by not calling expensive functions unnecessarily.
+
+				The following higher-order function can be used:
+
+				\begin{lstlisting}
+function debounce(func, timeout = 300){
+	let timer;
+	return (...args) => {
+		clearTimeout(timer);
+		timer = setTimeout(() => { func.apply(this, args); }, timeout);
+	};
+}
+				\end{lstlisting}
+				\autocite{fcc-debounce}\\
+
+				What happens is when this function is called, it creates a timer, that after elapsing will execute the function passed as an argument. When this is called a subsequent time, the timer is reset, and thus the passed function will only execute when timer is able to fully elapse.
+
+		\subsection{JavaScript Observers}
+			JavaScript observers are an easy way to monitor for changes within the DOM. This also benefits from not being tied to any one framework, as it is a generic web API.\\
+
+			These work by taking a function into their constructor. Whenever the observer is triggered, it will execute the provided function. Then this Observer is stored in a variable, and the observe method can be called, which takes the element being observed. \\
+
+
+			\subsubsection{Intersection Observer}
+				The intersection Observer is used to check to see if an element is "intersecting with the viewport". In layman's terms, this means can the user see the element. Two different options can be selected for what intersecting means, the first is partial intersection (the user can see part of the element), and the other is complete intersection (the user can see all of the element). An example: \\
+
+				\begin{lstlisting}
+const observer = new IntersectionObserver((entries) => {
+	if (entries[0].isIntersecting === true) {
+		console.log("I can see you!")
+	}
+});
+
+observer.observe(document.getElementById("target-id"))
+				\end{lstlisting}
+
+				This will track to see if the element with the id "target-id" is intersecting the viewport, and when it does, it will print "I can see you!" to the console.\\
+
+				\autocite{intersection-observer}\\
+
+			\subsubsection{Mutation Observer}
+				Mutation Observers watch for any mutation within the DOM. This means that any changes to style, or content for example, will be noticed. There are a few options, one of which is to only watch the element that has been passed in, another is to only monitor the element and its children, and the last is to monitor the entire subtree underneath the element. \\
+
+				The code is fairly similar to a IntersectionObserver, but instead MutationObserver constructor is used. Config files are places within the observe method as a secondary parameter to the element. A possible config might be: \\
+
+				\begin{lstlisting}
+observer.observe(targetNode, { attributes: true, childList: true, subtree: true });
+				\end{lstlisting}
+
+			\autocite{mutation-observer}
+
+			\subsubsection{Disconnection}
+				Observers must be disconnected when they are finished. This typically is when a component is unmounted from the DOM. This will prevent memory leaks. To disconnect an observer simply call \textbf{observer.disconnect();})
+
+
+
+\end{document}

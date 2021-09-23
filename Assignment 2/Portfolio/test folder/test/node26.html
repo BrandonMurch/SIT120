@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+
+<!--Converted with LaTeX2HTML 2020.2 (Released July 1, 2020) -->
+<HTML lang="en">
+<HEAD>
+<TITLE>Templates</TITLE>
+<META NAME="description" CONTENT="Templates">
+<META NAME="keywords" CONTENT="test">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2020.2">
+
+<LINK REL="STYLESHEET" HREF="test.css">
+
+<LINK REL="next" HREF="node27.html">
+<LINK REL="previous" HREF="node25.html">
+<LINK REL="next" HREF="node27.html">
+</HEAD>
+
+<BODY >
+
+<DIV CLASS="navigation"><!--Navigation Panel-->
+<A
+ HREF="node27.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node24.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node25.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html200"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node27.html">Components</A>
+<B> Up:</B> <A
+ HREF="node24.html">Vue.js</A>
+<B> Previous:</B> <A
+ HREF="node25.html">Introduction to Vue</A>
+ &nbsp; <B>  <A ID="tex2html201"
+  HREF="node1.html">Contents</A></B> 
+<BR>
+<BR></DIV>
+<!--End of Navigation Panel-->
+
+<H3><A ID="SECTION00224200000000000000">
+Templates</A>
+</H3>
+					Within Vue, templates can be created. These templates contain the information displayed on the website, similar to HTML. In fact all HTML will work within these templates, but the templates include extra features to make responsive design much easier.  
+<BR>
+<P>
+Templates allow for a reduction in code compared to traditional HTML. By finding common <SPAN  CLASS="textit">structures</SPAN> within the HTML, templates can be created so that different data can be inserted into these reusable structures. This means that we don't have to spend time re-writing the same structures over and over. Syntactically, Vue uses double curly braces to represent areas where data will be inserted later. <SPAN  CLASS="textbf">{{ name }}</SPAN> will be replaced with the value of the name variable.
+<BR>
+vue-template
+<BR>
+<P>
+For a simple example of where templating can reduce the amount of code written, refer back to <A HREF="node7.html#html-boiler"><IMG  ALT="[*]" SRC="crossref.png"></A>. Each html document you create has to have these pieces of code. Instead of rewriting this every time,  a template could be created as follows:
+<BR>
+<P>
+<BR>
+<IMG STYLE=""
+ SRC="img9.svg"
+ ALT="\begin{lstlisting}
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Title&lt;/title&gt;
+&lt;script src=''{{ jsFile...
+...y&gt;
+&lt;h1&gt;{{ title }}&lt;/h1&gt;
+&lt;p&gt; {{ paragraph }}
+&lt;/body&gt;
+&lt;/html&gt;
+\end{lstlisting}">
+<BR>
+
+<P>
+<BR>
+<BR>
+
+<P>
+This could then be reused for many different websites with different information by supplying different values for the variables title, paragraph, jsFile, etc.. This of course can be expanded to much more complicated websites where there are many of the same pages. Consider Facebook, where everyone has their own profile page. These pages are standardised across the website to look the same, but the information is different on each one. A template is made once, then whenever the page is rendered it is filled with the appropriate data.
+<BR>
+<P>
+This then becomes even more powerful when responsive web apps are considered. If required, different templates could be created for each style of device (small mobile, tablet, desktop) to create a very different experience. When the user visits the web app, the appropriate template will be selected and used, all while the data remains the same.
+<BR>
+<P>
+
+<DIV CLASS="navigation"><HR>
+<!--Navigation Panel-->
+<A
+ HREF="node27.html">
+<IMG WIDTH="37" HEIGHT="24" ALT="next" SRC="next.png"></A> 
+<A
+ HREF="node24.html">
+<IMG WIDTH="26" HEIGHT="24" ALT="up" SRC="up.png"></A> 
+<A
+ HREF="node25.html">
+<IMG WIDTH="63" HEIGHT="24" ALT="previous" SRC="prev.png"></A> 
+<A ID="tex2html200"
+  HREF="node1.html">
+<IMG WIDTH="65" HEIGHT="24" ALT="contents" SRC="contents.png"></A>  
+<BR>
+<B> Next:</B> <A
+ HREF="node27.html">Components</A>
+<B> Up:</B> <A
+ HREF="node24.html">Vue.js</A>
+<B> Previous:</B> <A
+ HREF="node25.html">Introduction to Vue</A>
+ &nbsp; <B>  <A ID="tex2html201"
+  HREF="node1.html">Contents</A></B> </DIV>
+<!--End of Navigation Panel-->
+
+</BODY>
+</HTML>

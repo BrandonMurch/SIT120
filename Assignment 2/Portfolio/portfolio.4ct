@@ -1,0 +1,252 @@
+\expandafter\ifx\csname doTocEntry\endcsname\relax \expandafter\endinput\fi 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-1000}{QQ2-1-1}{}}{2}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-2000}{QQ2-1-2}{Contents}}{2}\relax 
+\doTocEntry\tocchapter{1}{\csname a:TocLink\endcsname{1}{x1-30001}{QQ2-1-3}{Justification For Grade}}{6}\relax 
+\doTocEntry\tocchapter{2}{\csname a:TocLink\endcsname{1}{x1-40002}{QQ2-1-4}{The Basics of Web Development}}{7}\relax 
+\doTocEntry\tocsection{2.1}{\csname a:TocLink\endcsname{1}{x1-50001}{QQ2-1-5}{Introduction}}{7}\relax 
+\doTocEntry\tocsection{2.2}{\csname a:TocLink\endcsname{1}{x1-60002}{QQ2-1-6}{Weekly Content}}{7}\relax 
+\doTocEntry\tocsubsection{2.2.1}{\csname a:TocLink\endcsname{1}{x1-70001}{QQ2-1-7}{HTML}}{7}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-80001}{QQ2-1-8}{Introduction to HTML}}{7}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-90001}{QQ2-1-9}{Boilerplate To Get Started}}{7}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-100001}{QQ2-1-10}{Other useful tags and descriptions}}{8}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-110001}{QQ2-1-11}{\textbf  {Tags without closing tags}}}{9}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-120001}{QQ2-1-12}{Tables}}{9}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-130001}{QQ2-1-13}{Forms}}{9}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-140001}{QQ2-1-14}{Inputs}}{10}\relax 
+\doTocEntry\tocsubsection{2.2.2}{\csname a:TocLink\endcsname{1}{x1-150002}{QQ2-1-15}{CSS}}{11}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-160002}{QQ2-1-16}{Introduction to CSS}}{11}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-170002}{QQ2-1-17}{Basic Syntax}}{11}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-180002}{QQ2-1-18}{Location of CSS}}{12}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-190002}{QQ2-1-19}{CSS Box}}{12}\relax 
+\doTocEntry\tocsubsection{2.2.3}{\csname a:TocLink\endcsname{1}{x1-200003}{QQ2-1-20}{JavaScript}}{13}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-210003}{QQ2-1-21}{Introduction to Javascript}}{13}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-220003}{QQ2-1-22}{Declaring Variables}}{13}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-230003}{QQ2-1-23}{Declaring and Calling Functions}}{13}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-240003}{QQ2-1-24}{Window and Document Objects}}{13}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-250003}{QQ2-1-25}{More JavaScript}}{14}\relax 
+\doTocEntry\tocsubsection{2.2.4}{\csname a:TocLink\endcsname{1}{x1-260004}{QQ2-1-26}{Vue.js}}{14}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-270004}{QQ2-1-27}{Introduction to Vue}}{14}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-280004}{QQ2-1-28}{Templates}}{14}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-290004}{QQ2-1-29}{Components}}{15}\relax 
+\doTocEntry\tocsection{2.3}{\csname a:TocLink\endcsname{1}{x1-300003}{QQ2-1-30}{Practical Tasks}}{15}\relax 
+\doTocEntry\tocsubsection{2.3.1}{\csname a:TocLink\endcsname{1}{x1-310001}{QQ2-1-31}{1 - HTML}}{15}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-320001}{QQ2-1-32}{Code}}{15}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-330001}{QQ2-1-33}{Screenshot}}{16}\relax 
+\doTocEntry\tocsubsection{2.3.2}{\csname a:TocLink\endcsname{1}{x1-340002}{QQ2-1-34}{2 - CSS}}{16}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-350002}{QQ2-1-35}{Code}}{16}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-360002}{QQ2-1-36}{Screenshot}}{16}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-370002}{QQ2-1-37}{Useful Code}}{16}\relax 
+\doTocEntry\tocsubsection{2.3.3}{\csname a:TocLink\endcsname{1}{x1-380003}{QQ2-1-38}{3 - JavaScript}}{17}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-390003}{QQ2-1-39}{Code}}{17}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-400003}{QQ2-1-40}{Useful Code}}{17}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-410003}{QQ2-1-41}{Screenshot}}{17}\relax 
+\doTocEntry\tocsubsection{2.3.4}{\csname a:TocLink\endcsname{1}{x1-420004}{QQ2-1-42}{4 - Vue.js}}{17}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-430004}{QQ2-1-43}{Code}}{18}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-440004}{QQ2-1-44}{Useful Code}}{18}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-450004}{QQ2-1-45}{Screenshot}}{18}\relax 
+\doTocEntry\tocsection{2.4}{\csname a:TocLink\endcsname{1}{x1-460004}{QQ2-1-46}{Project}}{18}\relax 
+\doTocEntry\tocsubsection{2.4.1}{\csname a:TocLink\endcsname{1}{x1-470001}{QQ2-1-47}{What I completed this week}}{18}\relax 
+\doTocEntry\tocsubsection{2.4.2}{\csname a:TocLink\endcsname{1}{x1-480002}{QQ2-1-48}{What I will complete next week}}{18}\relax 
+\doTocEntry\tocchapter{3}{\csname a:TocLink\endcsname{1}{x1-490003}{QQ2-1-49}{Development Techniques}}{20}\relax 
+\doTocEntry\tocsection{3.1}{\csname a:TocLink\endcsname{1}{x1-500001}{QQ2-1-50}{Introduction}}{20}\relax 
+\doTocEntry\tocsection{3.2}{\csname a:TocLink\endcsname{1}{x1-510002}{QQ2-1-51}{Weekly Content}}{20}\relax 
+\doTocEntry\tocsubsection{3.2.1}{\csname a:TocLink\endcsname{1}{x1-520001}{QQ2-1-52}{Responsive Design}}{20}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-530001}{QQ2-1-53}{Meta Viewport}}{20}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-540001}{QQ2-1-54}{Avoid Horizontal Scrolling}}{21}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-550001}{QQ2-1-55}{Use Percentages for Size}}{21}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-560001}{QQ2-1-56}{Flexbox}}{21}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-570001}{QQ2-1-57}{Grid}}{21}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-580001}{QQ2-1-58}{Media Queries}}{21}\relax 
+\doTocEntry\tocsubsection{3.2.2}{\csname a:TocLink\endcsname{1}{x1-590002}{QQ2-1-59}{User Stories}}{22}\relax 
+\doTocEntry\tocsubsection{3.2.3}{\csname a:TocLink\endcsname{1}{x1-600003}{QQ2-1-60}{HTML Media}}{23}\relax 
+\doTocEntry\tocsubsection{3.2.4}{\csname a:TocLink\endcsname{1}{x1-610004}{QQ2-1-61}{HTML API}}{24}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-620004}{QQ2-1-62}{Drag and Drop}}{24}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-630004}{QQ2-1-63}{Geolocation}}{24}\relax 
+\doTocEntry\tocsection{3.3}{\csname a:TocLink\endcsname{1}{x1-640003}{QQ2-1-64}{Practical Tasks}}{24}\relax 
+\doTocEntry\tocsubsection{3.3.1}{\csname a:TocLink\endcsname{1}{x1-650001}{QQ2-1-65}{Task 1}}{24}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-660001}{QQ2-1-66}{Reflection}}{24}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-670001}{QQ2-1-67}{Introduction}}{24}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-680001}{QQ2-1-68}{Pinterest}}{24}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-690001}{QQ2-1-69}{garden.org}}{26}\relax 
+\doTocEntry\tocsubsection{3.3.2}{\csname a:TocLink\endcsname{1}{x1-700002}{QQ2-1-70}{Task 2}}{26}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-710002}{QQ2-1-71}{Reflection}}{26}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-720002}{QQ2-1-72}{Screenshot}}{27}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-730002}{QQ2-1-73}{Source Code}}{27}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-740002}{QQ2-1-74}{Useful Code}}{27}\relax 
+\doTocEntry\tocsubsection{3.3.3}{\csname a:TocLink\endcsname{1}{x1-750003}{QQ2-1-75}{Task 3}}{28}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-760003}{QQ2-1-76}{Reflection}}{28}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-770003}{QQ2-1-77}{User Stories}}{29}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-780003}{QQ2-1-78}{UI}}{35}\relax 
+\doTocEntry\tocsubsection{3.3.4}{\csname a:TocLink\endcsname{1}{x1-790004}{QQ2-1-79}{Task 4}}{36}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-800004}{QQ2-1-80}{Reflection}}{36}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-810004}{QQ2-1-81}{Explanation of Task Work}}{36}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-820004}{QQ2-1-82}{Source Code}}{36}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-830004}{QQ2-1-83}{Useful Code}}{37}\relax 
+\doTocEntry\tocsection{3.4}{\csname a:TocLink\endcsname{1}{x1-840004}{QQ2-1-84}{Project}}{37}\relax 
+\doTocEntry\tocsubsection{3.4.1}{\csname a:TocLink\endcsname{1}{x1-850001}{QQ2-1-85}{This Week}}{37}\relax 
+\doTocEntry\tocsubsection{3.4.2}{\csname a:TocLink\endcsname{1}{x1-860002}{QQ2-1-86}{Next Week}}{37}\relax 
+\doTocEntry\tocchapter{4}{\csname a:TocLink\endcsname{1}{x1-870004}{QQ2-1-87}{JavaScript In Depth}}{39}\relax 
+\doTocEntry\tocsection{4.1}{\csname a:TocLink\endcsname{1}{x1-880001}{QQ2-1-88}{Introduction}}{39}\relax 
+\doTocEntry\tocsection{4.2}{\csname a:TocLink\endcsname{1}{x1-890002}{QQ2-1-89}{Weekly Content}}{39}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-900002}{QQ2-1-90}{Control Statements}}{39}\relax 
+\doTocEntry\tocsubsection{4.2.1}{\csname a:TocLink\endcsname{1}{x1-910001}{QQ2-1-91}{Arrays}}{40}\relax 
+\doTocEntry\tocsubsection{4.2.2}{\csname a:TocLink\endcsname{1}{x1-920002}{QQ2-1-92}{JSON}}{41}\relax 
+\doTocEntry\tocsubsection{4.2.3}{\csname a:TocLink\endcsname{1}{x1-930003}{QQ2-1-93}{Operators}}{41}\relax 
+\doTocEntry\tocsubsection{4.2.4}{\csname a:TocLink\endcsname{1}{x1-940004}{QQ2-1-94}{jQuery}}{41}\relax 
+\doTocEntry\tocsection{4.3}{\csname a:TocLink\endcsname{1}{x1-950003}{QQ2-1-95}{Practical Tasks}}{42}\relax 
+\doTocEntry\tocsubsection{4.3.1}{\csname a:TocLink\endcsname{1}{x1-960001}{QQ2-1-96}{Task 1}}{42}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-970001}{QQ2-1-97}{Screenshot}}{43}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-980001}{QQ2-1-98}{Source Code}}{43}\relax 
+\doTocEntry\tocsubsection{4.3.2}{\csname a:TocLink\endcsname{1}{x1-990002}{QQ2-1-99}{Task 2}}{43}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1000002}{QQ2-1-100}{Number methods}}{44}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1010002}{QQ2-1-101}{Array methods}}{44}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1020002}{QQ2-1-102}{Screenshot}}{44}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1030002}{QQ2-1-103}{Source Code}}{44}\relax 
+\doTocEntry\tocsubsection{4.3.3}{\csname a:TocLink\endcsname{1}{x1-1040003}{QQ2-1-104}{Task 3}}{44}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1050003}{QQ2-1-105}{Screenshot}}{45}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1060003}{QQ2-1-106}{Source Code}}{45}\relax 
+\doTocEntry\tocsubsection{4.3.4}{\csname a:TocLink\endcsname{1}{x1-1070004}{QQ2-1-107}{Task 4}}{45}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1080004}{QQ2-1-108}{Reflection}}{45}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1090004}{QQ2-1-109}{Computed Property}}{45}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1100004}{QQ2-1-110}{Watcher}}{45}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1110004}{QQ2-1-111}{Class and Style Bindings}}{46}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1120004}{QQ2-1-112}{Conditional Rendering}}{46}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1130004}{QQ2-1-113}{List Rendering}}{46}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1140004}{QQ2-1-114}{Event Handling}}{46}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1150004}{QQ2-1-115}{Form Input Bindings}}{47}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1160004}{QQ2-1-116}{Component Basics}}{47}\relax 
+\doTocEntry\tocsection{4.4}{\csname a:TocLink\endcsname{1}{x1-1170004}{QQ2-1-117}{Project}}{47}\relax 
+\doTocEntry\tocsubsection{4.4.1}{\csname a:TocLink\endcsname{1}{x1-1180001}{QQ2-1-118}{What I achieved this week}}{47}\relax 
+\doTocEntry\tocsubsection{4.4.2}{\csname a:TocLink\endcsname{1}{x1-1190002}{QQ2-1-119}{What I need to achieve next week}}{47}\relax 
+\doTocEntry\tocchapter{5}{\csname a:TocLink\endcsname{1}{x1-1200005}{QQ2-1-120}{TCP/IP}}{49}\relax 
+\doTocEntry\tocsection{5.1}{\csname a:TocLink\endcsname{1}{x1-1210001}{QQ2-1-121}{Weekly Content}}{49}\relax 
+\doTocEntry\tocsubsection{5.1.1}{\csname a:TocLink\endcsname{1}{x1-1220001}{QQ2-1-122}{Introduction}}{49}\relax 
+\doTocEntry\tocsubsection{5.1.2}{\csname a:TocLink\endcsname{1}{x1-1230002}{QQ2-1-123}{TCP/IP Protocol}}{49}\relax 
+\doTocEntry\tocsubsection{5.1.3}{\csname a:TocLink\endcsname{1}{x1-1240003}{QQ2-1-124}{Data packets}}{49}\relax 
+\doTocEntry\tocsubsection{5.1.4}{\csname a:TocLink\endcsname{1}{x1-1250004}{QQ2-1-125}{Application Layer}}{49}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1260004}{QQ2-1-126}{TCP}}{49}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1270004}{QQ2-1-127}{IP}}{50}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1280004}{QQ2-1-128}{Data-link}}{50}\relax 
+\doTocEntry\tocsubsection{5.1.5}{\csname a:TocLink\endcsname{1}{x1-1290005}{QQ2-1-129}{Routing}}{50}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1300005}{QQ2-1-130}{DNS}}{50}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1310005}{QQ2-1-131}{Pathway}}{50}\relax 
+\doTocEntry\tocsection{5.2}{\csname a:TocLink\endcsname{1}{x1-1320002}{QQ2-1-132}{Practical Tasks}}{51}\relax 
+\doTocEntry\tocsubsection{5.2.1}{\csname a:TocLink\endcsname{1}{x1-1330001}{QQ2-1-133}{Introduction}}{51}\relax 
+\doTocEntry\tocsubsection{5.2.2}{\csname a:TocLink\endcsname{1}{x1-1340002}{QQ2-1-134}{Task 1}}{51}\relax 
+\doTocEntry\tocsubsection{5.2.3}{\csname a:TocLink\endcsname{1}{x1-1350003}{QQ2-1-135}{Task 2}}{52}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1360003}{QQ2-1-136}{Source Code}}{53}\relax 
+\doTocEntry\tocsection{5.3}{\csname a:TocLink\endcsname{1}{x1-1370003}{QQ2-1-137}{Project}}{53}\relax 
+\doTocEntry\tocsubsection{5.3.1}{\csname a:TocLink\endcsname{1}{x1-1380001}{QQ2-1-138}{What I accomplished this week}}{53}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1390001}{QQ2-1-139}{Custom Events}}{53}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1400001}{QQ2-1-140}{Vue Component Lifecycle}}{54}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1410001}{QQ2-1-141}{Slots}}{54}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1420001}{QQ2-1-142}{Refs}}{55}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1430001}{QQ2-1-143}{Unrelated to Vue}}{56}\relax 
+\doTocEntry\tocsubsection{5.3.2}{\csname a:TocLink\endcsname{1}{x1-1440002}{QQ2-1-144}{What I would like to accomplish next week}}{56}\relax 
+\doTocEntry\tocchapter{6}{\csname a:TocLink\endcsname{1}{x1-1450006}{QQ2-1-145}{Model View Design Patterns}}{58}\relax 
+\doTocEntry\tocsection{6.1}{\csname a:TocLink\endcsname{1}{x1-1460001}{QQ2-1-146}{Weekly Content}}{58}\relax 
+\doTocEntry\tocsubsection{6.1.1}{\csname a:TocLink\endcsname{1}{x1-1470001}{QQ2-1-147}{Introduction}}{58}\relax 
+\doTocEntry\tocsubsection{6.1.2}{\csname a:TocLink\endcsname{1}{x1-1480002}{QQ2-1-148}{MVC}}{58}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1490002}{QQ2-1-149}{Controller}}{58}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1500002}{QQ2-1-150}{Model}}{58}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1510002}{QQ2-1-151}{View}}{58}\relax 
+\doTocEntry\tocsubsection{6.1.3}{\csname a:TocLink\endcsname{1}{x1-1520003}{QQ2-1-152}{MVVM}}{59}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1530003}{QQ2-1-153}{View}}{59}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1540003}{QQ2-1-154}{View-Model}}{59}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1550003}{QQ2-1-155}{Model}}{59}\relax 
+\doTocEntry\tocsection{6.2}{\csname a:TocLink\endcsname{1}{x1-1560002}{QQ2-1-156}{Practical Tasks}}{59}\relax 
+\doTocEntry\tocsubsection{6.2.1}{\csname a:TocLink\endcsname{1}{x1-1570001}{QQ2-1-157}{Introduction}}{59}\relax 
+\doTocEntry\tocsubsection{6.2.2}{\csname a:TocLink\endcsname{1}{x1-1580002}{QQ2-1-158}{Task 1}}{60}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1590002}{QQ2-1-159}{Source Code}}{60}\relax 
+\doTocEntry\tocsubsection{6.2.3}{\csname a:TocLink\endcsname{1}{x1-1600003}{QQ2-1-160}{Task 2}}{60}\relax 
+\doTocEntry\tocsubsection{6.2.4}{\csname a:TocLink\endcsname{1}{x1-1610004}{QQ2-1-161}{Task 3}}{61}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1620004}{QQ2-1-162}{Source Code}}{61}\relax 
+\doTocEntry\tocsubsection{6.2.5}{\csname a:TocLink\endcsname{1}{x1-1630005}{QQ2-1-163}{Task 4}}{61}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1640005}{QQ2-1-164}{Component Registration}}{61}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1650005}{QQ2-1-165}{Props}}{62}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1660005}{QQ2-1-166}{Custom Events and Slots}}{62}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1670005}{QQ2-1-167}{Dynamic and Async Components}}{62}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1680005}{QQ2-1-168}{Handling Edge Cases}}{63}\relax 
+\doTocEntry\tocsection{6.3}{\csname a:TocLink\endcsname{1}{x1-1690003}{QQ2-1-169}{Project}}{64}\relax 
+\doTocEntry\tocsubsection{6.3.1}{\csname a:TocLink\endcsname{1}{x1-1700001}{QQ2-1-170}{What I accomplished this week}}{64}\relax 
+\doTocEntry\tocsubsection{6.3.2}{\csname a:TocLink\endcsname{1}{x1-1710002}{QQ2-1-171}{What I would like to accomplish next week}}{64}\relax 
+\doTocEntry\tocchapter{7}{\csname a:TocLink\endcsname{1}{x1-1720007}{QQ2-1-172}{Data Binding}}{66}\relax 
+\doTocEntry\tocsection{7.1}{\csname a:TocLink\endcsname{1}{x1-1730001}{QQ2-1-173}{Weekly Content}}{66}\relax 
+\doTocEntry\tocsection{7.2}{\csname a:TocLink\endcsname{1}{x1-1740002}{QQ2-1-174}{Introduction}}{66}\relax 
+\doTocEntry\tocsubsection{7.2.1}{\csname a:TocLink\endcsname{1}{x1-1750001}{QQ2-1-175}{Two-Way Binding}}{66}\relax 
+\doTocEntry\tocsection{7.3}{\csname a:TocLink\endcsname{1}{x1-1760003}{QQ2-1-176}{Individually Researched Topics}}{67}\relax 
+\doTocEntry\tocsubsection{7.3.1}{\csname a:TocLink\endcsname{1}{x1-1770001}{QQ2-1-177}{Introduction}}{67}\relax 
+\doTocEntry\tocsubsection{7.3.2}{\csname a:TocLink\endcsname{1}{x1-1780002}{QQ2-1-178}{Vue Router}}{67}\relax 
+\doTocEntry\tocsubsection{7.3.3}{\csname a:TocLink\endcsname{1}{x1-1790003}{QQ2-1-179}{Vuex}}{68}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1800003}{QQ2-1-180}{Source Code}}{69}\relax 
+\doTocEntry\tocsubsection{7.3.4}{\csname a:TocLink\endcsname{1}{x1-1810004}{QQ2-1-181}{Composition API}}{69}\relax 
+\doTocEntry\tocsubsection{7.3.5}{\csname a:TocLink\endcsname{1}{x1-1820005}{QQ2-1-182}{Vue Transitions}}{70}\relax 
+\doTocEntry\tocsubsection{7.3.6}{\csname a:TocLink\endcsname{1}{x1-1830006}{QQ2-1-183}{Deployment}}{72}\relax 
+\doTocEntry\tocsubsection{7.3.7}{\csname a:TocLink\endcsname{1}{x1-1840007}{QQ2-1-184}{DNS Records}}{73}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1850007}{QQ2-1-185}{Subdomains}}{73}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1860007}{QQ2-1-186}{CNAME}}{73}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1870007}{QQ2-1-187}{A Record}}{73}\relax 
+\doTocEntry\tocsection{7.4}{\csname a:TocLink\endcsname{1}{x1-1880004}{QQ2-1-188}{Practical Tasks}}{74}\relax 
+\doTocEntry\tocsubsection{7.4.1}{\csname a:TocLink\endcsname{1}{x1-1890001}{QQ2-1-189}{Task 1}}{74}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1900001}{QQ2-1-190}{Source Code}}{74}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1910001}{QQ2-1-191}{Screenshot}}{74}\relax 
+\doTocEntry\tocsubsection{7.4.2}{\csname a:TocLink\endcsname{1}{x1-1920002}{QQ2-1-192}{Task 2}}{74}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1930002}{QQ2-1-193}{Source Code}}{75}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1940002}{QQ2-1-194}{Screenshot}}{75}\relax 
+\doTocEntry\tocsubsection{7.4.3}{\csname a:TocLink\endcsname{1}{x1-1950003}{QQ2-1-195}{Task 3}}{75}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1960003}{QQ2-1-196}{Source Code}}{75}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1970003}{QQ2-1-197}{Screenshot}}{75}\relax 
+\doTocEntry\tocsubsection{7.4.4}{\csname a:TocLink\endcsname{1}{x1-1980004}{QQ2-1-198}{Task 4}}{75}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1990004}{QQ2-1-199}{Github Link}}{76}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2000004}{QQ2-1-200}{Screenshot}}{76}\relax 
+\doTocEntry\tocsection{7.5}{\csname a:TocLink\endcsname{1}{x1-2010005}{QQ2-1-201}{Project}}{76}\relax 
+\doTocEntry\tocsubsection{7.5.1}{\csname a:TocLink\endcsname{1}{x1-2020001}{QQ2-1-202}{What I accomplished this week}}{76}\relax 
+\doTocEntry\tocsubsection{7.5.2}{\csname a:TocLink\endcsname{1}{x1-2030002}{QQ2-1-203}{What I would like to accomplish next week}}{76}\relax 
+\doTocEntry\tocchapter{8}{\csname a:TocLink\endcsname{1}{x1-2040008}{QQ2-1-204}{Digging Deeper into Vue}}{78}\relax 
+\doTocEntry\tocsection{8.1}{\csname a:TocLink\endcsname{1}{x1-2050001}{QQ2-1-205}{Weekly Content}}{78}\relax 
+\doTocEntry\tocsubsection{8.1.1}{\csname a:TocLink\endcsname{1}{x1-2060001}{QQ2-1-206}{Component Registration}}{78}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2070001}{QQ2-1-207}{Global Registration}}{78}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2080001}{QQ2-1-208}{Local Registration}}{78}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2090001}{QQ2-1-209}{Single-File Components}}{79}\relax 
+\doTocEntry\tocsubsection{8.1.2}{\csname a:TocLink\endcsname{1}{x1-2100002}{QQ2-1-210}{Props, Custom Events, Dynamic \& Async Components}}{79}\relax 
+\doTocEntry\tocsection{8.2}{\csname a:TocLink\endcsname{1}{x1-2110002}{QQ2-1-211}{Practical Tasks}}{79}\relax 
+\doTocEntry\tocsubsection{8.2.1}{\csname a:TocLink\endcsname{1}{x1-2120001}{QQ2-1-212}{Task 1}}{79}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2130001}{QQ2-1-213}{Source Code}}{79}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2140001}{QQ2-1-214}{Screenshot}}{80}\relax 
+\doTocEntry\tocsubsection{8.2.2}{\csname a:TocLink\endcsname{1}{x1-2150002}{QQ2-1-215}{Task 2}}{80}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2160002}{QQ2-1-216}{Screenshot}}{80}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2170002}{QQ2-1-217}{Source Code}}{80}\relax 
+\doTocEntry\tocsubsection{8.2.3}{\csname a:TocLink\endcsname{1}{x1-2180003}{QQ2-1-218}{Task 3}}{81}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2190003}{QQ2-1-219}{Github Link}}{81}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2200003}{QQ2-1-220}{Screenshot}}{81}\relax 
+\doTocEntry\tocsubsection{8.2.4}{\csname a:TocLink\endcsname{1}{x1-2210004}{QQ2-1-221}{Task 4}}{81}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2220004}{QQ2-1-222}{Github Link}}{81}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2230004}{QQ2-1-223}{Screenshot}}{81}\relax 
+\doTocEntry\tocsection{8.3}{\csname a:TocLink\endcsname{1}{x1-2240003}{QQ2-1-224}{Project}}{81}\relax 
+\doTocEntry\tocsubsection{8.3.1}{\csname a:TocLink\endcsname{1}{x1-2250001}{QQ2-1-225}{What I accomplished this week}}{82}\relax 
+\doTocEntry\tocsubsection{8.3.2}{\csname a:TocLink\endcsname{1}{x1-2260002}{QQ2-1-226}{What I would like to accomplish next week}}{82}\relax 
+\doTocEntry\tocchapter{9}{\csname a:TocLink\endcsname{1}{x1-2270009}{QQ2-1-227}{Useful Code Snippets}}{84}\relax 
+\doTocEntry\tocsection{9.1}{\csname a:TocLink\endcsname{1}{x1-2280001}{QQ2-1-228}{Introduction}}{84}\relax 
+\doTocEntry\tocsection{9.2}{\csname a:TocLink\endcsname{1}{x1-2290002}{QQ2-1-229}{CSS}}{84}\relax 
+\doTocEntry\tocsubsection{9.2.1}{\csname a:TocLink\endcsname{1}{x1-2300001}{QQ2-1-230}{Common Properties}}{84}\relax 
+\doTocEntry\tocsubsection{9.2.2}{\csname a:TocLink\endcsname{1}{x1-2310002}{QQ2-1-231}{Center an Element (From Week 1)}}{84}\relax 
+\doTocEntry\tocsubsection{9.2.3}{\csname a:TocLink\endcsname{1}{x1-2320003}{QQ2-1-232}{Centring an Element with Flex}}{85}\relax 
+\doTocEntry\tocsubsection{9.2.4}{\csname a:TocLink\endcsname{1}{x1-2330004}{QQ2-1-233}{Box Shadow}}{85}\relax 
+\doTocEntry\tocsubsection{9.2.5}{\csname a:TocLink\endcsname{1}{x1-2340005}{QQ2-1-234}{Round Specific Corners}}{85}\relax 
+\doTocEntry\tocsubsection{9.2.6}{\csname a:TocLink\endcsname{1}{x1-2350006}{QQ2-1-235}{Adding a custom font}}{86}\relax 
+\doTocEntry\tocsubsection{9.2.7}{\csname a:TocLink\endcsname{1}{x1-2360007}{QQ2-1-236}{Modifying Scrollbar}}{86}\relax 
+\doTocEntry\tocsubsection{9.2.8}{\csname a:TocLink\endcsname{1}{x1-2370008}{QQ2-1-237}{Transitions}}{86}\relax 
+\doTocEntry\tocsubsection{9.2.9}{\csname a:TocLink\endcsname{1}{x1-2380009}{QQ2-1-238}{Modifying Scrollbar}}{87}\relax 
+\doTocEntry\tocsection{9.3}{\csname a:TocLink\endcsname{1}{x1-2390003}{QQ2-1-239}{JavaScript}}{88}\relax 
+\doTocEntry\tocsubsection{9.3.1}{\csname a:TocLink\endcsname{1}{x1-2400001}{QQ2-1-240}{Window.onLoad = function() \{...\}}}{88}\relax 
+\doTocEntry\tocsubsection{9.3.2}{\csname a:TocLink\endcsname{1}{x1-2410002}{QQ2-1-241}{Round to Specific Decimal Place}}{88}\relax 
+\doTocEntry\tocsubsection{9.3.3}{\csname a:TocLink\endcsname{1}{x1-2420003}{QQ2-1-242}{Canvas Drawing}}{88}\relax 
+\doTocEntry\tocsubsection{9.3.4}{\csname a:TocLink\endcsname{1}{x1-2430004}{QQ2-1-243}{Delay()}}{88}\relax 
+\doTocEntry\tocsubsection{9.3.5}{\csname a:TocLink\endcsname{1}{x1-2440005}{QQ2-1-244}{"Debounce"}}{89}\relax 
+\doTocEntry\tocsubsection{9.3.6}{\csname a:TocLink\endcsname{1}{x1-2450006}{QQ2-1-245}{JavaScript Observers}}{89}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2460006}{QQ2-1-246}{Intersection Observer}}{90}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2470006}{QQ2-1-247}{Mutation Observer}}{90}\relax 
+\doTocEntry\toclikesubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2480006}{QQ2-1-248}{Disconnection}}{90}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-2490009.3.6}{QQ2-1-249}{}}{92}\relax 
+\doTocEntry\toclikechapter{}{\csname a:TocLink\endcsname{1}{x1-2500009.3.6}{QQ2-1-250}{Bibliography}}{92}\relax 
+\par 

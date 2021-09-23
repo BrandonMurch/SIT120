@@ -1,0 +1,583 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Justification For Grade}{5}{chapter.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}The Basics of Web Development}{6}{chapter.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Introduction}{6}{section.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Weekly Content}{6}{section.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.1}HTML}{6}{subsection.2.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Introduction to HTML}{6}{subsection.2.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Boilerplate To Get Started}{7}{subsection.2.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Other useful tags and descriptions}{8}{lstnumber.-1.11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\textbf {Tags without closing tags}}{9}{lstnumber.-1.11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Tables}{9}{lstnumber.-1.11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Forms}{10}{lstnumber.-1.11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Inputs}{10}{lstnumber.-2.11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.2}CSS}{11}{subsection.2.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Introduction to CSS}{11}{subsection.2.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Basic Syntax}{11}{subsection.2.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Location of CSS}{12}{lstnumber.-3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{CSS Box}{13}{Item.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.3}JavaScript}{13}{subsection.2.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Introduction to Javascript}{13}{subsection.2.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Declaring Variables}{13}{subsection.2.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Declaring and Calling Functions}{14}{subsection.2.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Window and Document Objects}{14}{lstnumber.-4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{More JavaScript}{14}{lstnumber.-4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.4}Vue.js}{14}{subsection.2.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Introduction to Vue}{14}{subsection.2.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Templates}{15}{subsection.2.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Components}{16}{lstnumber.-5.11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Practical Tasks}{16}{section.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.1}1 - HTML}{16}{subsection.2.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Code}{16}{subsection.2.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Screenshot}{17}{subsection.2.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.2}2 - CSS}{17}{subsection.2.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Code}{17}{subsection.2.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Screenshot}{18}{subsection.2.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Useful Code}{18}{subsection.2.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.3}3 - JavaScript}{18}{subsection.2.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Code}{18}{subsection.2.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Useful Code}{18}{subsection.2.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Screenshot}{19}{subsection.2.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3.4}4 - Vue.js}{19}{subsection.2.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Code}{19}{subsection.2.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Useful Code}{20}{subsection.2.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Screenshot}{20}{subsection.2.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.4}Project}{20}{section.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4.1}What I completed this week}{20}{subsection.2.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4.2}What I will complete next week}{20}{subsection.2.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Development Techniques}{21}{chapter.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Introduction}{21}{section.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Weekly Content}{21}{section.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.1}Responsive Design}{21}{subsection.3.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Meta Viewport}{21}{subsection.3.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Avoid Horizontal Scrolling}{22}{subsection.3.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Use Percentages for Size}{22}{subsection.3.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Flexbox}{22}{subsection.3.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Grid}{23}{subsection.3.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Media Queries}{23}{subsection.3.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.2}User Stories}{24}{subsection.3.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.3}HTML Media}{25}{subsection.3.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.4}HTML API}{25}{subsection.3.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Drag and Drop}{25}{subsection.3.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Geolocation}{25}{subsection.3.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}Practical Tasks}{26}{section.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.1}Task 1}{26}{subsection.3.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Reflection}{26}{subsection.3.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Introduction}{26}{subsection.3.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Pinterest}{26}{subsection.3.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{garden.org}{28}{subsection.3.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.2}Task 2}{30}{subsection.3.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Reflection}{30}{subsection.3.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Screenshot}{30}{subsection.3.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Source Code}{31}{subsection.3.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Useful Code}{31}{subsection.3.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.3}Task 3}{32}{subsection.3.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Reflection}{32}{subsection.3.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{User Stories}{33}{subsection.3.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{UI}{38}{Item.60}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.4}Task 4}{39}{subsection.3.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Reflection}{39}{subsection.3.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Explanation of Task Work}{40}{subsection.3.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Source Code}{40}{subsection.3.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Useful Code}{40}{subsection.3.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.4}Project}{41}{section.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.1}This Week}{41}{subsection.3.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.2}Next Week}{41}{subsection.3.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}JavaScript In Depth}{42}{chapter.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}Introduction}{42}{section.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}Weekly Content}{42}{section.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Control Statements}{42}{section.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.1}Arrays}{44}{subsection.4.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.2}JSON}{44}{subsection.4.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.3}Operators}{45}{subsection.4.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.4}jQuery}{46}{subsection.4.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.3}Practical Tasks}{46}{section.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.1}Task 1}{46}{subsection.4.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Screenshot}{47}{subsection.4.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Source Code}{47}{subsection.4.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.2}Task 2}{48}{subsection.4.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Number methods}{48}{subsection.4.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Array methods}{49}{subsection.4.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Screenshot}{49}{subsection.4.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Source Code}{49}{subsection.4.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.3}Task 3}{50}{subsection.4.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Screenshot}{50}{subsection.4.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Source Code}{50}{subsection.4.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.4}Task 4}{50}{subsection.4.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Reflection}{50}{subsection.4.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Computed Property}{50}{subsection.4.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Watcher}{51}{subsection.4.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Class and Style Bindings}{51}{subsection.4.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Conditional Rendering}{51}{subsection.4.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{List Rendering}{51}{subsection.4.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Event Handling}{52}{subsection.4.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Form Input Bindings}{52}{subsection.4.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Component Basics}{52}{subsection.4.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.4}Project}{52}{section.4.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.4.1}What I achieved this week}{52}{subsection.4.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.4.2}What I need to achieve next week}{52}{subsection.4.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}TCP/IP}{53}{chapter.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}Weekly Content}{53}{section.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.1}Introduction}{53}{subsection.5.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.2}TCP/IP Protocol}{53}{subsection.5.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.3}Data packets}{53}{subsection.5.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.4}Application Layer}{53}{subsection.5.1.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{TCP}{54}{subsection.5.1.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{IP}{54}{subsection.5.1.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Data-link}{54}{subsection.5.1.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.5}Routing}{55}{subsection.5.1.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{DNS}{55}{subsection.5.1.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Pathway}{55}{subsection.5.1.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.2}Practical Tasks}{56}{section.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.1}Introduction}{56}{subsection.5.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.2}Task 1}{56}{subsection.5.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2.3}Task 2}{57}{subsection.5.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Source Code}{57}{subsection.5.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.3}Project}{58}{section.5.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3.1}What I accomplished this week}{58}{subsection.5.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Custom Events}{58}{subsection.5.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Vue Component Lifecycle}{59}{lstnumber.-11.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Slots}{60}{lstnumber.-11.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Refs}{60}{lstnumber.-13.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Unrelated to Vue}{61}{lstnumber.-13.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.3.2}What I would like to accomplish next week}{61}{subsection.5.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Model View Design Patterns}{62}{chapter.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.1}Weekly Content}{62}{section.6.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.1.1}Introduction}{62}{subsection.6.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.1.2}MVC}{62}{subsection.6.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Controller}{62}{subsection.6.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Model}{63}{subsection.6.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{View}{63}{subsection.6.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.1.3}MVVM}{63}{subsection.6.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{View}{63}{subsection.6.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{View-Model}{63}{subsection.6.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Model}{64}{subsection.6.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.2}Practical Tasks}{64}{section.6.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2.1}Introduction}{64}{subsection.6.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2.2}Task 1}{64}{subsection.6.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Source Code}{65}{lstnumber.-14.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2.3}Task 2}{65}{subsection.6.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2.4}Task 3}{65}{subsection.6.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Source Code}{65}{subsection.6.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2.5}Task 4}{66}{subsection.6.2.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Component Registration}{66}{subsection.6.2.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Props}{66}{lstnumber.-15.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Custom Events and Slots}{66}{lstnumber.-16.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Dynamic and Async Components}{66}{lstnumber.-16.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Handling Edge Cases}{68}{lstnumber.-20.13}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.3}Project}{69}{section.6.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.3.1}What I accomplished this week}{69}{subsection.6.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.3.2}What I would like to accomplish next week}{69}{subsection.6.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {7}Data Binding}{70}{chapter.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.1}Weekly Content}{70}{section.7.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.2}Introduction}{70}{section.7.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.2.1}Two-Way Binding}{71}{subsection.7.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.3}Individually Researched Topics}{71}{section.7.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.3.1}Introduction}{71}{subsection.7.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.3.2}Vue Router}{71}{subsection.7.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.3.3}Vuex}{73}{subsection.7.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Source Code}{75}{lstnumber.-24.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.3.4}Composition API}{75}{subsection.7.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.3.5}Vue Transitions}{76}{subsection.7.3.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.3.6}Deployment}{78}{subsection.7.3.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.3.7}DNS Records}{79}{subsection.7.3.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Subdomains}{79}{subsection.7.3.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{CNAME}{80}{subsection.7.3.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{A Record}{80}{subsection.7.3.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.4}Practical Tasks}{80}{section.7.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.4.1}Task 1}{80}{subsection.7.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Source Code}{80}{subsection.7.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Screenshot}{80}{subsection.7.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.4.2}Task 2}{81}{subsection.7.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Source Code}{81}{subsection.7.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Screenshot}{82}{subsection.7.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.4.3}Task 3}{82}{subsection.7.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Source Code}{82}{subsection.7.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Screenshot}{82}{subsection.7.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.4.4}Task 4}{83}{subsection.7.4.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Github Link}{83}{subsection.7.4.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Screenshot}{83}{subsection.7.4.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7.5}Project}{84}{section.7.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.5.1}What I accomplished this week}{84}{subsection.7.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {7.5.2}What I would like to accomplish next week}{84}{subsection.7.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {8}Digging Deeper into Vue}{85}{chapter.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.1}Weekly Content}{85}{section.8.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.1.1}Component Registration}{85}{subsection.8.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Global Registration}{85}{subsection.8.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Local Registration}{85}{subsection.8.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Single-File Components}{86}{lstnumber.-32.13}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.1.2}Props, Custom Events, Dynamic \& Async Components}{87}{subsection.8.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.2}Practical Tasks}{87}{section.8.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.2.1}Task 1}{87}{subsection.8.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Github Link}{88}{subsection.8.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Screenshot}{88}{subsection.8.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.2.2}Task 2}{88}{subsection.8.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Github Link}{88}{subsection.8.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Screenshot}{88}{subsection.8.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.2.3}Task 3}{89}{subsection.8.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Github Link}{89}{subsection.8.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Screenshot}{89}{subsection.8.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.2.4}Task 4}{89}{subsection.8.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Github Link}{90}{subsection.8.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Screenshot}{90}{subsection.8.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.3}Project}{90}{section.8.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.3.1}What I accomplished this week}{90}{subsection.8.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {8.3.2}What I would like to accomplish next week}{90}{subsection.8.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {9}Useful Code Snippets}{91}{chapter.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9.1}Introduction}{91}{section.9.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9.2}CSS}{92}{section.9.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.2.1}Common Properties}{92}{subsection.9.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.2.2}Center an Element (From Week 1)}{93}{subsection.9.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.2.3}Centring an Element with Flex}{93}{subsection.9.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.2.4}Box Shadow}{93}{subsection.9.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.2.5}Round Specific Corners}{94}{subsection.9.2.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.2.6}Adding a custom font}{94}{subsection.9.2.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.2.7}Modifying Scrollbar}{94}{subsection.9.2.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.2.8}Transitions}{95}{subsection.9.2.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.2.9}Modifying Scrollbar}{95}{subsection.9.2.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9.3}JavaScript}{96}{section.9.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.3.1}Window.onLoad}{96}{subsection.9.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.3.2}Round to Specific Decimal Place (From Week 1)}{96}{subsection.9.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.3.3}Canvas Drawing}{96}{subsection.9.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.3.4}Delay()}{97}{subsection.9.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.3.5}"Debounce"}{98}{subsection.9.3.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.3.6}JavaScript Observers}{98}{subsection.9.3.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Intersection Observer}{98}{subsection.9.3.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Mutation Observer}{99}{lstnumber.-42.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Disconnection}{99}{lstnumber.-43.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {10}The Basics of Web Development}{100}{chapter.10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.1}Introduction}{100}{section.10.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.2}Weekly Content}{100}{section.10.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.2.1}HTML}{100}{subsection.10.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Introduction to HTML}{100}{subsection.10.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Boilerplate To Get Started}{101}{subsection.10.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Other useful tags and descriptions}{102}{lstnumber.-44.11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\textbf {Tags without closing tags}}{103}{lstnumber.-44.11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Tables}{103}{lstnumber.-44.11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Forms}{104}{lstnumber.-44.11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Inputs}{104}{lstnumber.-45.11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.2.2}CSS}{105}{subsection.10.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Introduction to CSS}{105}{subsection.10.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Basic Syntax}{105}{subsection.10.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Location of CSS}{106}{lstnumber.-46.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{CSS Box}{107}{Item.63}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.2.3}JavaScript}{107}{subsection.10.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Introduction to Javascript}{107}{subsection.10.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Declaring Variables}{107}{subsection.10.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Declaring and Calling Functions}{108}{subsection.10.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Window and Document Objects}{108}{lstnumber.-47.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{More JavaScript}{108}{lstnumber.-47.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.2.4}Vue.js}{108}{subsection.10.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Introduction to Vue}{108}{subsection.10.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Templates}{109}{subsection.10.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Components}{110}{lstnumber.-48.11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.3}Practical Tasks}{110}{section.10.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.3.1}1 - HTML}{110}{subsection.10.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Code}{110}{subsection.10.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Screenshot}{111}{subsection.10.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.3.2}2 - CSS}{111}{subsection.10.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Code}{111}{subsection.10.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Screenshot}{112}{subsection.10.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Useful Code}{112}{subsection.10.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.3.3}3 - JavaScript}{112}{subsection.10.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Code}{112}{subsection.10.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Useful Code}{112}{subsection.10.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Screenshot}{113}{subsection.10.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.3.4}4 - Vue.js}{113}{subsection.10.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Code}{113}{subsection.10.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Useful Code}{114}{subsection.10.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Screenshot}{114}{subsection.10.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10.4}Project}{114}{section.10.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.4.1}What I completed this week}{114}{subsection.10.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.4.2}What I will complete next week}{114}{subsection.10.4.2}%

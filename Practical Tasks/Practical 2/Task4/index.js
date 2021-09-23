@@ -57,7 +57,6 @@ function getRandomHexString(min, max) {
 // Cancel all timers in an array.
 function clearAllTimeouts(timers) {
     for (let i = timers.length; i > 0; i--) {
-        console.log("clear: " + i)
         window.clearTimeout(timers[i]);
     }
 }

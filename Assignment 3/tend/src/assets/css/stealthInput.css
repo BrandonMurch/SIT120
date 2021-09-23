@@ -1,0 +1,16 @@
+.stealth-input {
+	border: none;
+	background-color: transparent;
+	font-family: fell, serif;
+	line-height: 4rem;
+	font-size: inherit;
+	color: inherit;
+	cursor: pointer;
+	text-transform: lowercase;
+	text-align: inherit;
+}
+
+.stealth-input:focus {
+	border-bottom: 4px solid #3d6b56;
+	outline: none;
+}

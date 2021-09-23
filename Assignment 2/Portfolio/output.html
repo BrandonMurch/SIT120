@@ -1,0 +1,1973 @@
+<h1 id="justification-for-grade">Justification For Grade</h1>
+<p>I will be aiming for a <strong>High Distinction</strong> grade within this assignment, and also more generally throughout the course. I have done a few MOOC courses relating to web development, and have used similar frameworks to VUE, such as React and Angular. Since I am familiar with these topics, I will use this course to fill in the gaps of knowledge, and focus on the more advanced topics within the course, as well as the more formal proposal process.<br />
+I believe that this report reflects my targeted mark. Throughout the 8 weeks so far, my reflections have provided information in different formats (text, rich text and images). I have constantly been looking to outside sources to expand my knowledge of what is taught in class, and offering my findings in detail. In addition, I have included a section at the end this document reserved for useful code snippets. This way when I have come across a problem which I have already solved, there is an easy place I can refresh myself on the correct way to approach the problem. Finally I hope that my report is easily readable for other people, as that has been my goal while writing it.<br />
+</p>
+<h1 id="week-1-the-basics-of-web-development">Week 1<br />
+The Basics of Web Development</h1>
+<h2 id="introduction">Introduction</h2>
+<p>Web development requires the use of three languages: HTML, CSS and Javascript. These three languages work together to tell the browser how a website should <u><strong>look</strong></u> and <u><strong>act</strong></u>. By understanding them thoroughly, we are able to create high quality, responsive websites, that users will find visually pleasing and easy to use.<br />
+</p>
+<h2 id="weekly-content">Weekly Content</h2>
+<h3 id="html">HTML</h3>
+<h4 id="introduction-to-html">Introduction to HTML</h4>
+<p>Hyper Text Markup Language is a structured way to store the information which will be displayed on a webpage. More simply, HTML tells the browser <strong>WHAT</strong> to display.<br />
+<br />
+HTML uses tags to hold the data. An example of a tag is: <span class="math inline">$\color{blue}&lt;body&gt;\color{red}&lt;/body&gt;$</span>. The opening tag in blue, has a matching closing tag in red. Relevant information is placed between the two tags. For our body example earlier, the browser will know that the information for the body will be between the opening body tag and the closing body tag.<br />
+Attributes for tags can be set within the opening tag. An example of using attributes to assign a class to a p element would look like: <span class="math inline">&lt;</span>p <strong>class="text"</strong><span class="math inline">&gt;</span>. A class groups a number of elements together, while another attribute <strong>id</strong> refers to only one element. There are many other HTML attributes to help us configure our elements. For a large list of possible attributes. visit .<br />
+</p>
+<h4 id="html-boiler">Boilerplate To Get Started</h4>
+<p>To get started writing an HTML document, there is some boilerplate code that must <em>almost</em> always be present:<br />
+</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Title&lt;/title&gt;
+		&lt;script src=&quot;INSERT LINK TO JAVASCRIPT FILE HERE&quot;&gt;&lt;/script&gt;
+		&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;INSERT LINK TO CSS FILE HERE&quot;&gt;
+	&lt;/head&gt;
+		&lt;body&gt;
+			INSERT HTML TO DISPLAY HERE.
+		&lt;/body&gt;
+&lt;/html&gt;
+					</code></pre>
+<p><strong>Notice the indentation!</strong> To make this code easier to read, any tag that is inside another tag will be indented further. For example, it is easy to see that the head tag is inside the html tag. See the below table for descriptions of each tag.<br />
+</p>
+<div class="tabular">
+<p><span>P<span>4cm</span>p<span>11cm</span></span> <strong>Tag</strong> &amp; <strong>Description</strong><br />
+<span class="math inline">&lt;</span>!DOCTYPE<span class="math inline">&gt;</span> &amp; This is to let the browser know that this is a current HTML5 document. Previous versions of html will have different codes to insert here. <span class="citation" data-cites="doctype"></span><br />
+<span class="math inline">&lt;</span>html<span class="math inline">&gt;</span>...<span class="math inline">&lt;</span>/html<span class="math inline">&gt;</span> &amp; This is the html document, all information will be inside this tag<br />
+<span class="math inline">&lt;</span>head<span class="math inline">&gt;</span>...<span class="math inline">&lt;</span>/head<span class="math inline">&gt;</span> &amp; This contains information that will not be displayed within the webpage itself.<br />
+<span class="math inline">&lt;</span>title<span class="math inline">&gt;</span>...<span class="math inline">&lt;</span>/title<span class="math inline">&gt;</span> &amp; The title to the webpage. This will be displayed either in the browser’s title bar area at the top of the window, or the tab area.<br />
+<span class="math inline">&lt;</span>script<span class="math inline">&gt;</span>...<span class="math inline">&lt;</span>/script<span class="math inline">&gt;</span> &amp; This can either contain JavaScript code directly, or have a src attribute that links to an external file (either locally, or from a http link)<br />
+<span class="math inline">&lt;</span>link<span class="math inline">&gt;</span>&amp; This links to some exterior document. The most common use of the link tag is to link to an external css file, but other documents that might be linked are icons, and licenses. <span class="citation" data-cites="w3-link"></span><br />
+<span class="math inline">&lt;</span>body<span class="math inline">&gt;</span>&amp; Body contains all the information that will be displayed on the website itself.<br />
+</p>
+</div>
+<h4 id="other-useful-tags-and-descriptions">Other useful tags and descriptions</h4>
+<ul>
+<li><p><span class="math inline">&lt;</span><strong>p</strong><span class="math inline">&gt;</span>...<span class="math inline">&lt;</span><strong>/p</strong><span class="math inline">&gt;</span> contains a paragraph of text.</p></li>
+<li><p><span class="math inline">&lt;</span><strong>h#</strong><span class="math inline">&gt;</span>...<span class="math inline">&lt;</span><strong>/h#</strong><span class="math inline">&gt;</span> contains a header. # is replaced by the size of header, 1 is the largest and 6 is the smallest.</p></li>
+<li><p><span class="math inline">&lt;</span><strong>div</strong><span class="math inline">&gt;</span>...<span class="math inline">&lt;</span><strong>/div</strong><span class="math inline">&gt;</span> is a generic tag that creates a container for other elements.</p></li>
+<li><p><span class="math inline">&lt;</span><strong>a href="..."</strong><span class="math inline">&gt;</span>...<span class="math inline">&lt;</span><strong>/a</strong><span class="math inline">&gt;</span> creates a hyperlink to another page. href is the link, and the text between the tags is displayed to the user.</p></li>
+</ul>
+<h4 id="tags-without-closing-tags"><strong>Tags without closing tags</strong></h4>
+<p>There are a few tags which don’t require a closing tag. These tags get information through other means, like the <span class="math inline">&lt;</span>img /<span class="math inline">&gt;</span> tag, which knows what image to render using the <strong>src</strong> attribute.</p>
+<ul>
+<li><p><span class="math inline">&lt;</span><strong>img src="image location"</strong><span class="math inline">&gt;</span> loads an image from either a website, or local storage.</p></li>
+</ul>
+<h4 id="tables">Tables</h4>
+<p>Tables are a great way to organise information on a website. They act the same way as tables within commonly used word processors such as Microsoft Word with columns and rows.<br />
+The table is broken into two parts: <span class="math inline">&lt;</span>thead<span class="math inline">&gt;</span> which uses <span class="math inline">&lt;</span>th<span class="math inline">&gt;</span> to create header cells, and <span class="math inline">&lt;</span>tbody<span class="math inline">&gt;</span> which uses <span class="math inline">&lt;</span>td<span class="math inline">&gt;</span> to create regular cells. The graphic below provides a clear understanding of the structure of a table. Remember, the values for each cell are placed in the inner most tags (th and td).<br />
+</p>
+<div class="center">
+<p><img src="html-table.png" alt="image" /><br />
+<span class="citation" data-cites="html-table"></span><br />
+</p>
+</div>
+<h4 id="forms">Forms</h4>
+<p>Forms are a collection of input fields within HTML. The user can enter different types of information depending on the type of input field. When the form is submitted, the browser will collect all the inputs and either send them to a url (if the attribute <strong>action</strong> is present on the form), or will send them to a JavaScript function (if the attribute <strong>onsubmit</strong> is present). An example of a form with the inputs name, age and location might be: <span id="form-html" label="form-html">[form-html]</span><br />
+</p>
+<pre><code>&lt;form onsubmit=&quot;submitForm(event)&quot;&gt;
+	&lt;label for=&quot;name&quot;&gt;Name&lt;/label&gt;
+	&lt;input type=&quot;text&quot; id=&quot;name&quot; size=20 maxlength=20&gt;
+	&lt;label for=&quot;age&quot;&gt;Age&lt;/label&gt;
+	&lt;input type=&quot;number&quot; id=&quot;age&quot; max=120&gt;
+	&lt;label for=&quot;location&quot;&gt;Location&lt;/label&gt;
+	&lt;input type=&quot;text&quot; id=&quot;location&quot;&gt;
+	&lt;input class=&quot;button&quot; type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
+	&lt;input class=&quot;button&quot; type=&quot;reset&quot; value=&quot;Cancel&quot;&gt;
+&lt;/form&gt;
+
+					</code></pre>
+<p>Which would output:<br />
+</p>
+<div class="center">
+<p><img src="html-form.png" style="width:14cm" alt="image" /></p>
+</div>
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span id="fig:email-error" label="fig:email-error">[fig:email-error]</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Input fields can also be displayed as buttons, for example if the input type is submit or reset as seen in the example form above.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">For accessibility reasons, each input must be accompanied by a label tag, which uses the <strong>for</strong> attribute to connect to an input’s id.</td>
+<td style="text-align: left;"><img src="number-keyboard-example.png" alt="image" /> <span id="fig:number-keyboard" label="fig:number-keyboard">[fig:number-keyboard]</span></td>
+</tr>
+</tbody>
+</table>
+<h3 id="css">CSS</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><h4 id="basic-syntax">Basic Syntax</h4>
+<p>CSS uses property name and value pairs separated by a colon. Different pairs are separated by a semi-colon. An example of making the text of an element blue would be: "<strong><span>color</span>: <span>blue</span>;</strong>" where color is the <u>property name</u>(red) and blue is the <u>property value</u>(blue).</p></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p>Specifying the elements for these styles to be applied is done using some of the following options:<br />
+</p>
+<div class="tabular">
+<p><span>P<span>4cm</span>p<span>11cm</span></span> <strong>tag</strong> &amp; This will apply a style to every element of a particular tag. For example, if p is used, every paragraph tag will have the specified styles applied. Note the lack of punctuation before the tag.<br />
+<strong>.class</strong> &amp; This will apply styles to every element with a particular class. A class is specified with a period before the class name.<br />
+<strong>#id</strong> &amp; This will apply styles to the element with a particular id. An id is specified with a hashtag before the id name.<br />
+</p>
+</div>
+<p>In the following example, every element with the class "specific-class" would have a margin of 10 pixels and a border that is 1 pixel thick, solid and black.<br />
+</p>
+<pre><code>.specific-class {
+	margin: 10px;
+	border: 1px solid black;
+}
+					</code></pre>
+<h4 id="location-of-css">Location of CSS</h4>
+<p>There are three options for where to place CSS code:<br />
+</p>
+<ol>
+<li><p><strong>Inline</strong> Placed within the html code within the element. Example: <span class="math inline">&lt;</span>p style="color: red;"<span class="math inline">&gt;</span></p></li>
+<li><p><strong>Internal</strong> Placed within the style tag, usually within the head tag. Example: <span class="math inline">&lt;</span>style<span class="math inline">&gt;</span>p { color: red;}<span class="math inline">&lt;</span>style<span class="math inline">&gt;</span></p></li>
+<li><p><strong>External</strong> Placed within an external .css file. This is then linked via the link tag as seen in <a href="#html-boiler" data-reference-type="ref" data-reference="html-boiler">10.2.1.2</a>.</p></li>
+</ol>
+<p>This also effects how certain elements will override others. For example, any inline style will override any internal or external style, and any internal style will override any external style. The code is also read top to bottom, so styles at the bottom will override styles at the top.</p>
+<h4 id="css-box">CSS Box</h4>
+<div class="center">
+<p><img src="CSS box.png" alt="image" /><br />
+<span class="citation" data-cites="w3-box"></span><br />
+</p>
+</div>
+<p>Every element on a webpage is contained in the box above. The outer most layer, margin, is the space outside the border. This will change the perception of how far away the box is from other boxes. After the margins and border, is the padding, this is the space between the border and the content. Good use of the CSS box is critical to creating good spacing within a webpage.</p>
+<h3 id="week-1-js">JavaScript</h3>
+<h4 id="introduction-to-javascript">Introduction to Javascript</h4>
+<p>JavaScript is a scripting language that is commonly used in web browsers. It has expanded outside of its original purpose to be able to do much more with the help of other programs such as NodeJS.<br />
+</p>
+<h4 id="declaring-variables">Declaring Variables</h4>
+<p>There are two options when declaring variables depending on if it is mutable or not. If the variable cannot be modified after initialization, use the keyword <strong>const</strong> followed by the variable name. For example <strong>const number = 2</strong>. If the variable is mutable, then use the keyword <strong>let</strong>. An example for this would be <strong>let letter = ’L’</strong>, where letter can be modified at a later time.</p>
+<h4 id="declaring-and-calling-functions">Declaring and Calling Functions</h4>
+<p>To declare a function, first use the function keyword, followed by the name, and a list of parameters within parenthesis. The internal code of the function is then placed within curly braces. To return a value to the calling function, simply use the keyword <strong>return</strong>. Example:<br />
+</p>
+<pre><code>function addTwoNumbers(num1, num2) {
+	return num1 + num2;
+}
+					</code></pre>
+<p>Then to call this function, use <strong>addTwoNumbers(230, 384)</strong>. Functions allow us to reuse code, instead of rewriting it every time.</p>
+<h4 id="window-and-document-objects">Window and Document Objects</h4>
+<p>Two useful objects within JavaScript is the window and document objects.<br />
+The window object references the entire browser window. This allows access to properties such as the location, history, height, width, etc.<br />
+The document object is a child of the window object. This contains everything that is displayed on the website. This includes the HTML and CSS. There are document methods that allow you to get an element by its id ( <strong>getElementById()</strong> ), as well as by its class ( <strong>getElementsByClass()</strong> ), and many more. For a full list of methods available within Document, see<br />
+<br />
+</p>
+<h4 id="more-javascript">More JavaScript</h4>
+<p>JavaScript is covered in much greater detail in Week 3. See <a href="#week-3-js" data-reference-type="ref" data-reference="week-3-js">4.1</a>.<br />
+</p>
+<h3 id="vue.js">Vue.js</h3>
+<h4 id="introduction-to-vue">Introduction to Vue</h4>
+<p>Vue.js is a framework that allows the creation of responsive user interfaces while reducing the amount of code actually written. It works with HTML/CSS/JavaScript to provide re-usable components, templates, state handling, and much more. <span class="citation" data-cites="vue"></span><br />
+</p>
+<h4 id="templates">Templates</h4>
+<p>Within Vue, templates can be created. These templates contain the information displayed on the website, similar to HTML. In fact all HTML will work within these templates, but the templates include extra features to make responsive design much easier.<br />
+Templates allow for a reduction in code compared to traditional HTML. By finding common <em>structures</em> within the HTML, templates can be created so that different data can be inserted into these reusable structures. This means that we don’t have to spend time re-writing the same structures over and over. Syntactically, Vue uses double curly braces to represent areas where data will be inserted later. <strong>{{ name }}</strong> will be replaced with the value of the name variable.<br />
+<span class="citation" data-cites="vue-template"></span><br />
+For a simple example of where templating can reduce the amount of code written, refer back to <a href="#html-boiler" data-reference-type="ref" data-reference="html-boiler">10.2.1.2</a>. Each html document you create has to have these pieces of code. Instead of rewriting this every time, a template could be created as follows:<br />
+</p>
+<pre><code>&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Title&lt;/title&gt;
+		&lt;script src=&quot;{{ jsFile}}&quot;&gt;&lt;/script&gt;
+		&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;cssFile&quot;&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;h1&gt;{{ title }}&lt;/h1&gt;
+		&lt;p&gt; {{ paragraph }}
+	&lt;/body&gt;
+&lt;/html&gt;
+					</code></pre>
+<p>This could then be reused for many different websites with different information by supplying different values for the variables title, paragraph, jsFile, etc.. This of course can be expanded to much more complicated websites where there are many of the same pages. Consider Facebook, where everyone has their own profile page. These pages are standardised across the website to look the same, but the information is different on each one. A template is made once, then whenever the page is rendered it is filled with the appropriate data.<br />
+This then becomes even more powerful when responsive web apps are considered. If required, different templates could be created for each style of device (small mobile, tablet, desktop) to create a very different experience. When the user visits the web app, the appropriate template will be selected and used, all while the data remains the same.<br />
+</p>
+<h4 id="components">Components</h4>
+<p>Components are re-usable snippets of code that abstract away some code. Pre-defined options(or "props") can also be passed to the components to affect what is rendered making them much more flexible. Many components can then be built together to form much larger components, and then those components combined to create a whole application. All while using minimal code compared to pure HTML/CSS/JS.<br />
+</p>
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">In this small example, the link component and the button component are reused within two separate, larger components. This is incredibly small compared to many web apps, which would reuse the components many, many times. This reduces repetition of code. <span class="citation" data-cites="vue-component"></span></td>
+<td style="text-align: left;"><img src="component-app.png" alt="image" /></td>
+</tr>
+</tbody>
+</table>
+<h2 id="practical-tasks">Practical Tasks</h2>
+<h3 id="html-1">1 - HTML</h3>
+<p>This task provided a very basic example to help learn the bare bones of HTML, and its commonly used tags. It also allowed practice in creating both a table and input form.</p>
+<h4 id="code">Code</h4>
+<p>The code can be viewed at</p>
+<h4 id="task-1.1">Screenshot</h4>
+<p><img src="Task 1 Evidence.png" alt="image" /></p>
+<h3 id="css-1">2 - CSS</h3>
+<p>This task focussed on introducing CSS, which makes the website look attractive. It allows practice with the structure of CSS, as well as with properties that are commonly used.<br />
+Building upon the last task, I formatted the website using CSS. This allowed me to create a website that has two columns. One which contains the table of entries, the other that contains the form to input new entries. The image at the top of the page is then modified to look slimmer and stretch the width of the window, while the title is centred below.<br />
+Using a two-column design used the space much more intelligently than the default styling, which would have spread both the table, and form across the entire screen, using double the vertical space.<br />
+</p>
+<h4 id="code-1">Code</h4>
+<p>See code on</p>
+<h4 id="screenshot">Screenshot</h4>
+<p>See <a href="#task-1.1" data-reference-type="ref" data-reference="task-1.1">10.3.1.2</a> since these tasks are combined into one website.<br />
+</p>
+<h4 id="useful-code">Useful Code</h4>
+<p>There are many ways to centre an element in CSS, this (<a href="#css-center-element" data-reference-type="ref" data-reference="css-center-element">9.2.2</a>) is a pretty simple and useful one which can either centre an element horizontally, vertically or both. This doesn’t rely on any of the more advanced CSS features such as flexbox or grid.<br />
+</p>
+<h3 id="javascript">3 - JavaScript</h3>
+<p>I made a small JavaScript function that takes the inputs within the form, and dynamically updates the table. I also created a separate website to calculate the inputted student scores. This helped practice modifying the DOM dynamically with JavaScript, which allows for a seamless experience as the user, since information or elements can be modified without refreshing the page.<br />
+</p>
+<h4 id="code-2">Code</h4>
+<p>See code for the input form:<br />
+<br />
+and for the student grades:<br />
+</p>
+<h4 id="useful-code-1">Useful Code</h4>
+<p>Being able to round numbers in JavaScript was useful in this project, since otherwise there could be tens of decimal places. To accomplish this I used variable.toFixed() [<a href="#js-window-onload" data-reference-type="ref" data-reference="js-window-onload">9.3.1</a>]</p>
+<h4 id="screenshot-1">Screenshot</h4>
+<p><strong>Before form submission:</strong><br />
+<img src="Task 3 Before.png" alt="image" /> <strong>After form submission:</strong><br />
+<img src="Task 3 After.png" alt="image" /><br />
+<strong>Before score calculation:</strong><br />
+<img src="scores empty.png" style="width:8cm" alt="image" /><br />
+<strong>After score calculation:</strong><br />
+<img src="scores calculated.png" style="width:8cm" alt="image" /></p>
+<h3 id="vue.js-1">4 - Vue.js</h3>
+<p>A small Todo app with three default items of a classic grocery list. New tasks can be added through the input text box. Tasks can be clicked to complete them.<br />
+This task introduced the concept of components. The component <span class="math inline">&lt;</span>todo-item<span class="math inline">&gt;</span> was reused multiple times, showing the utility of components. From this it shows if they are this beneficial in smaller applications, they must be exponentially so in large applications, making them incredibly important.</p>
+<h4 id="code-3">Code</h4>
+<p>See the code on <span><a href="https://github.com/BrandonMurch/SIT120/tree/main/Practical%201/task4">Github</a></span>.</p>
+<h4 id="useful-code-2">Useful Code</h4>
+<p>I found Window.onLoad() [<a href="#js-window-onload" data-reference-type="ref" data-reference="js-window-onload">9.3.1</a>] to be useful in ensuring the entire page is loaded before Vue tries to reference an element.</p>
+<h4 id="screenshot-2">Screenshot</h4>
+<p><img src="Vue Todo.png" style="width:8cm" alt="image" /></p>
+<h2 id="project">Project</h2>
+<h3 id="what-i-completed-this-week">What I completed this week</h3>
+<p>This week I have read through the <strong>Assignment 1: Guidelines and Rubrics</strong>. I have understood what is required of the assignment, and started to make notes of ideas/requirements that will help me to complete this assignment.</p>
+<h3 id="what-i-will-complete-next-week">What I will complete next week</h3>
+<p>Next week I will do research and think of an idea for my project. I expect this to take a fair bit of time to find a good idea that can be original, as well as managed within the time limitations of the course. This should take me approx. 4 hours.</p>
+<h1 id="week-2">Week 2</h1>
+<h2 id="weekly-content-1">Weekly Content</h2>
+<h3 id="responsive-design">Responsive Design</h3>
+<p>Responsive design is all about modifying how your website looks based on the device. 5This is mandatory now with the sheer number of users which primarily browse websites on their mobile device.<br />
+</p>
+<h4 id="meta-viewport">Meta Viewport</h4>
+<p>The most important part of responsive design is also the easiest. Using the <span class="math inline">&lt;</span>meta name="viewport"<span class="math inline">&gt;</span> tag in the head tag of the HTML file tells the browser to make the width of the page dependent on the width of the device, rather than the number of pixels on the screen. This is due to the high density of pixels on today’s smartphones. <span class="citation" data-cites="google-responsive"></span><br />
+Adding the initial-scale=1 attribute to the meta tag will help with smartphones in landscape view.<span class="citation" data-cites="google-responsive"></span><br />
+</p>
+<h4 id="avoid-horizontal-scrolling">Avoid Horizontal Scrolling</h4>
+<p>For a better user experience, only scroll vertically. This is what modern users are accustomed to, and scrolling horizontally or zooming to see a page properly will cause frustrations. <span class="citation" data-cites="google-responsive"></span><br />
+</p>
+<h4 id="use-percentages-for-size">Use Percentages for Size</h4>
+<p>For elements, it is preferred to assign size by percentage of parent element. This means that as the screen grows, so too does the element in proportion. Details such as margins, padding and font, should continue to use constant values.<br />
+</p>
+<h4 id="flexbox">Flexbox</h4>
+<p>Flexbox allows multiple elements within a row to be spread out various ways. Flexbox can evenly spread out these elements, or change the size of the elements proportionally to the row. When adding more elements, flexboxes will wrap around automatically. This creates a responsive design, while being very easy to develop by the developer.<br />
+</p>
+<h4 id="grid">Grid</h4>
+<p>CSS grid splits a container into grids. This allows for a container to be divided into the specified ratios. One part of this container is known as 1fr. For example, if there was a container that had two children, one was 1fr, and the other was 3fr, the one child would take up 25% of the space, and the other would take up 75% of the space. See the example below:<br />
+<img src="css-grid.png" style="width:10cm" alt="image" /></p>
+<h4 id="media-queries">Media Queries</h4>
+<p>Media queries allow CSS to be specified depending on the screen size. This means that the same HTML and JavaScript can be used, while there are two completely different styles. Alternatively the two versions could share many styles, and only differ with a few dimensions.<br />
+This allows the creation of "<strong>breakpoints</strong>" or points where the change in screen size, changes the layout of the page. Major breakpoints occur when there are significant layout changes, such as shifting from horizontal placement, to vertical. Minor breakpoints are where there is a shift in a smaller detail of the screen such as padding, or font-size. The syntax is as follows:<br />
+</p>
+<pre><code>@media (max-width: 600px) {
+	/* This CSS will be active for screens less than 600px wide*/
+}
+
+@media (min-width: 600px) {
+	/* This CSS will be active for screens greater than 600px wide*/
+}
+					</code></pre>
+<p><span class="citation" data-cites="google-responsive"></span></p>
+<h3 id="user-stories">User Stories</h3>
+<p>User Stories are a way of describing software requirements. It takes it a step further by placing the developer in the shoes of the user. This allows the developer to see understand what is important to the user, how it will effect them and the urgency of the potential change.<br />
+User stories can be written in the following formula: As a <strong>user</strong>, I want <strong>a feature</strong> so <strong>motivation</strong>. Although this isn’t a strict rule, and is more of a guideline for introducing the topic. The important part is that the sentence covers the <em>who</em>, <em>what</em>, and <em>why</em>. This skips over how to implement details. These can get very specific by creating possible personas for the users<br />
+User stories can also be broken up into three categories:</p>
+<ol>
+<li><p>Epic Stories Large stories. General goals for the software. Usually the starting point. Can be broken down into a few user stories.</p></li>
+<li><p>User Stories</p></li>
+<li><p>Sub Stories Small stories, usually about smaller implementations that help with user stories.</p></li>
+</ol>
+<h3 id="html-media">HTML Media</h3>
+<p>Html Media tags are a way to add dynamic media into a website, instead of only static text and images. There are a few with varying uses:</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><span class="math inline">&lt;</span>video<span class="math inline">&gt;</span> <span class="math inline">&lt;</span>source src = "movie.mp4" type="video/mp4"<span class="math inline">&gt;</span> <span class="math inline">&lt;</span>/video<span class="math inline">&gt;</span></th>
+<th style="text-align: left;">Loads a local video, which can be either mp4 or ogg. Possible attributes on the video tag are controls, width, height, autoplay and muted, which are all fairly self-explanatory <span class="citation" data-cites="w3-video"></span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">&lt;</span>audio<span class="math inline">&gt;</span> <span class="math inline">&lt;</span>source src = "movie.mp3" type="video/mp3"<span class="math inline">&gt;</span> <span class="math inline">&lt;</span>/audio<span class="math inline">&gt;</span></td>
+<td style="text-align: left;">Much the same as video, except the tag is audio instead of video. Uses mp3 instead of mp4, and does not have the height or width attributes. <span class="citation" data-cites="w3-audio"></span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">&lt;</span>canvas<span class="math inline">&gt;</span></td>
+<td style="text-align: left;">Creates a canvas on the screen which can then be drawn upon. This can be used to render graphics in real-time.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="html-api">HTML API</h3>
+<h4 id="drag-and-drop">Drag and Drop</h4>
+<p>An API that allows the developer to specify if an element is "draggable", and the actions that occur when that element is dropped. Most frequently the dropped element will be added as a child of the element it is dropped on. <span class="citation" data-cites="w3-drag"></span></p>
+<h4 id="geolocation">Geolocation</h4>
+<p>Accessible through JavaScript’s navigator.geolocation which shares the users current location. <span class="citation" data-cites="w3-geo"></span></p>
+<h2 id="practical-tasks-1">Practical Tasks</h2>
+<h3 id="task-1">Task 1</h3>
+<h4 id="reflection">Reflection</h4>
+<p>Since I am just starting out in the industry, and web development, it is handy to investigate how other sites are built. I then can observe what works well from a user perspective, and what falls short. Taking this I am able to learn from it and adapt it into my own style.</p>
+<h4 id="introduction-1">Introduction</h4>
+<p>Please see <a href="#project-this-week" data-reference-type="ref" data-reference="project-this-week">3.3.1</a> for further information about my proposal idea.</p>
+<p>Two websites I found to be similar were <strong>Pinterest</strong> and <strong>garden.org</strong>. Pinterest because they are an image driven website, and garden.org for the horticulture relation.</p>
+<h4 id="pinterest">Pinterest</h4>
+<p>Pinterest as a large tech company has a good responsive design. I imagine their priority would be on their app rather than their website.<br />
+Pinterest include the meta viewport tag in their header.<br />
+They use a number of columns to display images. Wider the screen, the more columns there are on the screen. They keep these columns at a fixed width of 252 px, and change the margins of the page accordingly. The large container is styled using media tags, changing the width as necessary. Each element is loaded individually with Javascript, and transformed/translated into place. The distances are calculated by knowing the previous images sizes as well as margins.</p>
+<div class="center">
+<p><img src="pinterest-main-large" style="width:15cm" alt="image" /><br />
+<img src="pinterest-main-small" style="width:8cm" alt="image" /></p>
+</div>
+<p>The navigation bar is also responsive. The main change is the search bar growing with the size of the screen to fill the navigation bar. Some features (such as advanced search) will disappear on lower widths when there isn’t enough room. Finally on very small screens, the search bar becomes a button that users press to open up the search bar below.<br />
+</p>
+<div class="center">
+<p><img src="pinterest-nav-large" style="width:15cm" alt="image" /><br />
+<img src="pinterest-nav-small" style="width:8cm" alt="image" /></p>
+</div>
+<p>On individual profile pages, the layout changes depending on the size of the screen. For smaller screens, the image/video is what you initially see, then scroll for the text/information. On larger screens, the image/video is on the left, while the information is on the right.</p>
+<div class="center">
+<p><img src="pinterest-item-large" style="width:10cm" alt="image" /><br />
+<img src="pinterest-item-small" style="width:6cm" alt="image" /></p>
+</div>
+<h4 id="garden.org">garden.org</h4>
+<p>garden.org is also quite responsive. For larger screens (<span class="math inline">&gt;</span> 1000px), there are two columns on the home screen, one for images the other for comments. For smaller screens, there is only one column, with comments being below images. These two columns grow and shrink depending on the size of the screen. The images within these columns are in columns, and the number of columns changes based on the screen width.</p>
+<div class="center">
+<p><img src="garden-one-small" style="width:7cm" alt="image" /> <img src="garden-one-large" style="width:7cm" alt="image" /><br />
+<img src="garden-two-small" style="width:10cm" alt="image" /><br />
+<img src="garden-two-large" style="width:14cm" alt="image" /><br />
+</p>
+</div>
+<p>When clicking on an image, a pop up window appears containing a larger version of the image. This grows as the screen grows, when it reaches a certain point ( 800px), it won’t grow any more, but will stay centred in the screen.</p>
+<div class="center">
+<p><img src="garden-pop-small" style="width:7cm" alt="image" /> <img src="garden-pop-large" style="width:7cm" alt="image" /></p>
+</div>
+<h3 id="task-2">Task 2</h3>
+<h4 id="reflection-1">Reflection</h4>
+<p>Using CSS is the most efficient way, and lightweight way to make a website responsive. Using the media tags, it is easy to create multiple versions of a design that adapts automatically.</p>
+<h4 id="screenshot-3">Screenshot</h4>
+<p>For Task 2, I decided to mock up the single plant page for my proposal. The information and photos just need to be added in later. I have created a simple layout of navigation bar at the top, as well as a main content pop-up in the middle of the screen. This will be overlayed on the screen as it’s opened. On a desktop (<span class="math inline">&gt;</span>1000px), the image will be on the left, and the text will be on the right. On a smaller device, the image will be prominent when the pop-up is opened, and the text will be below for the user to scroll through.<br />
+There is another major breakpoint at 700px. Larger screens will have text in the navigation bar. Smaller screens will only have a search icon and a menu icon (which opens up a drop down menu with further options).</p>
+<p><img src="tend-profile-small.png" style="width:10cm" alt="image" /><br />
+<img src="tend-profile-large.png" style="width:15cm" alt="image" /></p>
+<h4 id="source-code">Source Code</h4>
+<p>For the source code go to <span><a href="https://github.com/BrandonMurch/SIT120/tree/main/Practical%202/Task%202">github</a></span>.</p>
+<h4 id="useful-code-3">Useful Code</h4>
+<p>I decided to use a custom font on this website. I downloaded it locally, then used <a href="#css-custom-font" data-reference-type="ref" data-reference="css-custom-font">9.2.6</a> to add it to the website.</p>
+<p>I also discovered another way to centre an element with <a href="#css-center-element2" data-reference-type="ref" data-reference="css-center-element2">9.2.3</a>.</p>
+<p>Adding box shadows to my UI dramatically increased the visual appeal <a href="#box-shadow" data-reference-type="ref" data-reference="box-shadow">9.2.4</a>.</p>
+<p>Since there were two edges of an image that touched the corners of a rounded container, I needed to individually round those two corners using <a href="#specific-round-corners" data-reference-type="ref" data-reference="specific-round-corners">9.2.5</a>.</p>
+<p>Since there was an inner element that needed to scroll, I wanted to modify the scrollbar. I used <a href="#modify-scrollbar" data-reference-type="ref" data-reference="modify-scrollbar">9.2.7</a> to accomplish this.</p>
+<h3 id="task-3">Task 3</h3>
+<h4 id="reflection-2">Reflection</h4>
+<p>User stories are a very useful tool in the planning parts of software development. Putting yourself in the user’s shoes to determine what is important to them, and what features need to be implemented help create understanding, as well as the ability to prioritise what is important for these users.<br />
+Pre-designing UI within an application such as Figma saves a lot of time in the overall process. It is much easier to change a UI position, colour, etc. in such a program, rather than rewrite the CSS in the actual web page each time. I found this out after creating the first UI in Task 2, then subsequently using Figma in Task 3.</p>
+<h4 id="user-stories-1">User Stories</h4>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Epic Stories</strong></th>
+<th style="text-align: left;"><strong>Acceptance Criteria</strong></th>
+<th style="text-align: left;"><strong>Priority</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Epic #1:</strong> As a person with many plants, I would like to be able to keep track of the schedules for these plants so they can be healthy.</td>
+<td style="text-align: left;"><ol>
+<li><p>Create a plant profile. [1]</p></li>
+<li><p>Have the website generate a schedule based on the plant chosen, and be able to tweak that if necessary. [2]</p></li>
+<li><p>Notifications based on required scheduled events. [3]</p></li>
+</ol></td>
+<td style="text-align: left;">High</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Epic #2:</strong> As a person who is new to horticulture, I would like to get new information about plants so that I am informed about how to care for them</td>
+<td style="text-align: left;"><ol>
+<li><p>Search for information on specific plants. [4]</p></li>
+<li><p>Show new, useful tips. [5]</p></li>
+<li><p>Find general horticulture advice. [5]</p></li>
+</ol></td>
+<td style="text-align: left;">Medium</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Epic #3:</strong> As a social person, I would like to be able to share my plants, and interact with others, so that I am able to share experiences and ideas.</td>
+<td style="text-align: left;"><ol>
+<li><p>Discussion forum based on plant species. [6]</p></li>
+<li><p>Share photos of plants. [7,8]</p></li>
+<li><p>Interact with other users directly. [6]</p></li>
+</ol></td>
+<td style="text-align: left;">Low</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>User Stories</strong></th>
+<th style="text-align: left;"><strong>Acceptance Criteria</strong></th>
+<th style="text-align: left;"><strong>Priority</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>User Story #1:</strong> As a user, I would be able to create a plant profile so that I can store information about my plants.</td>
+<td style="text-align: left;"><ol>
+<li><p>Input information about plants. [1, 2]</p></li>
+<li><p>Upload image of plant. [1,2]</p></li>
+<li><p>Select species of plant. [1,2]</p></li>
+</ol></td>
+<td style="text-align: left;">High</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>User Story #2:</strong> As a user, I would like auto-generation of a schedule for my plants that I can adjust, so that I am able to see when I need to water/fertilize/re-pot my plants.</td>
+<td style="text-align: left;"><ol>
+<li><p>Auto-generate schedule based on species and climate. [2]</p></li>
+<li><p>Modify frequency of actions manually. [2]</p></li>
+<li><p>Regeneration of schedule if action occurs (Example: user waters plant). [3]</p></li>
+</ol></td>
+<td style="text-align: left;">High</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>User Story #3:</strong> As a user, I would like notifications about necessary actions so that I don’t forget to water a specific plant.</td>
+<td style="text-align: left;"><ol>
+<li><p>Show notifications clearly.[3]</p></li>
+<li><p>Simple actions by clicking notifications. [3]</p></li>
+</ol></td>
+<td style="text-align: left;">High</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>User Story #4:</strong> As a user, I would like to be able to search for information on specific plants so that I am able to anticipate the level of care for a future plant, or properly care for a current plant.</td>
+<td style="text-align: left;"><ol>
+<li><p>Search For species of plant. [4]</p></li>
+<li><p>Get ideal schedule for specified plant. [5]</p></li>
+<li><p>Get trouble shooting guide for specific plant. [5]</p></li>
+</ol></td>
+<td style="text-align: left;">Medium</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>User Story #5:</strong> As a user, I would like to be shown new horticulture tips, so that I am able to learn about new topics and concepts.</td>
+<td style="text-align: left;"><ol>
+<li><p>Randomly display a tip of the day. [6]</p></li>
+<li><p>A "How-To" guide for basic horticulture principles and techniques. [7]</p></li>
+</ol></td>
+<td style="text-align: left;">Medium</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>User Story #6:</strong> As a social user, I would like to discuss and exchange horticulture related ideas so I can expand my knowledge on more advanced topics, or ask more experience users for help.</td>
+<td style="text-align: left;"><ol>
+<li><p>Post to a discussion forum. [8]</p></li>
+<li><p>Message users directly. [9]</p></li>
+</ol></td>
+<td style="text-align: left;">Low</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>User Stories</strong></th>
+<th style="text-align: left;"><strong>Acceptance Criteria</strong></th>
+<th style="text-align: left;"><strong>Priority</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>User Story #7:</strong> As a social user, I would like to share photos of plants I have grown so that I can proudly show off all my hard work</td>
+<td style="text-align: left;"><ol>
+<li><p>Add a photo to a plant profile. [2, 10]</p></li>
+</ol></td>
+<td style="text-align: left;">Low</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>User Story #8:</strong> As a plant enthusiast, I would like to browse photos of other plants so that I can gain inspiration and enjoyment.</td>
+<td style="text-align: left;"><ol>
+<li><p>Browse other plant profiles. [11]</p></li>
+</ol></td>
+<td style="text-align: left;">Low</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Sub Stories</strong></th>
+<th style="text-align: left;"><strong>Acceptance Criteria</strong></th>
+<th style="text-align: left;"><strong>Priority</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Sub Story #1:</strong> As a user I would like to login or create an account so that I can store information for later.</td>
+<td style="text-align: left;"><ol>
+<li><p>Text input for username, password and a box to remember me.</p></li>
+<li><p>Button to register a new user. Able to input username, email, password After registration, user is asked to login with new credentials</p></li>
+<li><p>Successful login returns user to a personal home screen</p></li>
+</ol></td>
+<td style="text-align: left;">High</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Sub Story #2:</strong> As a user I would like to input information about my plants so that I can reference it later.</td>
+<td style="text-align: left;"><ol>
+<li><p>Text input for title, notes.</p></li>
+<li><p>Select species of plants using an autocomplete box.</p></li>
+<li><p>Upload image.</p></li>
+<li><p>Suggested water timings, fertilization and re-potting values which can be modified.</p></li>
+</ol></td>
+<td style="text-align: left;">High</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Sub Story #3:</strong> As a user I would like to interact with my plants so I can record times I have watered, fertilized, etc..</td>
+<td style="text-align: left;"><ol>
+<li><p>Quick buttons for watering, fertilizing, re-potting.</p></li>
+<li><p>Generic action button for recording notes.</p></li>
+<li><p>Confirmation window to confirm actions in case of mistaken click.</p></li>
+</ol></td>
+<td style="text-align: left;">High</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Sub Stories</strong></th>
+<th style="text-align: left;"><strong>Acceptance Criteria</strong></th>
+<th style="text-align: left;"><strong>Priority</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Sub Story #4:</strong> As a user I would like to search for species of plants, so I can easily find what I am looking for.</td>
+<td style="text-align: left;"><ol>
+<li><p>Text input with autocomplete for searching.</p></li>
+<li><p>List relevant search results based on selected filters.</p></li>
+</ol></td>
+<td style="text-align: left;">Medium</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Sub Story #5:</strong> As a user I would like to get information for specific species.</td>
+<td style="text-align: left;"><ol>
+<li><p>Display generic information</p></li>
+<li><p>Display usual watering schedule, humidity, and other care tips</p></li>
+<li><p>Display troubleshooting guide for an unhealthy plant</p></li>
+</ol></td>
+<td style="text-align: left;">Medium</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Sub Story #6:</strong> As a user I would like to get random tips of the day for plants that I am interested in.</td>
+<td style="text-align: left;"><ol>
+<li><p>Tip is based on a list of plants/topics which interest the user.</p></li>
+<li><p>Tip is displayed on the personal home screen.</p></li>
+</ol></td>
+<td style="text-align: left;">Medium</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Sub Story #7:</strong> As a user I would like to learn the basics of horticulture to ensure I am doing things correctly.</td>
+<td style="text-align: left;"><ol>
+<li><p>Written articles explaining certain topics.</p></li>
+<li><p>Browse all articles or search for specific</p></li>
+</ol></td>
+<td style="text-align: left;">Medium</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Sub Story #8:</strong> As a user I would like to post to the discussion forum so I can discuss and share ideas with others.</td>
+<td style="text-align: left;"><ol>
+<li><p>Browse previous posts based on topic</p></li>
+<li><p>Text box for writing the post.</p></li>
+<li><p>Click a button to submit the post</p></li>
+</ol></td>
+<td style="text-align: left;">Low</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Sub Story #9:</strong> As a user I would like to message other users directly.</td>
+<td style="text-align: left;"><ol>
+<li><p>Click on users profile to message.</p></li>
+<li><p>Text box for writing the message.</p></li>
+<li><p>Click a button to submit the message</p></li>
+</ol></td>
+<td style="text-align: left;">Low</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><strong>Sub Stories</strong></th>
+<th style="text-align: left;"><strong>Acceptance Criteria</strong></th>
+<th style="text-align: left;"><strong>Priority</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Sub Story #10:</strong> As a user I would like to create a public profile for my plant.</td>
+<td style="text-align: left;"><ol>
+<li><p>Add public profile message to plant.</p></li>
+</ol></td>
+<td style="text-align: left;">Low</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Sub Story #11:</strong> As a user I would like to browse other plant photos.</td>
+<td style="text-align: left;"><ol>
+<li><p>Look at many different plant photos in an efficient way.</p></li>
+<li><p>Be able to find out more about plants that are interesting.</p></li>
+</ol></td>
+<td style="text-align: left;">Low</td>
+</tr>
+</tbody>
+</table>
+<h4 id="ui">UI</h4>
+<p>I used Figma to design one of the pages for my application. I designed the "Share Plants" page from my proposed web app. I decided on a fairly neutral, and natural colour scheme. Going through, I was able to identify a font that was</p>
+<p>The end result was:<br />
+<img src="share plants.png" alt="image" /></p>
+<p>Much of this design can be reused throughout the web app, such as the navigation bar at the top, logo, etc. I will continue to use Figma to design the remaining pages of my web app.<br />
+I was able to get mock images from <span><a href="https://www.unsplash.com">unsplash.com</a></span>, which will be populated by real user images on the live version. The logo is a modified svg image from <span><a href="https://www.pixabay.com">pixabay.com</a></span>.</p>
+<h3 id="task-4">Task 4</h3>
+<h4 id="reflection-3">Reflection</h4>
+<p>This task was helpful to become familiar with some of the media tags. The canvas tag in particular, I felt as though I have barely scratched the surface of what it can do. HTML has come such a long way from simply displaying text and is incredible what it can currently do by itself.</p>
+<h4 id="explanation-of-task-work">Explanation of Task Work</h4>
+<p>For task 4, I decided to play around with the video and canvas tag.<br />
+For the video tag, I used the previous template I was working on for my proposal site, but instead of an image, it had a video. This will allow users to be able to upload videos as well as pictures. Plant users love a good time lapse!<br />
+<img src="task4-video.png" style="width:10cm" alt="image" /><br />
+I also used the canvas tool, as well as some JavaScript to animate a green wreath around an idle mouse. The design needs a little work, but is a neat concept. This is achieved by finding the mouse with a "onmousemove" attribute on the canvas. This allows the position to be stored, and the countdown started. After an certain number of seconds the wreath begins forming. This makes use of the quadraticCurveTo, as well as some basic trigonometry/linear equations.<br />
+</p>
+<h4 id="screenshot-4">Screenshot</h4>
+<p><img src="green-wreath.png" style="width:5cm" alt="image" /></p>
+<h4 id="source-code-1">Source Code</h4>
+<p>For task 4 source code, see <span><a href="https://github.com/BrandonMurch/SIT120/tree/main/Practical%202/Task4">Github</a></span>.</p>
+<h4 id="useful-code-4">Useful Code</h4>
+<p>To draw a basic line on the canvas, I used <a href="#js-canvas" data-reference-type="ref" data-reference="js-canvas">9.3.3</a>.</p>
+<p>While playing around with the canvas, I tried to animate it by calling a function every x seconds. To accomplish this in JavaScript i used <a href="#js-delay" data-reference-type="ref" data-reference="js-delay">9.3.4</a>.</p>
+<h2 id="project-1">Project</h2>
+<h3 id="project-this-week">This Week</h3>
+<p>This week, I have come up with the basic idea for my web application. I will create an online website to store and share information about house plants. Part of the site will be a place to store information about current plants including water schedule, notes, etc. Another part will allow people to share experiences and photos of their plants.<br />
+Also throughout this weeks tasks, I have created one of the pages necessary, as well as worked on the mock-ups and user stories.</p>
+<h3 id="next-week">Next Week</h3>
+<p>Next week I fill focus on finishing the proposal. This includes finishing the user stories, the proof of concept as well as the mock ups. I will then go over and review before submission. This should take approx. 8 hours.</p>
+<h1 id="week-3">Week 3</h1>
+<h2 id="week-3-js">Weekly Content</h2>
+<p>This week extends our knowledge on JavaScript from <a href="#week-1-js" data-reference-type="ref" data-reference="week-1-js">10.2.3</a>.</p>
+<h4 id="control-statements">Control Statements</h4>
+<p>Control statements allow us to create different paths that can be traversed in programs depending on certain conditions.<br />
+<strong>If</strong> statements check a boolean expression (something is either true or false) and if the result of that expression is true, the actions within that block will be executed. There is also an <strong>else if</strong> statement that can occur directly after an if statement. This statement only occurs if the if statement was false, and the supplied boolean expression is true. The last piece of this chain is an <strong>else</strong> statement. If all previous if and else if statements were false, the code within the else block will execute.<br />
+</p>
+<pre><code>If(x &gt; 0) {
+	return &quot;x is a positive number&quot;;
+} else if (x &lt; 0) {
+	return &quot; x is a negative number&quot;;
+} else {
+	return &quot;x is 0&quot;;
+}
+				</code></pre>
+<p>For statements that have many options, a <strong>switch</strong> statement would be a better option. In a switch statement, the interpreter will compare the variable against each value. Once a value matches the variable, the remaining code will be executed, or until a <strong>break</strong> is reached. A good code practice should be to always have a default case that runs if none of the other cases match. Here is an example of a switch statement from the lecture that I have modified:<br />
+</p>
+<pre><code>switch(fruit) {
+	case &#39;Oranges&#39;:
+		console.log(&#39;$0.59 a pound.&#39;);
+		break;
+	case &#39;Mangoes&#39;:
+		console.log(&#39;$2.49 a pound.&#39;);
+	case &#39;Papayas&#39;:
+		console.log(&#39;$2.79 a pound.&#39;);
+		break;
+	default:
+		console.log(&#39;Sorry, we are out of these&#39;);
+}
+				</code></pre>
+<p>This demonstrates the importance of remembering the break. In this code if the fruit was Mangoes, Both the $2.49 a pound, and the $2.79 a pound messages would print. There might be cases when you would want multiple variables to perform the same action. In this case omitting the break is necessary.<br />
+<strong>Try/catch</strong> blocks is another control statement. Code within the try block is executed as normal, and if an error occurs, the code within <strong>catch</strong> block will run. This allows the program to handle the error smoothly. To highlight the importance of the try/catch; if an error occurred outside of a try block, the program would immediately stop (<strong>crash</strong>) and display an error code.</p>
+<pre><code>try {
+	file = readFromDisk();
+} catch (error) {
+	console.log(&quot;File was not found&quot;)
+	askUserForNewFile();
+}
+				</code></pre>
+<h3 id="arrays">Arrays</h3>
+<p>Arrays are a collection of values stored in one variable (in contiguous memory). Elements of an array can be accessed by their index (which starts at 0 in JavaScript). The syntax in JavaScript is to use square brackets, for example: <em>array[2]</em> would give the third value of the array.</p>
+<h3 id="json">JSON</h3>
+<p>JSON is a format for storing data. It uses key-value pairs to describe the data. Basic data structures can also be nested inside keys using the curly brackets {} for an object, or square brackets <span class="math display"></span> for an array.</p>
+<pre><code>{
+	&quot;name&quot;:&quot;John&quot;,
+	&quot;age&quot;:31,
+	&quot;children&quot; :[&quot;Sarah&quot;,&quot;Harry&quot;],
+	&quot;contact&quot;:{
+		&quot;phone&quot;:123-232-2323,
+		&quot;email&quot;:&quot;john@john.com&quot;
+	}
+}
+				</code></pre>
+<h3 id="operators">Operators</h3>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;"><span class="math inline">&gt;</span></th>
+<th style="text-align: left;">Is true if the left value is greater than the right.</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">&lt;</span></td>
+<td style="text-align: left;">Is true if the left value is less than the right.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">==</td>
+<td style="text-align: left;">Is true if both values are equal.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">!=</td>
+<td style="text-align: left;">Is true if both values are not equal.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&amp;&amp;</td>
+<td style="text-align: left;">Combines two logical statements, only true if both individual expressions are true.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">∥</span></td>
+<td style="text-align: left;">Combines two logical statements, true if either expression are true (or both).</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">&amp;</td>
+<td style="text-align: left;">Applies a bitwise AND to each value. That is goes bit by bit, through both variables and returns 1 if they are both 1, otherwise it returns the zero. The results are stored in a third variable. For example 10011 &amp; 11001 = 10001.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;">The same as &amp;, but it applies a bitwise OR. Returns 1 if either bit is one, but returns 0 if both are the same.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">^</td>
+<td style="text-align: left;">The same as | but will also return 1 if both bits are 1. (Bitwise XOR)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">=== / !==</td>
+<td style="text-align: left;">The difference between === and == is that === also checks type. For example 0 == "0" is true, but 0 === "0" is false.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="jquery">jQuery</h3>
+<p>jQuery is a framework that shortens the amount of code needed. For example, instead of <strong>document.getElementById("id").hide();</strong>, jQuery allows a shorter command: <strong>$(’#id’).hide();</strong>. The $ means that it is a jQuery command.<br />
+Another area where jQuery helps reduce the amount of code is in network calls using AJAX. AJAX is <strong>A</strong>synchronous <strong>J</strong>avascript <strong>A</strong>nd <strong>X</strong>ml. This allows to create calls to external urls, and then call function based on success or failure. This allows easy manipulation of the DOM based on queries.</p>
+<h2 id="practical-tasks-2">Practical Tasks</h2>
+<p>JavaScript has many built-in libraries and class methods. These accomplish common tasks, so developers don’t have to constantly "re-invent the wheel".<br />
+These tasks help reinforce being able to learn and understand the documentation.</p>
+<h3 id="task-1-1">Task 1</h3>
+<p>Task 1 was all about string manipulation. Since websites are about displaying information, manipulating strings occurs often. Since strings are objects in JavaScript, they come with some built-in methods. Some common methods are:<br />
+</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">string.length</th>
+<th style="text-align: left;">The number of characters in a string.</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">string.splice() string.slice()</td>
+<td style="text-align: left;">Two very similar methods. They return the characters between the specified start index and end index. The difference is that splice removes the character from the original string, while slice leaves the original string intact.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">string.replace()</td>
+<td style="text-align: left;">Finds the first argument within the string, and replaces it in the second argument. The first argument can also be a <strong>Regular Expression</strong>, making this function very powerful.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">string.toLowerCase() string.toUppercase()</td>
+<td style="text-align: left;">Turns every character either lowercase or uppercase respectively.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">string.trim()</td>
+<td style="text-align: left;">Removes any extra white-space at the beginning and the end of the string.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">string.padStart() string.padEnd()</td>
+<td style="text-align: left;">Ensures the string is a certain length by adding padding if necessary. padStart() adds the specified padding character to the beginning, and padEnd() adds the padding to the end.</td>
+</tr>
+</tbody>
+</table>
+<p><span class="citation" data-cites="string-methods"></span><br />
+</p>
+<h4 id="screenshot-5">Screenshot</h4>
+<p><img src="Prac-3-Task-1.png" style="width:8cm" alt="image" /></p>
+<h4 id="source-code-2">Source Code</h4>
+<p>The source code for my task can be found on my <span><a href="https://github.com/BrandonMurch/SIT120/blob/main/Practical%20Tasks/Practical%203/Task%201.html">Github</a></span>.</p>
+<h3 id="task-2-1">Task 2</h3>
+<p>The second task involved using Number methods and Array methods. These methods are similar to the idea of the methods in task 1, but they apply to numbers and arrays respectively.<br />
+</p>
+<h4 id="number-methods">Number methods</h4>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">number.toString()</th>
+<th style="text-align: left;">Changes the number to the type "string".</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">number.toExponential()</td>
+<td style="text-align: left;">Returns the number in exponential form.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">number.toFixed()</td>
+<td style="text-align: left;">Returns the number, with a fixed amount of decimal places.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">number.toPrecision()</td>
+<td style="text-align: left;">Returns the number with a fixed number of digits.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">parseInt()</td>
+<td style="text-align: left;">Takes a string and returns it as a Number if possible.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Math.round() Math.ciel() Math.floor()</td>
+<td style="text-align: left;">Round the number to the nearest digit. ciel always rounds up, floor always round down.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Math.random()</td>
+<td style="text-align: left;">Gives a random number between 0 and 1.</td>
+</tr>
+</tbody>
+</table>
+<p><span class="citation" data-cites="number-methods"></span><br />
+</p>
+<h4 id="array-methods">Array methods</h4>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">array.toString()</th>
+<th style="text-align: left;">Converts the array to a string.</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">array.join()</td>
+<td style="text-align: left;">Same as toString, but can specify what characters to place in between elements.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Array.from()</td>
+<td style="text-align: left;">Returns a new array from whatever is provided as an argument. Useful for duplicating arrays.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">array.pop() array.shift()</td>
+<td style="text-align: left;">Removes and returns the last or first element of the array respectively.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">array.push() array.unshift()</td>
+<td style="text-align: left;">Adds a value to the end or beginning of the array respectively. Returns the array length.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">array.concat()</td>
+<td style="text-align: left;">Merges an array passed as an argument into the original array.</td>
+</tr>
+</tbody>
+</table>
+<p><span class="citation" data-cites="array-methods"></span><br />
+</p>
+<h4 id="screenshot-6">Screenshot</h4>
+<p><img src="Prac-3-Task-2.png" style="width:8cm" alt="image" /></p>
+<h4 id="source-code-3">Source Code</h4>
+<p>The source code for my task can be found on my <span><a href="https://github.com/BrandonMurch/SIT120/blob/main/Practical%20Tasks/Practical%203/Task%202.html">Github</a></span>.</p>
+<h3 id="task-3-1">Task 3</h3>
+<p>JavaScript objects have methods for getting and setting internal values. This is an example of encapsulation, a main concept in object-oriented design. Instead of having access to the variables directly, the objects are interacted with using GET functions and SET functions. GET functions return the value of the variable. SET functions take the new value as an argument, and then changes the value of the variable internally.<br />
+Date is an object built into JavaScript that stores a particular date and time. This uses get functions to get either the whole date formatted in a particular manner, or parts of the date such as hours, months, etc. The set function of the date object allows the caller to set a particular part of the date such as hours, months, etc.</p>
+<h4 id="screenshot-7">Screenshot</h4>
+<p><img src="Prac-3-Task-3.png" style="width:4cm" alt="image" /></p>
+<h4 id="source-code-4">Source Code</h4>
+<p>The source code for my task can be found on my <span><a href="https://github.com/BrandonMurch/SIT120/blob/main/Practical%20Tasks/Practical%203/Task%203.html">Github</a></span>.</p>
+<h3 id="task-4-1">Task 4</h3>
+<h4 id="computed-property">Computed Property</h4>
+<p>Computed property is a property based on another property. It is a function that modifies another property and returns a value. This reduces the redundancy of code by reusing these functions instead of putting them directly in the template. Another benefit to using computed properties is that they are cached for better performance, and is only re-called when the original property is modified.<br />
+Computed Properties are assigned using the <strong>computed</strong> key inside the component object. <span class="citation" data-cites="vue-computed"></span></p>
+<h4 id="watcher">Watcher</h4>
+<p>Watchers are a more generic version of computer property. The two are different because Watchers allow the observation of external variables and are not restricted to Vue Properties. This is useful when using asynchronous calls as the base data.<br />
+Watchers are assigned using the <strong>watch</strong> key inside the component object. <span class="citation" data-cites="vue-computed"></span></p>
+<h4 id="class-and-style-bindings">Class and Style Bindings</h4>
+<p>Vue allows classes to be dynamically assigned based on variables. An object is passed in to the attribute where the keys are the classes, and the paired values are the variables being evaluated. If the variable is truthy, then the class will be applied. Many classes can be put into the object.<br />
+Styles can also be assigned dynamically by passing in an object with style key-value pairs.<br />
+Class and Style bindings use the <strong>v-bind:class=""</strong> or <strong>v-bind:style =""</strong> syntax respectively. <span class="citation" data-cites="vue-class"></span></p>
+<h4 id="conditional-rendering">Conditional Rendering</h4>
+<p>Conditional rendering allows the browser to render an element only a boolean expression is true. If true, then the element will be rendered. If not, the element will not be rendered.<br />
+Conditional rendering uses the <strong>v-if</strong> attribute in the html or templates. This can be combined with <strong>v-else-if and v-else</strong> to create multiple outcomes. <span class="citation" data-cites="vue-conditional"></span></p>
+<h4 id="list-rendering">List Rendering</h4>
+<p>List rendering renders a component or template using each element in a list as the passed in value. For example, if there was a list of [1,2,3], it would render one element, and pass in 1, render the same element again and pass in 2, then finally render element once more and pass in 3. This is very useful if you have a list of items that need to be rendered and reduces the code needed to accomplish this.<br />
+This uses the <strong>v-for</strong> attribute in the html or templates. <span class="citation" data-cites="vue-list"></span></p>
+<h4 id="event-handling">Event Handling</h4>
+<p>This allows Vue to monitor for specified actions being performed on the element. For example <strong>v-on:click</strong> will run whatever function is given when the element is clicked. This also allows the direct modification of component data instead of a function (for example: v-on:click="counter += 1" would increment the counter on click). Methods can be written in directly, or placed in the methods object within the component. <span class="citation" data-cites="vue-event"></span></p>
+<h4 id="form-input-bindings">Form Input Bindings</h4>
+<p>Form input bindings allow Vue to directly link inputs to variables. Whenever the value of an input changes, the variable in the component is updated. This is done by placing the variable being updated into the <strong>v-model</strong> attribute on the input element. <span class="citation" data-cites="vue-list"></span></p>
+<h4 id="component-basics">Component Basics</h4>
+<p>Components allow reusing templates, methods, etc. based on different values being passed in. This allows many of these components to be created without having to retype the boilerplate code, methods, etc. This also also provides easy consistency when it comes to style.<br />
+A new component is defined in the JavaScript file. It gets created by calling <strong>Vue.component()</strong> and passing in the name of the component, as well as an object will all of the data, template, methods, etc.. <span class="citation" data-cites="vue-component"></span></p>
+<h2 id="project-2">Project</h2>
+<h3 id="what-i-achieved-this-week">What I achieved this week</h3>
+<p>This week I have completed the remaining parts of my proposal. I designed every webpage in Figma, meaning the implementation should be quite painless. I have planned out the layout of my code and am ready to get started.</p>
+<h3 id="what-i-need-to-achieve-next-week">What I need to achieve next week</h3>
+<p>Next week I must start creating my webapp using HTML/CSS/JS/Vue. Specifically I would like to target the Nav bar and Image gallery components. This are probably the more complicated components within the web app and also the most reused. This should take me 4 hours.</p>
+<h1 id="week-4">Week 4</h1>
+<h2 id="weekly-content-2">Weekly Content</h2>
+<h3 id="tcpip-protocol">TCP/IP Protocol</h3>
+<h3 id="data-packets">Data packets</h3>
+<p>Files are too large to send all at once over the internet, it is impossible. Instead we break them up into many packets, and send them one at a time.</p>
+<h3 id="application-layer">Application Layer</h3>
+<p>This layer is specific to each type of application and is how the applications connect to the internet. Each type of application will be given a port number. This allows many different services/applications to be running on a particular computer at one time. This also creates standards, so applications of the same type can communicate with each other effectively. An example of this is HTTP. This tells browsers and web servers how to communicate with each other. All of this information is bundled as a header on the data packet, and passed to the TCP layer. <span class="citation" data-cites="stanford-internet"></span></p>
+<h4 id="tcp">TCP</h4>
+<p>If the application layer is how applications communicate, then the TCP layer is how computers communicate. This is a set of standard pieces of information put together in a very specific format. This includes information like the number of packets being sent, a checksum to ensure no corruption, etc.</p>
+<h4 id="ip">IP</h4>
+<p>Now that we have all the information, the next part to be applied is the IP address or <strong>WHERE</strong> to send the packet. This is unique for each computer in the world, and is bundled on top of the tcp layer.</p>
+<h4 id="mac">Data-link</h4>
+<p>Finally the data-link layer is associated with the physical machines themselves. This is how the short jumps are addressed, from router to router as the message travels to its destination.</p>
+<h3 id="routing">Routing</h3>
+<h4 id="dns">DNS</h4>
+<p>DNS or Domain Name System is an electronic address book for websites. Instead of having to remember the IP addresses of the web server you would like to visit, it allows users to remember more human-friendly addresses, such as www.deakin.edu.au. <span class="citation" data-cites="stanford-internet"></span> This is similar to a phone book, where instead of remembering the phone number, you only have to remember the persons name.<br />
+Each time before connecting to a server, your computer must first get the IP address from the DNS server, so that it knows where to send the data.</p>
+<h4 id="pathway">Pathway</h4>
+<p>The internet isn’t one solid "thing". Instead it is made up of many computers/routers/etc. To be able to communicate with another specific computer, the message must pass through a chain of many other routers. This uses the MAC address discussed in <a href="#mac" data-reference-type="ref" data-reference="mac">5.1.3.3</a> and the IP address discussed in <a href="#ip" data-reference-type="ref" data-reference="ip">5.1.3.2</a>.<br />
+Starting from the source computer, each computer finds a router which is closer to the end destination. The message is then sent to a router that is closer to the destination ip address using the router’s mac address. Then that router finds a closer router and passes the message along. This continues until the message finally gets to the destination. Usually the first hop will be to your ISP, then a second one will be to a larger router(or groups of routers) called an NSP (Network Service Provider). From here they can connect to other NSPs via an NAP (Network access Point) or MAE (Metropolitan Area Exhanges). <span class="citation" data-cites="stanford-internet"></span><br />
+The beauty of this is two fold. First of all, there is no "set path" that a message must travel. This helps to relieve congestion within the network. Secondly, if there is a break in the chain, it is very easy for the routers to reroute the message to another router, as long as it is closer to the destination.</p>
+<h2 id="practical-tasks-3">Practical Tasks</h2>
+<h3 id="task-1-2">Task 1</h3>
+<p>Declarative rendering in Vue is about dynamically creating webpages based on templates. In the templates, placeholders will use double curly brackets {{}},with the placeholder name being inside. This placeholder name will map to a variable in the Vue/Javascript code. During rendering, Vue will grab the variable value and place it in the placeholder. This way, each time the user visits the webpage, it can present different information based on their query without writing millions of possible HTML pages.<br />
+This becomes even more powerful, when different images, links, etc can be loaded into the template. So that the same page layout can look drastically different.<br />
+For evidence of the completion of this tasks, I will provide the work in Vue I did for my proof of concept. I used declarative rendering throughout the application.<br />
+See examples of my proof of concept at:<br />
+https://github.com/BrandonMurch/SIT120/tree/main/Assignment%201/proof-of-concept</p>
+<h3 id="task-2-2">Task 2</h3>
+<p>Conditionals are a way of selecting whether to display a component or not. If the particular variable is true, the component will be rendered. If not, the component will not be rendered at all. The syntax for this within Vue is v-if, v-else, v-else-if. Within my project I used this for a few things. Firstly, I used it in my main profile page as a mock router to switch between pages before I implement Vue-Router. I also used it to render the pop up if a plant was selected. If there was no plant selected, the pop up would not appear. Finally, another use was to hold off loading certain elements until the image was loaded, presenting a cleaner webapp.<br />
+<br />
+There is an alternative syntax of v-show which still renders the component (unlike v-if), but hides it using CSS.<br />
+Loops are used for rendering multiple elements, with a single template element. I used this frequently to reduce the amount of code. For example, instead of creating each navigation link, I created a template, then looped over an array to insert information for each link. I also used it within my Image Gallery to place my columns and images within them.<br />
+See examples of my proof of concept at:<br />
+https://github.com/BrandonMurch/SIT120/tree/main/Assignment%201/proof-of-concept</p>
+<h2 id="project-3">Project</h2>
+<h3 id="what-i-accomplished-this-week">What I accomplished this week</h3>
+<p>I focused on my proof of concept this week. I was able to complete the explore portion of my application. Within this section I was also able to create the following components: ImageGallery, SearchBar, ImageCard, NavigationBar, ContactForm, PopUp, and MenuIcon.<br />
+While doing this, I also explored several more advanced topics within Vue.<br />
+</p>
+<h4 id="custom-events">Custom Events</h4>
+<p>Within Vue there are ways to create custom events. These react the same way as native Vue events, such as @click or v-on:click.<br />
+To create a custom event, Vue allows the use of the emit method, with the following syntax: this.$emit(’customEvent’). This will send the custom event to the parent component.<br />
+To react to the event in the parent component, simply use the same syntax as native events. Continuing the example of ’customEvent’, the syntax used is <strong>@customEvent="..."</strong>.<br />
+A second argument can be passed into $emit to pass a variable through to the parent component. This allows the ability for two way binding, where two variable can be the same values in both the parent and child. Changing the value in one, will change the value in the other.<span class="citation" data-cites="vue-custom-event"></span></p>
+<h4 id="vue-component-lifecycle">Vue Component Lifecycle</h4>
+<p>Vue allows functions to be called at certain points relative to the creation of a component. Some options are:</p>
+<ul>
+<li><p>create - Data, properties, etc. are available, but the element has not been rendered.</p></li>
+<li><p>mounted - Element has been rendered in the DOM for the first time.</p></li>
+<li><p>updated - A data change has caused the component to update.</p></li>
+<li><p>unmounted - The component has been destroyed, removing it from the DOM, and memory.</p></li>
+</ul>
+<p>More hooks can be found here: <span class="citation" data-cites="vue-lifecycle"></span>.</p>
+<h4 id="slots">Slots</h4>
+<p>Slots are a way for full components or html to be easily passed into another component. In addition to the default slot, slots can be named for multiple slots in one component.<br />
+To define the slot space, the slot element is used. To name it, use the name attribute. For example: <strong><span class="math inline">&lt;</span>slot name="slotName" /<span class="math inline">&gt;</span></strong>.<br />
+In the parent component, the template element is used to define what should be put inside this slot. To choose which named slot to use, the v-slot:name attribute is used. So to place html in the previously mentioned slot, the syntax would be <strong><span class="math inline">&lt;</span>template v-slot:slotName <span class="math inline">&gt;</span> ... <span class="math inline">&lt;</span>/template<span class="math inline">&gt;</span></strong><span class="citation" data-cites="vue-slots"></span></p>
+<h4 id="refs">Refs</h4>
+<p>Refs give developers a way to reference components without having to use id or class. This is done by first setting the ref attribute on the component using a string. Then the component can be grabbed by using the <strong>this.$ref.referenceString</strong> were referenceString is the string used in the attribute.</p>
+<p><span class="citation" data-cites="vue-refs"></span></p>
+<h4 id="unrelated-to-vue">Unrelated to Vue</h4>
+<p>Unrelated to Vue, I also looked into the following:</p>
+<ul>
+<li><p>CSS Transitions (<a href="#css-transitions" data-reference-type="ref" data-reference="css-transitions">9.2.8</a>)</p></li>
+<li><p>Modifying the scrollbar with CSS (<a href="#css-scrollbar" data-reference-type="ref" data-reference="css-scrollbar">9.2.9</a>)</p></li>
+<li><p>"Debounce" (<a href="#js-debounce" data-reference-type="ref" data-reference="js-debounce">9.3.5</a>)</p></li>
+<li><p>Array Filter (<a href="#css-scrollbar" data-reference-type="ref" data-reference="css-scrollbar">9.2.9</a>)</p></li>
+</ul>
+<h3 id="what-i-would-like-to-accomplish-next-week">What I would like to accomplish next week</h3>
+<p>This week I would like to incorporate Vue-Router into my program, and start creating the other parts of the website (My Plants, and Learn). The main reusable components I will need for this are lists to display cards for comments, articles, etc. Another important part will be to create the interface for adjusting plant settings. I suspect this all will take 4 hours.</p>
+<h1 id="week-5">Week 5</h1>
+<h2 id="weekly-content-3">Weekly Content</h2>
+<p>The new concept for this week was UI design patterns. Two of the most well known are MVC and MVVM.</p>
+<h3 id="mvc">MVC</h3>
+<p><strong>M</strong>odel <strong>V</strong>iew <strong>C</strong>ontroller was the original Model-View design. This model looked to solve how to structure large front end codebases, and separate areas of concern. As the name suggests it was made of up three components, a model, a view and a controller.</p>
+<p><img src="mvc.png" style="width:8cm" alt="image" /> <span class="citation" data-cites="mvc-image"></span></p>
+<h4 id="controller">Controller</h4>
+<p>The controller handles all user interactions or events. When a button is clicked, the controller will decide what to do and modify the model accordingly. The controller is also in charge of which view to present to the user. This way many different views could be used depending on the situation.</p>
+<h4 id="model">Model</h4>
+<p>This contains the data that will be loaded into the webpage. This is the component that will get information from a back-end or database, and is in charge of the applications state.</p>
+<h4 id="view">View</h4>
+<p>What the user sees. Using the observer pattern, the view is notified when a change occurs to the model, and then the view will fetch the new data.</p>
+<p><span class="citation" data-cites="mv-design"></span></p>
+<h3 id="mvvm">MVVM</h3>
+<p><strong>M</strong>odel <strong>V</strong>iew <strong>V</strong>iew <strong>M</strong>odel builds upon MVC. The main benefit of this is being able to reuse the business logic for multiple view-controllers, making the controller more UI focussed.</p>
+<h4 id="view-1">View</h4>
+<p>MVVM considers the view and the controller to be tightly coupled. This means that view handles both the displaying of information, as well as user inputs and events. The view can also pull data from the View Model and trigger methods within the view model based on user input.</p>
+<h4 id="view-model">View-Model</h4>
+<p>The new component added when compared to MVC. It works between view and model. It handles all the logic and state within the application. View-model is unaware of view. Any updates within the view-model will be announced to subscribers, and then the subscribers can grab the update.</p>
+<h4 id="model-1">Model</h4>
+<p>This is very similar to the model in MVC. Model is unaware of view or view-model. It simply supplies the data to the application and modifies this data on request.<br />
+<span class="citation" data-cites="mv-design"></span></p>
+<h2 id="practical-tasks-4">Practical Tasks</h2>
+<h3 id="task-1-3">Task 1</h3>
+<p>Components are ways to reuse pieces of code. Both presentation code and logic can be reused within elements that perform similar tasks. This allows less repetition of code and the ability to build applications much quicker.<br />
+The syntax for defining a component is:<br />
+<span id="global-registration" label="global-registration">[global-registration]</span></p>
+<pre><code>Vue.component(&#39;component-name&#39;, {
+	template: &#39;&lt;h1&gt;This is a component&lt;/h1&gt;&#39;
+})
+				</code></pre>
+<p>Then to use this component simply use the tag in the html like so:<br />
+</p>
+<pre><code>&lt;component-name /&gt;
+				</code></pre>
+<p>This will output the header, "This is a component", into the DOM.<br />
+I have already created a few components in my project. See<br />
+https://github.com/BrandonMurch/SIT120/tree/main/Assignment%201/proof-of-concept/src/components.</p>
+<h3 id="task-2-3">Task 2</h3>
+<p>I have explored Vue and implemented concepts so far in my project. See:<br />
+https://github.com/BrandonMurch/SIT120/tree/main/Assignment%201/proof-of-concept/src/.</p>
+<h3 id="task-3-2">Task 3</h3>
+<p>To handle user input the <strong>v-on</strong> or <strong>@</strong> keywords can be used. This can be used with many native events such as <strong>click</strong>. It can also be used for custom events. I have described such events here: <a href="#custom-events" data-reference-type="ref" data-reference="custom-events">5.3.1.1</a>.<br />
+These events can either call methods in the methods object or they can modify properties within the data object directly.<br />
+As with previous tasks, I have also used event handling throughout my project. A specific example is watching for clicks on buttons using @click within the PopUp component.<br />
+https://github.com/BrandonMurch/SIT120/blob/main/Assignment%201/proof-of-concept/src/components/PopUp.vue</p>
+<h3 id="task4">Task 4</h3>
+<h4 id="component-registration">Component Registration</h4>
+<p>With Vue, components can be registered globally (<a href="#global-registration" data-reference-type="ref" data-reference="global-registration">[global-registration]</a>), or locally. To register a component locally, just store the component in a local variable like so:</p>
+<pre><code>const component = { .... }
+					</code></pre>
+<p>Alternatively Vue components can be placed in their own <strong>.vue</strong> file. Their declaration is handled implicitly, and the file can contain three tags [template, script and style] which contain the relevant HTML, JavaScript and CSS respectively.</p>
+<h4 id="props">Props</h4>
+<p>If we just used components with the same values every time, they wouldn’t be very reusable or useful. By defining options that can be passed into the component as "props", components become much more useful and versatile.</p>
+<p>Using the <strong>v-bind</strong> keyword we are able to pass in this data. If the component accepted a prop <strong>message</strong>, then to pass in a message, use v-bind:<br />
+</p>
+<pre><code>&lt;component-name v-bind:message=&quot;This is a message!&quot; /&gt;
+					</code></pre>
+<p>The shorthand for v-bind would be simply <strong>:</strong>message="..."<br />
+</p>
+<h4 id="custom-events-and-slots">Custom Events and Slots</h4>
+<p>See <a href="#custom-events" data-reference-type="ref" data-reference="custom-events">5.3.1.1</a> for custom events and <a href="#slots" data-reference-type="ref" data-reference="slots">5.3.1.3</a> for slots.</p>
+<h4 id="dynamic-and-async-components">Dynamic and Async Components</h4>
+<p>Putting elements inside the <span class="math inline">&lt;</span>keep-alive<span class="math inline">&gt;</span> element, as the name suggests will keep the component alive. That is, the component will not be destroyed. This helps with loading times on elements that are frequently switched between, or whose information won’t change.<br />
+Components can be rendered asynchronously. An example of this would be when the component renders only after information is received from the backend server. These components can even load other components while they are loading, or if there is an error.</p>
+<p>There are a few ways to accomplish this within Vue. The first is to return the component as a promise resolve:</p>
+<pre><code>Vue.component(&#39;async-webpack-example&#39;, function (resolve) {
+	require([&#39;./my-async-component&#39;], resolve)
+})
+					</code></pre>
+<p><span class="citation" data-cites="vue-async"></span><br />
+Another is dynamically importing the component:</p>
+<pre><code>Vue.component(
+	&#39;async-webpack-example&#39;,
+	() =&gt; import(&#39;./my-async-component&#39;)
+)
+					</code></pre>
+<p><span class="citation" data-cites="vue-async"></span><br />
+Finally Vue can also handle the loading, errors, delay and timout of these async components using the following:</p>
+<pre><code>const AsyncComponent = () =&gt; ({
+	// The component to load (should be a Promise)
+	component: import(&#39;./MyComponent.vue&#39;),
+	// A component to use while the async component is loading
+	loading: LoadingComponent,
+	// A component to use if the load fails
+	error: ErrorComponent,
+	// Delay before showing the loading component. Default: 200ms.
+	delay: 200,
+	// The error component will be displayed if a timeout is
+	// provided and exceeded. Default: Infinity.
+	timeout: 3000
+})
+					</code></pre>
+<p><span class="citation" data-cites="vue-async"></span></p>
+<h4 id="handling-edge-cases">Handling Edge Cases</h4>
+<p>There are cases when the strict nature of Vue needs to be broken, giving more access to the developer. These cases are very rare, and have serious drawbacks, so they should not be used lightly.</p>
+<p>Within Vue, any subcomponent can reference the root component with $root. This is particularly handy when using the root as a store.<br />
+Similarly, $parent can be used to access the parent component. This is generally reserved for very special cases, and is not recommended for regular use.<br />
+A way to avoid prop drilling (passing information down multiple layers of components) is to use the provide and inject options. In the parent use the option provide to supply data or method. Then within the child using inject, the child will be able to access the provided data/method.<br />
+Event listeners can be programatically managed within Vue. There are three options: $on to add an event listener, $once to add an event listener that only listens for the first event and $off to remove an event listener.<br />
+The $forceUpdate method can be called to manually force an update on the component. This is primarily if there is external data that causes an update.<br />
+</p>
+<h2 id="project-4">Project</h2>
+<h3 id="what-i-accomplished-this-week-1">What I accomplished this week</h3>
+<p>I decided against working on my web app this week until I receive the feedback from my proposal to ensure I am working in the right direction. I will use this time to get ahead on other courses so that I can focus on my application next week.</p>
+<h3 id="what-i-would-like-to-accomplish-next-week-1">What I would like to accomplish next week</h3>
+<p>This week I would like to incorporate Vue-Router into my program, and start creating the other parts of the website (My Plants, and Learn). The main reusable components I will need for this are lists to display cards for comments, articles, etc. Another important part will be to create the interface for adjusting plant settings. I suspect this all will take 4 hours.</p>
+<h1 id="week-6">Week 6</h1>
+<h2 id="weekly-content-4">Weekly Content</h2>
+<h3 id="two-way-binding">Two-Way Binding</h3>
+<p>Data binding describes how data is passed between the model and the view. One-Way binding means that data only travels one way. For example, data in the model, can be passed to the view, but the view cannot update data in the model. In Vue, this would be the v-bind directive, where information is only passed from the parent to the child.<br />
+Two-way binding on the other hand is bi-directional. That means as before, the data passes from the model to the view, but now the view can directly update the data in the model. In Vue, this is the v-model directive. An input field takes in a value from the parent, and then returns any updates. This means that the source of truth lies solely in the parent component.<br />
+</p>
+<div class="center">
+<p><img src="Data Binding.png" style="width:5cm" alt="image" /></p>
+</div>
+<p>v-model can be manually implemented as well. Depending on the input type, different directives can be used. For example input would use v-bind:value to pass the value to the input, and then v-on:input event to update the value whenever the input changes.<br />
+</p>
+<h3 id="vue-router">Vue Router</h3>
+<p>Vue Router is an easy way to manage url paths within an application. There are three main steps to using Vue Router.<br />
+The first is setting up the router. The router can be set up in the main.js, or more cleanly it its own JavaScript file and then imported into main.js. The main options needed when setting up the router is the possible routes, and the history. There are many other available options to configure the routers further. Here is an example of a router setup:<br />
+</p>
+<pre><code>// 1. Define route components.
+// These can be imported from other files
+import Home from &#39;./components/Home&#39;;
+import NotFound from &#39;./components/NotFound&#39;;
+const About = { template: &#39;&lt;div&gt;About&lt;/div&gt;&#39; }
+
+// 2. Define some routes
+// Each route should map to a component.
+// We&#39;ll talk about nested routes later.
+const routes = [
+{ path: &#39;/&#39;, component: Home },
+{ path: &#39;/about&#39;, component: About },
+// A general path for any unmatched path, which redirects to a not found component.
+{ path: &#39;/:pathMatch(.*)&#39;, name: &#39;NotFound&#39;, component: NotFound },
+]
+
+// 3. Create the router instance and pass the `routes` option
+// You can pass in additional options here, but let&#39;s
+// keep it simple for now.
+const router = VueRouter.createRouter({
+	// 4. Provide the history implementation to use. We are using the hash history for simplicity here.
+	history: VueRouter.createWebHashHistory(),
+	routes, // short for `routes: routes`
+})
+
+// 5. Create and mount the root instance.
+const app = Vue.createApp({})
+// Make sure to _use_ the router instance to make the
+// whole app router-aware.
+app.use(router)
+
+app.mount(&#39;#app&#39;)
+
+// Now the app has started!
+
+			</code></pre>
+<p>Modified from <span class="citation" data-cites="vue-router"></span>.<br />
+Setting up Vue Router is, by far, the most complicated part. To use Vue router, two main tags are needed. The first is <span class="math inline">&lt;</span>router-view<span class="math inline">&gt;</span> wreflectshich places the selected component (by its corresponding route), and renders it inside. The other is <span class="math inline">&lt;</span>router-link<span class="math inline">&gt;</span>, which replaces the <span class="math inline">&lt;</span>a<span class="math inline">&gt;</span> tag, to be able to work seamlessly with Vue Router. The <strong>to="target"</strong> attribute is used to choose which path to go to on click.<br />
+</p>
+<h3 id="vuex">Vuex</h3>
+<p>Vuex is a great way to share information within the entire application. Vuex will create a "store" where information will be stored in one place.<br />
+Vuex uses the "State Management Pattern". To understand this pattern, it is useful to first understand the naive approach. This approach is to simply store the data in a variable. If this method is used, any component can access, and <strong>modify</strong> the data. There is no way to keep track of who has modified the data, if the component has permissions to modify the data, and what modifications are allowed. For example, if there is a "personAge" property in the store, there is no way to prevent a user from entering "Donkey". The "State Management Pattern" addresses this by creating actions that can be performed, and certain variables that can be passed in. If a component "commits" one of these actions, the store is then able to verify the data coming in (making sure it is a number for the previous example), make modifications if necessary, and then place it within the appropriate variable. With this pattern, logs can also be created every time the store is modified.<br />
+To use the store, there are multiple categories of actions that can be defined. Getters are functions that return a value within the store. This could also be a more complicated function, for example within the store could be firstName and lastName, and a getter function could be getFullName, which would concatenate firstName and lastName together. A code example:<br />
+</p>
+<pre><code>const getters = {
+	username: (state) =&gt; {
+		console.log(state)
+		if (state.isLoggedIn) {
+			return state.user.name;
+		}
+		throw new Error(&quot;There is no user logged in.&quot;)
+	}
+}
+			</code></pre>
+<p>This getter attempts to get the username of the logged in user. If there is no user, it throws and error.<br />
+Another category of actions that can be defined are mutations. Mutations are a way of changing the state of the store. This category was provided in the earlier example of setting personAge. A code example:<br />
+</p>
+<pre><code>const mutations = {
+	logUserIn(state, name) {
+		state.isLoggedIn = true;
+		state.user.name = name;
+	}
+}
+			</code></pre>
+<p>This logs a user in and also sets the isLoggedIn boolean to true;<br />
+Actions call mutations. The difference between the two is that mutations are synchronous, while actions can be asynchronous. For example, an action could be an asynchronous call to a server for more information, which then calls a mutation to commit the information once it is loaded. An example from Vue:<br />
+</p>
+<pre><code>actions: {
+	incrementAsync ({ commit }) {
+		setTimeout(() =&gt; {
+			commit(&#39;increment&#39;)
+		}, 1000)
+	}
+}
+			</code></pre>
+<p>which increments a counter only after 1 second has passed.<br />
+<span class="citation" data-cites="vuex"></span></p>
+<h3 id="composition-api">Composition API</h3>
+<p>With Vue 3, the composition API is a new way to set up components.<br />
+The Composition API replaces the data function, the methods object and more, within a component. This allows for two things to happen, first of all this allows for similar concepts to be group together. In the previous API, you might have the following code:<br />
+</p>
+<pre><code>export default {
+	name: &quot;NavigationBar&quot;,
+	data() {
+		return {
+			isMenuOpen: false
+			links: [...]
+		}
+	},
+	methods: {
+		toggleMenuOpen() {
+			...
+		}
+		addLink() {
+			...
+		}
+	}
+}
+			</code></pre>
+<p>The problem with this is that there are two separate areas of concern. One that is handling the state of whether the menu is open or not, and the other that is handling which links are being displayed. It would be nice to group these together. This is where the composition API comes in. It allows these different parts of the component to be grouped in on <strong>setup</strong> function:<br />
+</p>
+<pre><code>export default {
+	name: &quot;NavigationBar&quot;,
+	setup() {
+		let isMenuOpen = false;
+		toggleMenuOpen() {
+			...
+		}
+
+
+		const links = [...]
+		addLink() {
+			...
+		}
+		return {
+			isMenuOpen,
+			toggleMenuOpen,
+			links,
+			addLink,
+		}
+	},
+}
+		</code></pre>
+<p>This nicely groups the two areas of concern. This also allows easy separating groups of like variables and functions into separate files, which can then be imported easily. This increases reusability and the clarity of the code.<br />
+<span class="citation" data-cites="vue-composition"></span></p>
+<h3 id="vue-transitions">Vue Transitions</h3>
+<p>Vue transitions work closely with directives such as v-if, or v-for. Transitions can be used with v-if for example, to add transitions when the component leaves or enters the DOM. This would use the transition tag as follows:</p>
+<pre><code>&lt;transition name=&quot;fade&quot;&gt;
+	&lt;MyComponent
+	v-if=&quot;booleanStatement&quot;
+	/&gt;
+&lt;/transition&gt;
+			</code></pre>
+<p>The transition can be named anything the user desires. It can even be dynamic. This connects it to a set of style attributes that describe how the transition will look. For the example of this fade transition the style would look like:<br />
+</p>
+<pre><code>			.fade-enter-active{
+				transition: all 0.5s !important;
+			}
+			.fade-leave-active {
+				position: absolute;
+				transition: all 0.5s;
+			}
+
+			.fade-enter-from,
+			.fade-leave-to {
+				opacity: 0 !important;
+			}
+
+			.fade-enter-to,
+			.fade-leave-from {
+				opacity: 1 !important;
+			}
+
+		</code></pre>
+<p>fade-enter-from and fade-leave-to refer to the states that occur one frame before entering and after leaving. This means that the element will both have a opacity of 0 before/after. fade-enter-to and fade-leave-from handle what the element will look like directly after entering or before leaving. fade-enter-active and fade-leave-active handle the animations during the transition. Any custom transitions can be created by using the <strong>NAME</strong>-enter-from, etc. templates and then placing that <strong>NAME</strong> in the name attribute of transition.<br />
+Vue Transitions also include a transition-group tag. This handles the transitions for lists of elements that use v-for to render. This will animate when new elements are added to the list, or removed.<br />
+transition group uses the same style templates as transition, but adds one more option for NAME-move, which will add a transition for elements shifting to accommodate new elements. For example, the following will take 0.5 seconds to slide an existing element down/up:<br />
+</p>
+<pre><code>.fade-move {
+	transition: all 0.5s ease;
+}
+			</code></pre>
+<h2 id="practical-tasks-5">Practical Tasks</h2>
+<h3 id="task-1-4">Task 1</h3>
+<p>This task was all about the basics of two-way data binding in Vue. Create a variable that keeps track of an input element.</p>
+<h4 id="github-link">Github Link</h4>
+<p>I used v-model within my contact form in my project.</p>
+<p>https://github.com/BrandonMurch/SIT120/blob/main/Assignment%201/updated-proof-of-concept/tend/src/components/TheContactForm.vue</p>
+<h4 id="screenshot-8">Screenshot</h4>
+<p>The output looks like:</p>
+<div class="center">
+<p><img src="contact form.png" style="width:14cm" alt="image" /></p>
+</div>
+<h3 id="task-2-4">Task 2</h3>
+<p>Checkboxes are an important part of a form and can either represent a boolean value, or the ability to choose multiple values.</p>
+<h4 id="github-link-1">Github Link</h4>
+<p>I used a checkbox within my login form. Clicking it will allow the user to be remembered by the application and not have to login again on that machine. It will contain two-way binding to a rememberMe variable.</p>
+<p>https://github.com/BrandonMurch/SIT120/blob/main/Assignment%201/updated-proof-of-concept/tend/src/components/TheLoginForm.vue</p>
+<h4 id="screenshot-9">Screenshot</h4>
+<p>The output looks like:</p>
+<div class="center">
+<p><img src="login form.png" style="width:14cm" alt="image" /></p>
+</div>
+<h3 id="task-3-3">Task 3</h3>
+<p>Being able to render options dynamically for a select element, saves a lot of repeating code. Instead a list of strings or a list of objects can be passed in.</p>
+<h4 id="github-link-2">Github Link</h4>
+<p>I used a dynamically rendered options list within my contact form in my project. Users could select the reason they were contacting the company.</p>
+<p>https://github.com/BrandonMurch/SIT120/blob/main/Assignment%201/updated-proof-of-concept/tend/src/components/TheContactForm.vue</p>
+<h4 id="screenshot-10">Screenshot</h4>
+<p>The output looks like:</p>
+<div class="center">
+<p><img src="contact form.png" style="width:14cm" alt="image" /></p>
+</div>
+<h3 id="task-4-2">Task 4</h3>
+<p>Modifiers add quick ways to perform common tasks. It saves code, and energy not having to reimplement the same common features over and over.</p>
+<h4 id="github-link-3">Github Link</h4>
+<p>I used trim within my SearchBar input to remove extra white spaces and make matching entries much easier.</p>
+<p>https://github.com/BrandonMurch/tend/blob/main/src/components/SearchBar.vue</p>
+<h4 id="screenshot-11">Screenshot</h4>
+<p>The output looks like:</p>
+<div class="center">
+<p><img src="search trim.png" style="width:14cm" alt="image" /></p>
+</div>
+<h2 id="project-5">Project</h2>
+<h3 id="what-i-accomplished-this-week-2">What I accomplished this week</h3>
+<p>This week I have successfully added in both Vue Router and Vuex. Vue Router allowed me to use paths within the url to visit certain pages. Vuex is a central store that allows me to store the user login information (such as if a user is logged in and what their name is). I have also implemented the login page which allows the user to login to their account.</p>
+<p>For design, I have implemented more transitions throughout my application to make it more polished. Reflecting the purpose of the design, this softens the harsh default transitions.</p>
+<p>Finally I have worked on deploying my app so far at tend.brandonmurch.com.</p>
+<h3 id="what-i-would-like-to-accomplish-next-week-2">What I would like to accomplish next week</h3>
+<p>Next week I would like to create the MyPlants page, and necessary sub-pages. This will allow the user to view all their plants, upload new plants, view their notifications and change settings.</p>
+<h1 id="week-7">Week 7</h1>
+<h2 id="weekly-content-5">Weekly Content</h2>
+<h3 id="component-registration-1">Component Registration</h3>
+<p>Components can be registered in three ways: Global, Local, and Single FIle.</p>
+<h4 id="global-registration">Global Registration</h4>
+<p>Global Components are available everywhere within the Vue Application. A global component can be registered with the following syntax: <strong>Vue.component(’my-component’, <span> <em>ENTER COMPONENT DETAILS...</em> </span>)</strong>. This means that anywhere within the HTML, a new component can be registered using <span class="math inline">&lt;</span>my-component<span class="math inline">&gt;</span>.</p>
+<h4 id="local-registration">Local Registration</h4>
+<p>On the other hand, locally registered components can only be used within the scope in which they are registered. For example:</p>
+<pre><code>&lt;script&gt;
+	var ComponentA = {...};
+
+	new Vue({
+		el: &#39;#app&#39;,
+		components: {
+			component-a: ComponentA,
+		}
+	})
+&lt;/script&gt;
+			</code></pre>
+<p>Now within the Vue app, the component can be used as component-a. However if we were to declare a second component component-a would not be available inside:</p>
+<pre><code>&lt;script&gt;
+var ComponentA = {...};
+var ComponentB = {
+	template: &#39;  &lt;div&gt;&lt;component-a&gt;  &lt;!-- THIS WON&#39;T WORK! --&gt; &lt;/component-a&gt;&lt;/div&gt;&#39;
+}
+
+new Vue({
+	el: &#39;#app&#39;,
+	components: {
+		component-a: ComponentA,
+	}
+})
+&lt;/script&gt;
+		</code></pre>
+<h4 id="single-file-components">Single-File Components</h4>
+<p>Single-file components are almost a combination of global and local components. Single file components are stored in a <strong>.vue</strong> file and are available anywhere within the Vue application but only if that vue file is imported. The following syntax can be used within the a JavaScript portion to import a component: <strong>import ComponentName from ’./ComponentName.vue’</strong>.<br />
+Within the file, there should be three tags <span class="math inline">&lt;</span>template<span class="math inline">&gt;</span>,<span class="math inline">&lt;</span>script<span class="math inline">&gt;</span> and <span class="math inline">&lt;</span>style<span class="math inline">&gt;</span>. template holds the template information such as HTML, or custom components. script holds all the custom JavaScript. It also is where the component is initialised using an object with fields such as data, name, methods, etc... style holds all the relevant CSS. The scoped modifier can be used to ensure the styles within this tag only apply to this component, even if other tags have the same classes.<br />
+The trade-off for the ease-of-use of single file components is the complexity of the setup. These cannot simply be inserted into regular HTML and require the use of Module Build systems like webpack/npm, etc.<br />
+Here is an example of a basic component:</p>
+<pre><code>&lt;template&gt;
+	&lt;CustomWrapper&gt;
+		&lt;h1 class=&quot;title&quot;&gt; {{ title }}  &lt;/h1&gt;
+	&lt;/CustomWrapper&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+	import CustomWrapper from &#39;./CustomWrapper.vue&#39;
+
+	export default {
+		name: &quot;MyComponent&quot;,
+		components: { CustomWrapper },
+		data() {
+			return {
+				title: &quot;My Title&quot;,
+			};
+		},
+	}
+&lt;/script&gt;
+
+&lt;style scoped&gt;
+	.title {
+		color: red;
+		font-weight: bold;
+	}
+&lt;/style&gt;
+			</code></pre>
+<h3 id="props-custom-events-dynamic-async-components">Props, Custom Events, Dynamic &amp; Async Components</h3>
+<p>For these topics please see <a href="#task4" data-reference-type="ref" data-reference="task4">6.2.4</a> where I have discussed them already.</p>
+<h2 id="practical-tasks-6">Practical Tasks</h2>
+<h3 id="task-1-5">Task 1</h3>
+<p>Within my project I have opted to use single-file components. Especially when building a fully vue-focused application, I find this to be the cleanest and most organized way of creating components.<br />
+</p>
+<h4 id="github-link-4">Github Link</h4>
+<p><br />
+</p>
+<h4 id="screenshot-12">Screenshot</h4>
+<p>I have included a picture of my project so far with different coloured squares highlighting different components.</p>
+<div class="center">
+<p><img src="components-example.png" style="width:14cm" alt="image" /></p>
+</div>
+<h3 id="task-2-5">Task 2</h3>
+<p>I have used props throughout my project to increase the reusability of my components.</p>
+<h4 id="github-link-5">Github Link</h4>
+<p><br />
+</p>
+<h4 id="screenshot-13">Screenshot</h4>
+<p>This screenshot shows the same component (CardImage) but which contains two different images that were passed in using props.</p>
+<div class="center">
+<p><img src="props-example.png" style="width:14cm" alt="image" /></p>
+</div>
+<h3 id="task-3-4">Task 3</h3>
+<p>One of the many custom events I have created in my application is the moreImages event. This application is created by the ImageGallery component. When the user scrolls to the bottom of this component, the image gallery emits the call for more images. This allows the parent node to provide more images if it is possible.</p>
+<h4 id="github-link-6">Github Link</h4>
+<h4 id="screenshot-14">Screenshot</h4>
+<div class="center">
+<p><img src="custom-event-example.png" style="width:14cm" alt="image" /></p>
+</div>
+<h3 id="task-4-3">Task 4</h3>
+<p>I used a named slot within the DropDown component. In the future, this will allow me to specify multiple components all within the one drop down menu.</p>
+<h4 id="github-link-7">Github Link</h4>
+<h4 id="screenshot-15">Screenshot</h4>
+<div class="center">
+<p><img src="slots-example.png" style="width:14cm" alt="image" /></p>
+</div>
+<h2 id="project-6">Project</h2>
+<h3 id="what-i-accomplished-this-week-3">What I accomplished this week</h3>
+<p>This week I have completed the MyPlants portion of the website.</p>
+<h3 id="what-i-would-like-to-accomplish-next-week-3">What I would like to accomplish next week</h3>
+<p>Next Week I would like to complete the "Learn" portion of tend, and populate it with a series of fake articles, questions and answers.</p>
+<h1 id="useful-code-snippets">Useful Code Snippets</h1>
+<h2 id="introduction-2">Introduction</h2>
+<p>Throughout this course, if there is a code snippet I have found useful, I have put it in this section for easy reference. They will also be referenced in the practical task in which they were discovered.</p>
+<h2 id="css-2">CSS</h2>
+<h3 id="common-properties">Common Properties</h3>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">color</th>
+<th style="text-align: left;">Color of text.</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">background-color</td>
+<td style="text-align: left;">Color of element background.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">height</td>
+<td style="text-align: left;">Height of element.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">width</td>
+<td style="text-align: left;">Width of element</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">font-size</td>
+<td style="text-align: left;">Size of font (can be in pixels, rem (relative font size), or pre-set (small, medium, etc.))</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">font-family</td>
+<td style="text-align: left;">Specify the font, or family of fonts. Multiple can be specified, with the earlier fonts taking priority.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">position</td>
+<td style="text-align: left;">How the element is positioned in the document. Some possible values: relative(Follows the standard flow), absolute(placed in a particular location in the document), fixed (placed in a particular location on the screen.)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">left, right, top, bottom</td>
+<td style="text-align: left;">How far from the left/right/top/bottom the element is.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">text-align</td>
+<td style="text-align: left;">How the text within a p or h# tag are aligned (left, center, right)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">border</td>
+<td style="text-align: left;">How the border of the element looks. Uses the value format of "<strong>size style color</strong>"</td>
+</tr>
+</tbody>
+</table>
+<p><br />
+<span class="citation" data-cites="mozilla-css"></span></p>
+<h3 id="css-center-element">Center an Element (From Week 1)</h3>
+<p>To horizontally center any element:<br />
+</p>
+<pre><code>element {
+	postion: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+				</code></pre>
+<p>Any element can also be centred horizontally(by using top, and translateY) or both (using top, left and translate(X, Y)). This moves the element half way across the screen, and then moves the element back half of its width. The end effect being that it is centred on the screen. <span class="citation" data-cites="css-centre"></span></p>
+<h3 id="css-center-element2">Centring an Element with Flex</h3>
+<p>Elements can also be centred by modifying their parent with the following syntax:</p>
+<pre><code>parent-element {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+				</code></pre>
+<p>This works especially well if there is only one child of the parent.</p>
+<h3 id="box-shadow">Box Shadow</h3>
+<p>To give elements depth and make them look more realistic, they can be given a depth by applying a shadow.</p>
+<p>The syntax for applying a shadow is:</p>
+<div class="center">
+<p>box-shadow: offset-x, offset-y, blur-radius, spread-radius</p>
+</div>
+<p><strong>offset-x</strong>, and <strong>offset-y</strong> shift the shadow horizontally and vertically respectively. If positive, the shadow will move towards the right/bottom and if negative will shift towards the left/top.</p>
+<p><strong>blur-radius</strong> is used to blur the shadow. The greater the value, the larger the blurred portion of the shadow. The lowest value is 0, where the shadow is a sharp line.</p>
+<p><strong>spread-radius</strong> changes the size of the solid portion of the shadow. Larger values create a shadow that is larger than the element itself. A negative value will create a shadow smaller than the element. <span class="citation" data-cites="moz-box-shadow"></span></p>
+<h3 id="specific-round-corners">Round Specific Corners</h3>
+<p>border-radius is a property that allows corners to be rounded. Individual corners can be rounded separately from the rest of the element with one of a few self-explanatory commands:<br />
+border-top-left-radius, border-top-right-radius, border-bottom-left-radius, border-bottom-right-radius. <span class="citation" data-cites="w3-border-top-left"></span><br />
+</p>
+<h3 id="css-custom-font">Adding a custom font</h3>
+<p>To add a custom font, they have to be either available locally, or from a website. The following syntax is used:<br />
+</p>
+<pre><code>@font-face {
+	font-family: &quot;Name of Font&quot;,
+	src: url(&quot;www.fonts.com/name-of-font.tff&quot;) format(&quot;tff&quot;);
+}
+				</code></pre>
+<p><span class="citation" data-cites="moz-font-face"></span></p>
+<h3 id="modify-scrollbar">Modifying Scrollbar</h3>
+<p>To change the appearance of the scrollbar, a few different pseudo-selectors have to be used:</p>
+<pre><code>element::-webkit-scrollbar {
+	width: 4px; /* width of the entire scrollbar */
+}
+
+element::-webkit-scrollbar-track {
+	background: orange; /* color of the tracking area */
+}
+
+element::-webkit-scrollbar-thumb {
+	background-color: blue; /* color of the scroll thumb */
+	border-radius: 20px; /* roundness of the scroll thumb */
+	border: 5px solid black; /* creates padding around scroll thumb */
+}
+
+element  {
+	scrollbar-width: thin; /* &quot;auto&quot; or &quot;thin&quot; */
+	scrollbar-color: blue orange; /* scroll thumb and track */
+}
+			</code></pre>
+<p>The ::webkit-* pseudo-classes are for Chrome, Edge, Safari and Opera, since they don’t support the standard <strong>scrollbar-width</strong> and <strong>scrollbar color</strong>.</p>
+<p><span class="citation" data-cites="w3-scroll"></span>;</p>
+<h3 id="css-transitions">Transitions</h3>
+<p>It is possible to animate transitions between CSS changes. This is accomplished by using the transition attribute. The transition command is as follows:</p>
+<div class="center">
+<p><strong>transition: <span class="math inline">&lt;</span>property<span class="math inline">&gt;</span> <span class="math inline">&lt;</span>duration<span class="math inline">&gt;</span> <span class="math inline">&lt;</span>timing-function<span class="math inline">&gt;</span> <span class="math inline">&lt;</span>delay<span class="math inline">&gt;</span></strong></p>
+</div>
+<p>Property is which CSS properties will be affected by the transition. Duration is how long the animation will take to complete. The duration can either be in seconds (2s) or in milliseconds(200ms). Timing functions is how the timing maps to the animation. For example there is ease-in which is slow at the beginning, and then faster towards the end of the animation. Finally the delay value delays the start of the animation. <span class="citation" data-cites="mozilla-transitions"></span><br />
+One thing to note is that not all styles can be animated. For a complete list of animatable styles see <span class="citation" data-cites="possible-transitions"></span>.<br />
+</p>
+<h3 id="css-scrollbar">Modifying Scrollbar</h3>
+<p>To modify the appearance of the scrollbar, there is two different sets of attributes (one for Chrome/Edge/Safari/Opera and one for Firefox).<br />
+For Firefox, there are two CSS Properties available:</p>
+<ul>
+<li><p>scrollbar-color: <span class="math inline">&lt;</span>thumb colour<span class="math inline">&gt;</span> <span class="math inline">&lt;</span>track colour<span class="math inline">&gt;</span></p></li>
+<li><p>scrollbar-width: <span class="math inline">&lt;</span>auto, thin or none<span class="math inline">&gt;</span></p></li>
+</ul>
+<p><span class="citation" data-cites="modify-scroll-mozilla"></span><br />
+Alternatively, other browsers use the <strong>::-webkit-scrollbar</strong> pseudo element. This allows styles to be applied to the different parts of the scroll bar. The possible elements are:</p>
+<ul>
+<li><p>::-webkit-scrollbar - The entire scrollbar</p></li>
+<li><p>::-webkit-scrollbar-track - The track of the scrollbar (the background)</p></li>
+<li><p>::-webkit-scrollbar-thumb - The thumb of the scrollbar (the part that slides)</p></li>
+<li><p>::-webkit-scrollbar-thumb: hover - Modify the thumb on hover.</p></li>
+</ul>
+<p><span class="citation" data-cites="modify-scroll"></span></p>
+<h2 id="javascript-1">JavaScript</h2>
+<h3 id="js-window-onload">Window.onLoad = function() <span>...</span> (From Week 1)</h3>
+<p>Upon fully loading the window, the provided function will then be called. This ensures the elements referenced within the function will be able to be found within the DOM. This is particularly useful with Vue, since there needs to be a rendered element for Vue to be attached. <span class="citation" data-cites="onload"></span></p>
+<h3 id="js-round-number">Round to Specific Decimal Place (From Week 1)</h3>
+<p>To round to a specific number of decimal places, use the toFixed(places) method on an number variable. For example:<br />
+</p>
+<pre><code>let number = 9.43667;
+number = number.toFixed(2);
+// number == 9.43;
+				</code></pre>
+<p><span class="citation" data-cites="tofixed"></span></p>
+<h3 id="js-canvas">Canvas Drawing</h3>
+<p>To draw a line on the canvas:</p>
+<pre><code>// Get the canvas element from the document
+const canvas = document.querySelector(&#39;#canvas&#39;);
+
+// Adjust the height and width as necessary, this fills the screen
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+// Get the kind of canvas (2d, webgl, etc.) (webgl is 3d)
+const ctx = canvas.getContext(&#39;2d&#39;);
+
+// Begin drawing.
+ctx.beginPath();
+
+// Place the cursor at x,y.
+ctx.moveTo(x, y);
+
+// from (x, y), draw a line to (newX, newY).
+ctx.lineTo(newX, newY);
+
+// Select the width of the line.
+ctx.lineWidth = 3;
+
+// Assign a colour value
+to draw.
+ctx.strokeStyle = &quot;#123456&quot;;
+
+// Draw the line on the screen.
+ctx.stroke()
+
+			</code></pre>
+<p><span class="citation" data-cites="moz-canvas"></span></p>
+<h3 id="js-delay">Delay()</h3>
+<p>JavaScript does not have a simple delay() function which many other languages have that blocks the execution of code for a certain amount of time. Instead there is a bit of a hack to delay code as necessary. An empty array is first initialised. Each timer is set by supplying a function that is to be called when the function expires, and the amount of time. Essentially this means wait x amount of time, then call the function. To call a function every x milliseconds, construct a for loop, then multiply the time-value by i. See the syntax below:</p>
+<pre><code>const timers = [];
+
+// Calls the function after a delay.
+timers.push(setTimout(function, time-value));
+
+// Calling multiple delays, this will call the function every time-value milliseconds.
+for (let i = 0; i &lt; max; i++) {
+	timers.push(setTimout(function, time-value * i));
+}
+
+// To clear the first timer before it executes.
+window.clearTimeout(timers[0]);
+			</code></pre>
+<p><span class="citation" data-cites="js-delay"></span></p>
+<h3 id="js-debounce">"Debounce"</h3>
+<p>Debounce is a function that stops functions from being called over and over. An example of a useful application of this is when the user resizes the window. It means the browser will wait until the user is finished moving the window before calling the function. This can give a big boost to performance by not calling expensive functions unnecessarily.</p>
+<p>The following higher-order function can be used:</p>
+<pre><code>function debounce(func, timeout = 300){
+	let timer;
+	return (...args) =&gt; {
+		clearTimeout(timer);
+		timer = setTimeout(() =&gt; { func.apply(this, args); }, timeout);
+	};
+}
+				</code></pre>
+<p><span class="citation" data-cites="fcc-debounce"></span><br />
+What happens is when this function is called, it creates a timer, that after elapsing will execute the function passed as an argument. When this is called a subsequent time, the timer is reset, and thus the passed function will only execute when timer is able to fully elapse.</p>
+<h3 id="javascript-observers">JavaScript Observers</h3>
+<p>JavaScript observers are an easy way to monitor for changes within the DOM. This also benefits from not being tied to any one framework, as it is a generic web API.<br />
+These work by taking a function into their constructor. Whenever the observer is triggered, it will execute the provided function. Then this Observer is stored in a variable, and the observe method can be called, which takes the element being observed.<br />
+</p>
+<h4 id="intersection-observer">Intersection Observer</h4>
+<p>The intersection Observer is used to check to see if an element is "intersecting with the viewport". In layman’s terms, this means can the user see the element. Two different options can be selected for what intersecting means, the first is partial intersection (the user can see part of the element), and the other is complete intersection (the user can see all of the element). An example:<br />
+</p>
+<pre><code>const observer = new IntersectionObserver((entries) =&gt; {
+	if (entries[0].isIntersecting === true) {
+		console.log(&quot;I can see you!&quot;)
+	}
+});
+
+observer.observe(document.getElementById(&quot;target-id&quot;))
+				</code></pre>
+<p>This will track to see if the element with the id "target-id" is intersecting the viewport, and when it does, it will print "I can see you!" to the console.<br />
+<span class="citation" data-cites="intersection-observer"></span><br />
+</p>
+<h4 id="mutation-observer">Mutation Observer</h4>
+<p>Mutation Observers watch for any mutation within the DOM. This means that any changes to style, or content for example, will be noticed. There are a few options, one of which is to only watch the element that has been passed in, another is to only monitor the element and its children, and the last is to monitor the entire subtree underneath the element.<br />
+The code is fairly similar to a IntersectionObserver, but instead MutationObserver constructor is used. Config files are places within the observe method as a secondary parameter to the element. A possible config might be:<br />
+</p>
+<pre><code>observer.observe(targetNode, { attributes: true, childList: true, subtree: true });
+				</code></pre>
+<p><span class="citation" data-cites="mutation-observer"></span></p>
+<h4 id="disconnection">Disconnection</h4>
+<p>Observers must be disconnected when they are finished. This typically is when a component is unmounted from the DOM. This will prevent memory leaks. To disconnect an observer simply call <strong>observer.disconnect();</strong>)</p>
+<h1 id="week-1-the-basics-of-web-development-1">Week 1<br />
+The Basics of Web Development</h1>
+<h2 id="introduction-3">Introduction</h2>
+<p>Web development requires the use of three languages: HTML, CSS and Javascript. These three languages work together to tell the browser how a website should <u><strong>look</strong></u> and <u><strong>act</strong></u>. By understanding them thoroughly, we are able to create high quality, responsive websites, that users will find visually pleasing and easy to use.<br />
+</p>
+<h2 id="weekly-content-6">Weekly Content</h2>
+<h3 id="html-2">HTML</h3>
+<h4 id="introduction-to-html-1">Introduction to HTML</h4>
+<p>Hyper Text Markup Language is a structured way to store the information which will be displayed on a webpage. More simply, HTML tells the browser <strong>WHAT</strong> to display.<br />
+<br />
+HTML uses tags to hold the data. An example of a tag is: <span class="math inline">$\color{blue}&lt;body&gt;\color{red}&lt;/body&gt;$</span>. The opening tag in blue, has a matching closing tag in red. Relevant information is placed between the two tags. For our body example earlier, the browser will know that the information for the body will be between the opening body tag and the closing body tag.<br />
+Attributes for tags can be set within the opening tag. An example of using attributes to assign a class to a p element would look like: <span class="math inline">&lt;</span>p <strong>class="text"</strong><span class="math inline">&gt;</span>. A class groups a number of elements together, while another attribute <strong>id</strong> refers to only one element. There are many other HTML attributes to help us configure our elements. For a large list of possible attributes. visit .<br />
+</p>
+<h4 id="html-boiler">Boilerplate To Get Started</h4>
+<p>To get started writing an HTML document, there is some boilerplate code that must <em>almost</em> always be present:<br />
+</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Title&lt;/title&gt;
+        &lt;script src=&quot;INSERT LINK TO JAVASCRIPT FILE HERE&quot;&gt;&lt;/script&gt;
+        &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;INSERT LINK TO CSS FILE HERE&quot;&gt;
+    &lt;/head&gt;
+        &lt;body&gt;
+            INSERT HTML TO DISPLAY HERE.
+        &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<p><strong>Notice the indentation!</strong> To make this code easier to read, any tag that is inside another tag will be indented further. For example, it is easy to see that the head tag is inside the html tag. See the below table for descriptions of each tag.<br />
+</p>
+<div class="tabular">
+<p><span>P<span>4cm</span>p<span>11cm</span></span> <strong>Tag</strong> &amp; <strong>Description</strong><br />
+<span class="math inline">&lt;</span>!DOCTYPE<span class="math inline">&gt;</span> &amp; This is to let the browser know that this is a current HTML5 document. Previous versions of html will have different codes to insert here. <span class="citation" data-cites="doctype"></span><br />
+<span class="math inline">&lt;</span>html<span class="math inline">&gt;</span>...<span class="math inline">&lt;</span>/html<span class="math inline">&gt;</span> &amp; This is the html document, all information will be inside this tag<br />
+<span class="math inline">&lt;</span>head<span class="math inline">&gt;</span>...<span class="math inline">&lt;</span>/head<span class="math inline">&gt;</span> &amp; This contains information that will not be displayed within the webpage itself.<br />
+<span class="math inline">&lt;</span>title<span class="math inline">&gt;</span>...<span class="math inline">&lt;</span>/title<span class="math inline">&gt;</span> &amp; The title to the webpage. This will be displayed either in the browser’s title bar area at the top of the window, or the tab area.<br />
+<span class="math inline">&lt;</span>script<span class="math inline">&gt;</span>...<span class="math inline">&lt;</span>/script<span class="math inline">&gt;</span> &amp; This can either contain JavaScript code directly, or have a src attribute that links to an external file (either locally, or from a http link)<br />
+<span class="math inline">&lt;</span>link<span class="math inline">&gt;</span>&amp; This links to some exterior document. The most common use of the link tag is to link to an external css file, but other documents that might be linked are icons, and licenses. <span class="citation" data-cites="w3-link"></span><br />
+<span class="math inline">&lt;</span>body<span class="math inline">&gt;</span>&amp; Body contains all the information that will be displayed on the website itself.<br />
+</p>
+</div>
+<h4 id="other-useful-tags-and-descriptions-1">Other useful tags and descriptions</h4>
+<ul>
+<li><p><span class="math inline">&lt;</span><strong>p</strong><span class="math inline">&gt;</span>...<span class="math inline">&lt;</span><strong>/p</strong><span class="math inline">&gt;</span> contains a paragraph of text.</p></li>
+<li><p><span class="math inline">&lt;</span><strong>h#</strong><span class="math inline">&gt;</span>...<span class="math inline">&lt;</span><strong>/h#</strong><span class="math inline">&gt;</span> contains a header. # is replaced by the size of header, 1 is the largest and 6 is the smallest.</p></li>
+<li><p><span class="math inline">&lt;</span><strong>div</strong><span class="math inline">&gt;</span>...<span class="math inline">&lt;</span><strong>/div</strong><span class="math inline">&gt;</span> is a generic tag that creates a container for other elements.</p></li>
+<li><p><span class="math inline">&lt;</span><strong>a href="..."</strong><span class="math inline">&gt;</span>...<span class="math inline">&lt;</span><strong>/a</strong><span class="math inline">&gt;</span> creates a hyperlink to another page. href is the link, and the text between the tags is displayed to the user.</p></li>
+</ul>
+<h4 id="tags-without-closing-tags-1"><strong>Tags without closing tags</strong></h4>
+<p>There are a few tags which don’t require a closing tag. These tags get information through other means, like the <span class="math inline">&lt;</span>img /<span class="math inline">&gt;</span> tag, which knows what image to render using the <strong>src</strong> attribute.</p>
+<ul>
+<li><p><span class="math inline">&lt;</span><strong>img src="image location"</strong><span class="math inline">&gt;</span> loads an image from either a website, or local storage.</p></li>
+</ul>
+<h4 id="tables-1">Tables</h4>
+<p>Tables are a great way to organise information on a website. They act the same way as tables within commonly used word processors such as Microsoft Word with columns and rows.<br />
+The table is broken into two parts: <span class="math inline">&lt;</span>thead<span class="math inline">&gt;</span> which uses <span class="math inline">&lt;</span>th<span class="math inline">&gt;</span> to create header cells, and <span class="math inline">&lt;</span>tbody<span class="math inline">&gt;</span> which uses <span class="math inline">&lt;</span>td<span class="math inline">&gt;</span> to create regular cells. The graphic below provides a clear understanding of the structure of a table. Remember, the values for each cell are placed in the inner most tags (th and td).<br />
+</p>
+<div class="center">
+<p><img src="html-table.png" alt="image" /><br />
+<span class="citation" data-cites="html-table"></span><br />
+</p>
+</div>
+<h4 id="forms-1">Forms</h4>
+<p>Forms are a collection of input fields within HTML. The user can enter different types of information depending on the type of input field. When the form is submitted, the browser will collect all the inputs and either send them to a url (if the attribute <strong>action</strong> is present on the form), or will send them to a JavaScript function (if the attribute <strong>onsubmit</strong> is present). An example of a form with the inputs name, age and location might be: <span id="form-html" label="form-html">[form-html]</span><br />
+</p>
+<pre><code>&lt;form onsubmit=&quot;submitForm(event)&quot;&gt;
+    &lt;label for=&quot;name&quot;&gt;Name&lt;/label&gt;
+    &lt;input type=&quot;text&quot; id=&quot;name&quot; size=20 maxlength=20&gt;
+    &lt;label for=&quot;age&quot;&gt;Age&lt;/label&gt;
+    &lt;input type=&quot;number&quot; id=&quot;age&quot; max=120&gt;
+    &lt;label for=&quot;location&quot;&gt;Location&lt;/label&gt;
+    &lt;input type=&quot;text&quot; id=&quot;location&quot;&gt;
+    &lt;input class=&quot;button&quot; type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
+    &lt;input class=&quot;button&quot; type=&quot;reset&quot; value=&quot;Cancel&quot;&gt;
+&lt;/form&gt;
+</code></pre>
+<p>Which would output:<br />
+</p>
+<div class="center">
+<p><img src="html-form.png" style="width:14cm" alt="image" /></p>
+</div>
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span id="fig:email-error" label="fig:email-error">[fig:email-error]</span></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Input fields can also be displayed as buttons, for example if the input type is submit or reset as seen in the example form above.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">For accessibility reasons, each input must be accompanied by a label tag, which uses the <strong>for</strong> attribute to connect to an input’s id.</td>
+<td style="text-align: left;"><img src="number-keyboard-example.png" alt="image" /> <span id="fig:number-keyboard" label="fig:number-keyboard">[fig:number-keyboard]</span></td>
+</tr>
+</tbody>
+</table>
+<h3 id="css-3">CSS</h3>
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><h4 id="basic-syntax-1">Basic Syntax</h4>
+<p>CSS uses property name and value pairs separated by a colon. Different pairs are separated by a semi-colon. An example of making the text of an element blue would be: "<strong><span>color</span>: <span>blue</span>;</strong>" where color is the <u>property name</u>(red) and blue is the <u>property value</u>(blue).</p></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p>Specifying the elements for these styles to be applied is done using some of the following options:<br />
+</p>
+<div class="tabular">
+<p><span>P<span>4cm</span>p<span>11cm</span></span> <strong>tag</strong> &amp; This will apply a style to every element of a particular tag. For example, if p is used, every paragraph tag will have the specified styles applied. Note the lack of punctuation before the tag.<br />
+<strong>.class</strong> &amp; This will apply styles to every element with a particular class. A class is specified with a period before the class name.<br />
+<strong>#id</strong> &amp; This will apply styles to the element with a particular id. An id is specified with a hashtag before the id name.<br />
+</p>
+</div>
+<p>In the following example, every element with the class "specific-class" would have a margin of 10 pixels and a border that is 1 pixel thick, solid and black.<br />
+</p>
+<pre><code>.specific-class {
+    margin: 10px;
+    border: 1px solid black;
+}</code></pre>
+<h4 id="location-of-css-1">Location of CSS</h4>
+<p>There are three options for where to place CSS code:<br />
+</p>
+<ol>
+<li><p><strong>Inline</strong> Placed within the html code within the element. Example: <span class="math inline">&lt;</span>p style="color: red;"<span class="math inline">&gt;</span></p></li>
+<li><p><strong>Internal</strong> Placed within the style tag, usually within the head tag. Example: <span class="math inline">&lt;</span>style<span class="math inline">&gt;</span>p { color: red;}<span class="math inline">&lt;</span>style<span class="math inline">&gt;</span></p></li>
+<li><p><strong>External</strong> Placed within an external .css file. This is then linked via the link tag as seen in <a href="#html-boiler" data-reference-type="ref" data-reference="html-boiler">10.2.1.2</a>.</p></li>
+</ol>
+<p>This also effects how certain elements will override others. For example, any inline style will override any internal or external style, and any internal style will override any external style. The code is also read top to bottom, so styles at the bottom will override styles at the top.</p>
+<h4 id="css-box-1">CSS Box</h4>
+<div class="center">
+<p><img src="CSS box.png" alt="image" /><br />
+<span class="citation" data-cites="w3-box"></span><br />
+</p>
+</div>
+<p>Every element on a webpage is contained in the box above. The outer most layer, margin, is the space outside the border. This will change the perception of how far away the box is from other boxes. After the margins and border, is the padding, this is the space between the border and the content. Good use of the CSS box is critical to creating good spacing within a webpage.</p>
+<h3 id="week-1-js">JavaScript</h3>
+<h4 id="introduction-to-javascript-1">Introduction to Javascript</h4>
+<p>JavaScript is a scripting language that is commonly used in web browsers. It has expanded outside of its original purpose to be able to do much more with the help of other programs such as NodeJS.<br />
+</p>
+<h4 id="declaring-variables-1">Declaring Variables</h4>
+<p>There are two options when declaring variables depending on if it is mutable or not. If the variable cannot be modified after initialization, use the keyword <strong>const</strong> followed by the variable name. For example <strong>const number = 2</strong>. If the variable is mutable, then use the keyword <strong>let</strong>. An example for this would be <strong>let letter = ’L’</strong>, where letter can be modified at a later time.</p>
+<h4 id="declaring-and-calling-functions-1">Declaring and Calling Functions</h4>
+<p>To declare a function, first use the function keyword, followed by the name, and a list of parameters within parenthesis. The internal code of the function is then placed within curly braces. To return a value to the calling function, simply use the keyword <strong>return</strong>. Example:<br />
+</p>
+<pre><code>function addTwoNumbers(num1, num2) {
+    return num1 + num2;
+}</code></pre>
+<p>Then to call this function, use <strong>addTwoNumbers(230, 384)</strong>. Functions allow us to reuse code, instead of rewriting it every time.</p>
+<h4 id="window-and-document-objects-1">Window and Document Objects</h4>
+<p>Two useful objects within JavaScript is the window and document objects.<br />
+The window object references the entire browser window. This allows access to properties such as the location, history, height, width, etc.<br />
+The document object is a child of the window object. This contains everything that is displayed on the website. This includes the HTML and CSS. There are document methods that allow you to get an element by its id ( <strong>getElementById()</strong> ), as well as by its class ( <strong>getElementsByClass()</strong> ), and many more. For a full list of methods available within Document, see<br />
+<br />
+</p>
+<h4 id="more-javascript-1">More JavaScript</h4>
+<p>JavaScript is covered in much greater detail in Week 3. See <a href="#week-3-js" data-reference-type="ref" data-reference="week-3-js">4.1</a>.<br />
+</p>
+<h3 id="vue.js-2">Vue.js</h3>
+<h4 id="introduction-to-vue-1">Introduction to Vue</h4>
+<p>Vue.js is a framework that allows the creation of responsive user interfaces while reducing the amount of code actually written. It works with HTML/CSS/JavaScript to provide re-usable components, templates, state handling, and much more. <span class="citation" data-cites="vue"></span><br />
+</p>
+<h4 id="templates-1">Templates</h4>
+<p>Within Vue, templates can be created. These templates contain the information displayed on the website, similar to HTML. In fact all HTML will work within these templates, but the templates include extra features to make responsive design much easier.<br />
+Templates allow for a reduction in code compared to traditional HTML. By finding common <em>structures</em> within the HTML, templates can be created so that different data can be inserted into these reusable structures. This means that we don’t have to spend time re-writing the same structures over and over. Syntactically, Vue uses double curly braces to represent areas where data will be inserted later. <strong>{{ name }}</strong> will be replaced with the value of the name variable.<br />
+<span class="citation" data-cites="vue-template"></span><br />
+For a simple example of where templating can reduce the amount of code written, refer back to <a href="#html-boiler" data-reference-type="ref" data-reference="html-boiler">10.2.1.2</a>. Each html document you create has to have these pieces of code. Instead of rewriting this every time, a template could be created as follows:<br />
+</p>
+<pre><code>&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Title&lt;/title&gt;
+        &lt;script src=&quot;{{ jsFile}}&quot;&gt;&lt;/script&gt;
+        &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;cssFile&quot;&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;{{ title }}&lt;/h1&gt;
+        &lt;p&gt; {{ paragraph }}
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<p>This could then be reused for many different websites with different information by supplying different values for the variables title, paragraph, jsFile, etc.. This of course can be expanded to much more complicated websites where there are many of the same pages. Consider Facebook, where everyone has their own profile page. These pages are standardised across the website to look the same, but the information is different on each one. A template is made once, then whenever the page is rendered it is filled with the appropriate data.<br />
+This then becomes even more powerful when responsive web apps are considered. If required, different templates could be created for each style of device (small mobile, tablet, desktop) to create a very different experience. When the user visits the web app, the appropriate template will be selected and used, all while the data remains the same.<br />
+</p>
+<h4 id="components-1">Components</h4>
+<p>Components are re-usable snippets of code that abstract away some code. Pre-defined options(or "props") can also be passed to the components to affect what is rendered making them much more flexible. Many components can then be built together to form much larger components, and then those components combined to create a whole application. All while using minimal code compared to pure HTML/CSS/JS.<br />
+</p>
+<table>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">In this small example, the link component and the button component are reused within two separate, larger components. This is incredibly small compared to many web apps, which would reuse the components many, many times. This reduces repetition of code. <span class="citation" data-cites="vue-component"></span></td>
+<td style="text-align: left;"><img src="component-app.png" alt="image" /></td>
+</tr>
+</tbody>
+</table>
+<h2 id="practical-tasks-7">Practical Tasks</h2>
+<h3 id="html-3">1 - HTML</h3>
+<p>This task provided a very basic example to help learn the bare bones of HTML, and its commonly used tags. It also allowed practice in creating both a table and input form.</p>
+<h4 id="code-4">Code</h4>
+<p>The code can be viewed at</p>
+<h4 id="task-1.1">Screenshot</h4>
+<p><img src="Task 1 Evidence.png" alt="image" /></p>
+<h3 id="css-4">2 - CSS</h3>
+<p>This task focussed on introducing CSS, which makes the website look attractive. It allows practice with the structure of CSS, as well as with properties that are commonly used.<br />
+Building upon the last task, I formatted the website using CSS. This allowed me to create a website that has two columns. One which contains the table of entries, the other that contains the form to input new entries. The image at the top of the page is then modified to look slimmer and stretch the width of the window, while the title is centred below.<br />
+Using a two-column design used the space much more intelligently than the default styling, which would have spread both the table, and form across the entire screen, using double the vertical space.<br />
+</p>
+<h4 id="code-5">Code</h4>
+<p>See code on</p>
+<h4 id="screenshot-16">Screenshot</h4>
+<p>See <a href="#task-1.1" data-reference-type="ref" data-reference="task-1.1">10.3.1.2</a> since these tasks are combined into one website.<br />
+</p>
+<h4 id="useful-code-5">Useful Code</h4>
+<p>There are many ways to centre an element in CSS, this (<a href="#css-center-element" data-reference-type="ref" data-reference="css-center-element">9.2.2</a>) is a pretty simple and useful one which can either centre an element horizontally, vertically or both. This doesn’t rely on any of the more advanced CSS features such as flexbox or grid.<br />
+</p>
+<h3 id="javascript-2">3 - JavaScript</h3>
+<p>I made a small JavaScript function that takes the inputs within the form, and dynamically updates the table. I also created a separate website to calculate the inputted student scores. This helped practice modifying the DOM dynamically with JavaScript, which allows for a seamless experience as the user, since information or elements can be modified without refreshing the page.<br />
+</p>
+<h4 id="code-6">Code</h4>
+<p>See code for the <strong>input form</strong>:<br />
+<br />
+and for the <strong>student grades</strong>:<br />
+</p>
+<h4 id="useful-code-6">Useful Code</h4>
+<p>Being able to round numbers in JavaScript was useful in this project, since otherwise there could be tens of decimal places. To accomplish this I used variable.toFixed() [<a href="#js-window-onload" data-reference-type="ref" data-reference="js-window-onload">9.3.1</a>]</p>
+<h4 id="screenshot-17">Screenshot</h4>
+<p><strong>Before form submission:</strong><br />
+<img src="Task 3 Before.png" alt="image" /> <strong>After form submission:</strong><br />
+<img src="Task 3 After.png" alt="image" /><br />
+<strong>Before score calculation:</strong><br />
+<img src="scores empty.png" style="width:8cm" alt="image" /><br />
+<strong>After score calculation:</strong><br />
+<img src="scores calculated.png" style="width:8cm" alt="image" /></p>
+<h3 id="vue.js-3">4 - Vue.js</h3>
+<p>A small Todo app with three default items of a classic grocery list. New tasks can be added through the input text box. Tasks can be clicked to complete them.<br />
+This task introduced the concept of components. The component <span class="math inline">&lt;</span>todo-item<span class="math inline">&gt;</span> was reused multiple times, showing the utility of components. From this it shows if they are this beneficial in smaller applications, they must be exponentially so in large applications, making them incredibly important.</p>
+<h4 id="code-7">Code</h4>
+<p>See the code on <span><a href="https://github.com/BrandonMurch/SIT120/tree/main/Practical%201/task4">Github</a></span>.</p>
+<h4 id="useful-code-7">Useful Code</h4>
+<p>I found Window.onLoad() [<a href="#js-window-onload" data-reference-type="ref" data-reference="js-window-onload">9.3.1</a>] to be useful in ensuring the entire page is loaded before Vue tries to reference an element.</p>
+<h4 id="screenshot-18">Screenshot</h4>
+<p><img src="Vue Todo.png" style="width:8cm" alt="image" /></p>
+<h2 id="project-7">Project</h2>
+<h3 id="what-i-completed-this-week-1">What I completed this week</h3>
+<p>This week I have read through the <strong>Assignment 1: Guidelines and Rubrics</strong>. I have understood what is required of the assignment, and started to make notes of ideas/requirements that will help me to complete this assignment.</p>
+<h3 id="what-i-will-complete-next-week-1">What I will complete next week</h3>
+<p>Next week I will do research and think of an idea for my project. I expect this to take a fair bit of time to find a good idea that can be original, as well as managed within the time limitations of the course. This should take me approx. 4 hours.</p>
