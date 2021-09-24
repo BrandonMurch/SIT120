@@ -1,8 +1,8 @@
 // Store information about the user.
 const state = () => {
     return {
-        isLoggedIn: true,
-        name: "brandon",
+        isLoggedIn: false,
+        name: "",
     }
 }
 

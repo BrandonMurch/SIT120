@@ -30,6 +30,8 @@ Emits:
 			v-if="isLoaded && title"
 			class="image-overlay"
 			@click="$emit('imageClick')"
+			role="link"
+			tabindex="0"
 		>
 			<p class="image-hover-text">{{ title }}</p>
 		</div>
